@@ -1,0 +1,45 @@
+{
+  "schema": "CIR_TIR_COSMOLOGY_PARENT_PIN_V0_1",
+  "created_date": "2026-09-24",
+  "parent_repository": "AdrianLipa90/The-Fundamental-Theory-of-Informational-Relations",
+  "parent_commit": "853032e019824b836de43634d949da5566396153",
+  "target_repository": "AdrianLipa90/Cosmic-Informational-Relations-",
+  "target_branch": "feat/tir-foundations-v0-1-20260924",
+  "sources": [
+    {
+      "path": "TIR/integration/TIR_IDT_RFC_INFORMATION_HOLONOMY_COSMOLOGICAL_ACCELERATION_V0_1.md",
+      "sha": "eef132208fe03e6ccef7b49c306e67e34e0c02ec"
+    },
+    {
+      "path": "TIR/integration/TIR_IDT_RFC_TEMPORAL_U1_METRIC_RESPONSE_COSMOLOGY_V0_1.md",
+      "sha": "78f86cc7c873803a25af252cbbd79be0680e6cb2"
+    },
+    {
+      "path": "TIR/foundations/TIR_GRAVITY_DERIVATION_SPINE_V0_1.md",
+      "sha": "77caa2ed7e7835f14a341a11d37915246b2bd975"
+    },
+    {
+      "path": "TIR/CURRENT_STATUS.md",
+      "sha": "53acb4fa34c7c7968682296af66dff53a663865f"
+    },
+    {
+      "path": "README.md",
+      "sha": "da8f2cf2f575365590d5a000b8b2a8a8e67f0b16"
+    }
+  ],
+  "retained_no_go": [
+    "CURRENT_HOLONOMY_SPECTATOR_NO_GO",
+    "EQUAL_STRESS_HOLONOMY_PARTITION_NO_GO",
+    "PURE_PHASE_KINETIC_W_PLUS_ONE_DECELERATING",
+    "NAIVE_LOCAL_D_CHANNEL_MAXIMUM_UNSTABLE"
+  ],
+  "open": [
+    "ABSOLUTE_ALPHA_I_NORMALIZATION",
+    "PRODUCTION_EVENT_SPATIAL_COSMOLOGY_REALIZATION",
+    "NONTRIVIAL_HOLONOMY_PERSISTENCE",
+    "TEMPORAL_U1_TO_LOCAL_ABE_RESPONSE_BINDING",
+    "BERRY_EULER_R_ACTIVE_SIGN_AND_MAGNITUDE",
+    "DIMENSIONFUL_COSMOLOGICAL_SCALE_RHO_CRIT_BINDING",
+    "PERTURBATION_GROWTH_VALIDATION"
+  ]
+}
