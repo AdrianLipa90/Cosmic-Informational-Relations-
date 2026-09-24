@@ -1,0 +1,36 @@
+{
+  "schema": "CIR_FOUNDATION_VALIDATION_RECEIPT_V0_1",
+  "date": "2026-09-24",
+  "branch": "feat/tir-foundations-v0-1-20260924",
+  "tir_parent_commit": "853032e019824b836de43634d949da5566396153",
+  "execution": {
+    "mode": "LOCAL_EXECUTION_ON_CONNECTOR_VERIFIED_CONSUMED_SURFACES",
+    "full_git_checkout": false,
+    "full_checkout_blocker": "container DNS could not resolve github.com",
+    "validator": "validation/validate_foundation_spine.py"
+  },
+  "remote_blob_sha_verification": {
+    "README.md": "f84190a7cedee18c8d04d7e7e5a49e32628affbd",
+    "FOUNDATIONS/CIR_SCOPE_AND_PROMOTION_BOUNDARY_V0_1.md": "4e8e094298b44a1576267f1909d9a0cbfd90bba7",
+    "provenance/TIR_PARENT_PIN.json": "2a3630bde281f721cc1db325febb713444cbf093",
+    "validation/validate_foundation_spine.py": "cfddc40bf2ecee4bf16a4efa95cb60bac2e7b912"
+  },
+  "result": {
+    "verdict": "PASS",
+    "failures": [],
+    "kappa": 0.009193150006360484,
+    "checks": {
+      "parent_pin": true,
+      "ordered_dependency_chain": true,
+      "firewalls_present": true,
+      "kappa_numeric_sanity": true
+    }
+  },
+  "repository_boundary": {
+    "main_commit": "b284fceaf034945813d20e6cc666ba86c10a7c33",
+    "main_mutated": false,
+    "branch_ahead_of_main": true,
+    "behind_main": 0
+  },
+  "interpretation": "This receipt validates foundation-file consistency only. It is not a physical or empirical validation of CIR."
+}
