@@ -15,10 +15,10 @@ CIR uses the TIR claim hierarchy.
 
 | Claim | Class | Status |
 |---|---:|---|
-| (H_2(1/2)=ln2) | A | PASS — standard information theory |
-| (mathbb{CP}^1cong S^2) for pure qubit state space | A | PASS — standard projective geometry |
-| ({m Herm}_0(2)congmathbb R^3) as real vector spaces | A | PASS — standard linear algebra |
-| (kappa=ln2/(24pi)) | B | PINNED TIR structural normalization |
+| \(H_2(1/2)=\ln2\) | A | PASS — standard information theory |
+| \(\mathbb{CP}^1\cong S^2\) for pure qubit state space | A | PASS — standard projective geometry |
+| \({\rm Herm}_0(2)\cong\mathbb R^3\) as real vector spaces | A | PASS — standard linear algebra |
+| \(\kappa=\ln2/(24\pi)\) | B | PINNED TIR structural normalization |
 | TIR primitive dependency spine | B | PINNED |
 | TIR spatial relational carrier | B | PINNED |
 | TIR Cartan/Levi-Civita conditional chain | B | PINNED WITH DECLARED PREMISES |
