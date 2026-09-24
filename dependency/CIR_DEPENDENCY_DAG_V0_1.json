@@ -1,0 +1,293 @@
+{
+  "schema": "CIR_DEPENDENCY_DAG_V0_1",
+  "date": "2026-09-24",
+  "tir_parent_commit": "853032e019824b836de43634d949da5566396153",
+  "status_vocabulary": [
+    "PASS_STANDARD",
+    "PASS_EXACT",
+    "PASS_TIR_STRUCTURAL",
+    "PASS_CONDITIONAL",
+    "DEFINED_CONTRACT",
+    "OPEN_PHYSICAL_BINDING",
+    "OPEN_INPUT",
+    "OPEN_EMPIRICAL",
+    "NO_GO",
+    "NONE_FROZEN"
+  ],
+  "nodes": [
+    {
+      "id": "F0",
+      "name": "primitive informational spine",
+      "status": "PASS_TIR_STRUCTURAL",
+      "scope": "structural",
+      "blocks_physical_promotion": false
+    },
+    {
+      "id": "F1",
+      "name": "CP1 Fubini-Study Berry state geometry",
+      "status": "PASS_STANDARD",
+      "scope": "mathematical",
+      "blocks_physical_promotion": false
+    },
+    {
+      "id": "F2",
+      "name": "tetrahedral SIC state/shape closure",
+      "status": "PASS_EXACT",
+      "scope": "mathematical",
+      "blocks_physical_promotion": false
+    },
+    {
+      "id": "F3",
+      "name": "Herm_0(2) affine relation carrier",
+      "status": "PASS_TIR_STRUCTURAL",
+      "scope": "structural",
+      "blocks_physical_promotion": false
+    },
+    {
+      "id": "F4",
+      "name": "relation bundle and SU2/SO3 connection",
+      "status": "PASS_CONDITIONAL",
+      "scope": "geometric_internal",
+      "blocks_physical_promotion": false
+    },
+    {
+      "id": "P0",
+      "name": "relation bundle to physical tangent/coframe solder binding",
+      "status": "OPEN_PHYSICAL_BINDING",
+      "scope": "physical_realization",
+      "blocks_physical_promotion": true
+    },
+    {
+      "id": "F5",
+      "name": "Cartan small-cell torsion/curvature refinement",
+      "status": "PASS_CONDITIONAL",
+      "scope": "mathematical_conditional",
+      "blocks_physical_promotion": false
+    },
+    {
+      "id": "F6",
+      "name": "endpoint-compatible Levi-Civita sector",
+      "status": "PASS_CONDITIONAL",
+      "scope": "mathematical_conditional",
+      "blocks_physical_promotion": false
+    },
+    {
+      "id": "P1",
+      "name": "global smooth physical refinement",
+      "status": "OPEN_INPUT",
+      "scope": "physical_realization",
+      "blocks_physical_promotion": true
+    },
+    {
+      "id": "F7",
+      "name": "ADM Lorentzian reconstruction",
+      "status": "PASS_EXACT",
+      "scope": "mathematical_conditional",
+      "blocks_physical_promotion": false
+    },
+    {
+      "id": "P2",
+      "name": "production event-spatial realization",
+      "status": "OPEN_INPUT",
+      "scope": "physical_realization",
+      "blocks_physical_promotion": true
+    },
+    {
+      "id": "F8",
+      "name": "spherical vacuum and flat-FLRW GR controls",
+      "status": "PASS_CONDITIONAL",
+      "scope": "control",
+      "blocks_physical_promotion": false
+    },
+    {
+      "id": "C0",
+      "name": "information-scalar acceleration criterion",
+      "status": "PASS_EXACT",
+      "scope": "mathematical_conditional",
+      "blocks_physical_promotion": false
+    },
+    {
+      "id": "C1",
+      "name": "absolute alpha_I / m_I normalization",
+      "status": "OPEN_PHYSICAL_BINDING",
+      "scope": "physical_realization",
+      "blocks_physical_promotion": true
+    },
+    {
+      "id": "N0",
+      "name": "current holonomy spectator route",
+      "status": "NO_GO",
+      "scope": "current_action",
+      "blocks_physical_promotion": false
+    },
+    {
+      "id": "N1",
+      "name": "equal-stress C_h/D_h repartition",
+      "status": "NO_GO",
+      "scope": "current_action",
+      "blocks_physical_promotion": false
+    },
+    {
+      "id": "N2",
+      "name": "pure phase-kinetic dark-energy route",
+      "status": "NO_GO",
+      "scope": "current_action",
+      "blocks_physical_promotion": false
+    },
+    {
+      "id": "C2",
+      "name": "RF-F20 connection metric-response sign criterion",
+      "status": "PASS_EXACT",
+      "scope": "mathematical_conditional",
+      "blocks_physical_promotion": false
+    },
+    {
+      "id": "C3",
+      "name": "temporal U1 to local BE metric-response binding",
+      "status": "OPEN_PHYSICAL_BINDING",
+      "scope": "physical_realization",
+      "blocks_physical_promotion": true
+    },
+    {
+      "id": "C4",
+      "name": "dimensionful cosmological scale / rho_crit binding",
+      "status": "OPEN_PHYSICAL_BINDING",
+      "scope": "physical_realization",
+      "blocks_physical_promotion": true
+    },
+    {
+      "id": "O0",
+      "name": "background/lensing/growth/GW observable contract",
+      "status": "DEFINED_CONTRACT",
+      "scope": "observational",
+      "blocks_physical_promotion": false
+    },
+    {
+      "id": "O1",
+      "name": "prospective CIR cosmological prediction",
+      "status": "NONE_FROZEN",
+      "scope": "prospective_evidence",
+      "blocks_physical_promotion": true
+    },
+    {
+      "id": "O2",
+      "name": "empirical CIR cosmology verdict",
+      "status": "OPEN_EMPIRICAL",
+      "scope": "empirical",
+      "blocks_physical_promotion": true
+    }
+  ],
+  "edges": [
+    [
+      "F0",
+      "F1"
+    ],
+    [
+      "F1",
+      "F2"
+    ],
+    [
+      "F2",
+      "F3"
+    ],
+    [
+      "F3",
+      "F4"
+    ],
+    [
+      "F4",
+      "P0"
+    ],
+    [
+      "P0",
+      "F5"
+    ],
+    [
+      "F5",
+      "F6"
+    ],
+    [
+      "F6",
+      "P1"
+    ],
+    [
+      "P1",
+      "F7"
+    ],
+    [
+      "F7",
+      "P2"
+    ],
+    [
+      "P2",
+      "F8"
+    ],
+    [
+      "F8",
+      "C0"
+    ],
+    [
+      "C0",
+      "C1"
+    ],
+    [
+      "F8",
+      "N0"
+    ],
+    [
+      "N0",
+      "N1"
+    ],
+    [
+      "F8",
+      "N2"
+    ],
+    [
+      "F8",
+      "C2"
+    ],
+    [
+      "C2",
+      "C3"
+    ],
+    [
+      "C0",
+      "C4"
+    ],
+    [
+      "C1",
+      "O0"
+    ],
+    [
+      "C3",
+      "O0"
+    ],
+    [
+      "C4",
+      "O0"
+    ],
+    [
+      "P2",
+      "O0"
+    ],
+    [
+      "O0",
+      "O1"
+    ],
+    [
+      "O1",
+      "O2"
+    ]
+  ],
+  "physical_promotion_rule": "A physical-realization or empirical node may not be marked PASS/CLOSED while any required upstream node on its promotion path has blocks_physical_promotion=true and an OPEN/NONE_FROZEN status.",
+  "key_firewalls": [
+    "BERRY_U1_NOT_SPATIAL_SU2_WITHOUT_PROMOTION_MAP",
+    "INTERNAL_RELATION_BUNDLE_NOT_PHYSICAL_TANGENT_WITHOUT_SOLDER",
+    "ADM_SHIFT_NOT_STANDALONE_PHYSICAL_SOURCE",
+    "RUNTIME_OR_SYNTHETIC_STATE_NOT_PRODUCTION_SPACETIME",
+    "EQUAL_STRESS_HOLONOMY_PARTITION_NO_GO",
+    "PURE_PHASE_KINETIC_W_PLUS_ONE_DECELERATING",
+    "SIMILAR_LENSING_MORPHOLOGY_NOT_MECHANISM_IDENTITY",
+    "NO_POST_HOC_SOURCE_RETUNING"
+  ]
+}
