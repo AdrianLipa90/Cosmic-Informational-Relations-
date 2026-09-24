@@ -60,17 +60,20 @@ A mathematical identity or software PASS is never promoted into an empirical cos
 - `FOUNDATIONS/TIR_FOUNDATION_SPINE_V0_1.md`
 - `FOUNDATIONS/CIR_CP1_FS_BERRY_TETRAHEDRAL_BRIDGE_V0_1.md`
 - `FOUNDATIONS/CIR_RELATIONAL_BUNDLE_COFRAME_INVARIANTS_V0_1.md`
+- `FOUNDATIONS/CIR_SPATIAL_TEMPORAL_ADM_CLOSURE_V0_1.md`
 - `FOUNDATIONS/CIR_SCOPE_AND_PROMOTION_BOUNDARY_V0_1.md`
 - `CLAIM_STATUS.md`
 - `provenance/TIR_PARENT_PIN.json`
 - `provenance/TIR_GEOMETRY_PARENT_PIN_V0_1.json`
+- `provenance/TIR_SPACETIME_PARENT_PIN_V0_1.json`
 - `validation/validate_foundation_spine.py`
 - `validation/validate_geometry_bridge_v0_1.py`
+- `validation/validate_spacetime_closure_v0_1.py`
 
 ## Current boundary
 
 The internal geometry chain from qubit ray space through the tetrahedral relation carrier, typed connection, affine loop, Cartan refinement and local Levi-Civita sector is now explicitly represented.
 
-The remaining type-changing gate is physical soldering/global realization: the internal relation bundle must be bound to a physical tangent/coframe realization rather than identified by analogy. The four-dimensional spatial-temporal join is the next CIR foundation layer.
+The four-dimensional ADM/Lorentzian reconstruction is now explicit and validated at the algebraic/control level. The remaining physical gates are source-owned soldering/global realization, production event-spatial input, and derived cosmological source dynamics. Runtime or synthetic NOEMA/PhaseNav states are not promoted as production spacetime evidence.
 
 No claim in this repository should be read as evidence of priority, correctness, or empirical confirmation merely because it is structurally compatible with TIR.
