@@ -1,6 +1,6 @@
 # CIR Scope and Promotion Boundary v0.1
 
-Status: \`ACTIVE_RESEARCH_BOUNDARY\`
+Status: `ACTIVE_RESEARCH_BOUNDARY`
 
 ## 1. Definition
 
@@ -67,7 +67,7 @@ Each track must begin by stating which TIR parent variables it consumes.
 
 CIR explicitly forbids the following inference shortcuts:
 
-\`\`\`text
+```text
 similar picture             != same mechanism
 wave structure              != fuzzy dark matter
 holonomy                    != physical curvature
@@ -77,13 +77,13 @@ successful control metric   != derived microscopic source
 software validation         != empirical validation
 retrospective fit           != prediction
 public chronological priority != proof of copying
-\`\`\`
+```
 
 ## 6. Current foundation verdict
 
 At v0.1:
 
-\`\`\`text
+```text
 TIR_PARENT_PROVENANCE                 PASS
 PRIMITIVE_INFORMATIONAL_SPINE         PINNED
 STATE_SPACE_FIREWALL                  PASS
@@ -94,4 +94,4 @@ COSMOLOGICAL_SOURCE_BINDING           OPEN
 DARK_SECTOR_INTERPRETATION            NOT_YET_ADMITTED
 LENSING_PREDICTION                    NOT_YET_ADMITTED
 PROSPECTIVE_CIR_PREDICTION            NONE_FROZEN
-\`\`\`
+```
