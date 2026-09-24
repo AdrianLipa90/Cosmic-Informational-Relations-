@@ -1,9 +1,9 @@
 # CIR Foundation Spine v0.1
 
-Status: \`FOUNDATION_LAYER / TIR-PINNED / NO_COSMOLOGICAL_PROMOTION\`
+Status: `FOUNDATION_LAYER / TIR-PINNED / NO_COSMOLOGICAL_PROMOTION`
 
-Parent repository: \`AdrianLipa90/The-Fundamental-Theory-of-Informational-Relations\`  
-Pinned parent commit: \`853032e019824b836de43634d949da5566396153\`
+Parent repository: `AdrianLipa90/The-Fundamental-Theory-of-Informational-Relations`  
+Pinned parent commit: `853032e019824b836de43634d949da5566396153`
 
 ## 1. Purpose
 
@@ -207,11 +207,11 @@ Those topics belong to downstream branches with their own source, dynamics, inva
 
 The foundation is based on the following exact parent files at the pinned TIR commit:
 
-- \`TIR/foundations/TIR_AXIOMATIC_KERNEL_V0_1.md\`
-- \`TIR/foundations/TIR_CAUSAL_BRIDGE_FROM_ZERO_V0_1.md\`
-- \`TIR/foundations/TIR_SPATIAL_GEOMETRY_CORE_V0_1.md\`
-- \`TIR/foundations/TIR_GRAVITY_DERIVATION_SPINE_V0_1.md\`
-- \`TIR/foundations/TIR_FRACTAL_ORBITAL_INFORMATIONAL_HOLONOMIC_GRAVITY_V0_1.md\`
-- \`TIR/CLAIM_HIERARCHY.md\`
+- `TIR/foundations/TIR_AXIOMATIC_KERNEL_V0_1.md`
+- `TIR/foundations/TIR_CAUSAL_BRIDGE_FROM_ZERO_V0_1.md`
+- `TIR/foundations/TIR_SPATIAL_GEOMETRY_CORE_V0_1.md`
+- `TIR/foundations/TIR_GRAVITY_DERIVATION_SPINE_V0_1.md`
+- `TIR/foundations/TIR_FRACTAL_ORBITAL_INFORMATIONAL_HOLONOMIC_GRAVITY_V0_1.md`
+- `TIR/CLAIM_HIERARCHY.md`
 
-See \`provenance/TIR_PARENT_PIN.json\` for exact blob SHAs.
+See `provenance/TIR_PARENT_PIN.json` for exact blob SHAs.
