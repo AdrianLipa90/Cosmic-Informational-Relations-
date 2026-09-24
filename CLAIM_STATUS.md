@@ -62,3 +62,19 @@ CIR uses the TIR claim hierarchy.
 ## Rule
 
 No later file may upgrade a row by prose alone. Promotion requires a derivation/evidence artifact whose parent dependencies are explicit.
+
+
+## Observational contract v0.1
+
+| Claim / surface | Class | Status |
+|---|---:|---|
+| CIR observational falsification contract | B | DEFINED |
+| flat-branch distance-duality control | A | STANDARD CONDITIONAL |
+| null-geodesic/Jacobi lensing route | A | STANDARD CONDITIONAL |
+| perturbation/growth output contract | B | DEFINED / SOURCE EQUATIONS REQUIRED |
+| local PPN validation | E/D | OPEN AFTER SOURCE BINDING |
+| lensing validation | E/D | OPEN AFTER SOURCE BINDING |
+| GW propagation validation | E/D | OPEN AFTER SOURCE BINDING |
+| cross-observable no-retune rule | — | ACTIVE |
+| prospective CIR prediction freeze | E | NONE |
+| empirical CIR cosmology verdict | — | NOT YET AVAILABLE |
