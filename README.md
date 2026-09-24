@@ -65,6 +65,7 @@ A mathematical identity or software PASS is never promoted into an empirical cos
 - `COSMOLOGY/CIR_COSMOLOGICAL_SOURCE_LEDGER_V0_1.md`
 - `OBSERVABLES/CIR_OBSERVATIONAL_FALSIFICATION_CONTRACT_V0_1.md`
 - `schemas/CIR_PREDICTION_FREEZE_V0_1.json`
+- `dependency/CIR_DEPENDENCY_DAG_V0_1.json`
 - `CLAIM_STATUS.md`
 - `provenance/TIR_PARENT_PIN.json`
 - `provenance/TIR_GEOMETRY_PARENT_PIN_V0_1.json`
@@ -76,6 +77,7 @@ A mathematical identity or software PASS is never promoted into an empirical cos
 - `validation/validate_spacetime_closure_v0_1.py`
 - `validation/validate_cosmological_source_ledger_v0_1.py`
 - `validation/validate_observational_contract_v0_1.py`
+- `validation/validate_dependency_dag_v0_1.py`
 
 ## Current boundary
 
@@ -96,3 +98,8 @@ The next physical task is not another algebraic relabeling. It is to source-bind
 ## Observational boundary
 
 CIR now has a no-retune observational contract covering background expansion, distance consistency, null propagation/lensing, perturbation/growth observables and local/GW controls. No prospective CIR cosmological prediction is currently frozen. Lensing remains an open test after physical source binding; morphological similarity alone is explicitly non-identifying.
+
+
+## Machine-readable frontier
+
+`dependency/CIR_DEPENDENCY_DAG_V0_1.json` records 23 typed nodes and 25 dependency edges from the primitive TIR spine to empirical cosmology. Open physical parents, retained no-go results and the absence of any frozen prospective prediction are machine-validated so that downstream prose cannot silently promote them.
