@@ -2,13 +2,13 @@
 
 **Status:** foundation build in progress  
 **Parent theory:** [The Fundamental Theory of Informational Relations (TIR)](https://github.com/AdrianLipa90/The-Fundamental-Theory-of-Informational-Relations)  
-**Pinned parent:** \`TIR main@853032e019824b836de43634d949da5566396153\`
+**Pinned parent:** `TIR main@853032e019824b836de43634d949da5566396153`
 
 Cosmic Informational Relations (CIR) is a downstream cosmology programme built from the dependency-ordered foundations of TIR. CIR does **not** begin from dark matter, dark energy, lensing anomalies, black holes, neutrinos, or any preferred cosmological interpretation. Those are downstream physical hypotheses and observational tests.
 
 The admitted foundation spine is
 
-\`\`\`text
+```text
 0
 -> POINT
 -> FIRST DISTINCTION
@@ -28,7 +28,7 @@ The admitted foundation spine is
 -> spacetime metric / invariant gravity observables
 -> cosmological dynamics
 -> cosmic observables
-\`\`\`
+```
 
 The canonical TIR information normalization is
 
@@ -50,11 +50,11 @@ A mathematical identity or software PASS is never promoted into an empirical cos
 
 ## Start here
 
-- \`FOUNDATIONS/TIR_FOUNDATION_SPINE_V0_1.md\`
-- \`FOUNDATIONS/CIR_SCOPE_AND_PROMOTION_BOUNDARY_V0_1.md\`
-- \`CLAIM_STATUS.md\`
-- \`provenance/TIR_PARENT_PIN.json\`
-- \`validation/validate_foundation_spine.py\`
+- `FOUNDATIONS/TIR_FOUNDATION_SPINE_V0_1.md`
+- `FOUNDATIONS/CIR_SCOPE_AND_PROMOTION_BOUNDARY_V0_1.md`
+- `CLAIM_STATUS.md`
+- `provenance/TIR_PARENT_PIN.json`
+- `validation/validate_foundation_spine.py`
 
 ## Current boundary
 
