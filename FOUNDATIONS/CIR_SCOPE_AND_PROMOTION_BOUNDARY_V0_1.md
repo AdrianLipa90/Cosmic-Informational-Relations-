@@ -1,6 +1,6 @@
 # CIR Scope and Promotion Boundary v0.1
 
-Status: `ACTIVE_RESEARCH_BOUNDARY`
+Status: \`ACTIVE_RESEARCH_BOUNDARY\`
 
 ## 1. Definition
 
@@ -10,25 +10,25 @@ Cosmic Informational Relations (CIR) is the cosmological continuation of the TIR
 
 The required order is
 
-[
-	ext{primitive information}
-	o
-	ext{quantum/projective carrier}
-	o
-	ext{spatial relational geometry}
-	o
-	ext{temporal closure}
-	o
-	ext{spacetime metric/coframe}
-	o
-	ext{invariant gravity}
-	o
-	ext{cosmological dynamics}
-	o
-	ext{observables}
-	o
-	ext{interpretation}.
-]
+\[
+\text{primitive information}
+\to
+\text{quantum/projective carrier}
+\to
+\text{spatial relational geometry}
+\to
+\text{temporal closure}
+\to
+\text{spacetime metric/coframe}
+\to
+\text{invariant gravity}
+\to
+\text{cosmological dynamics}
+\to
+\text{observables}
+\to
+\text{interpretation}.
+\]
 
 An interpretation is never allowed to become a missing upstream derivation.
 
@@ -67,7 +67,7 @@ Each track must begin by stating which TIR parent variables it consumes.
 
 CIR explicitly forbids the following inference shortcuts:
 
-```text
+\`\`\`text
 similar picture             != same mechanism
 wave structure              != fuzzy dark matter
 holonomy                    != physical curvature
@@ -77,13 +77,13 @@ successful control metric   != derived microscopic source
 software validation         != empirical validation
 retrospective fit           != prediction
 public chronological priority != proof of copying
-```
+\`\`\`
 
 ## 6. Current foundation verdict
 
 At v0.1:
 
-```text
+\`\`\`text
 TIR_PARENT_PROVENANCE                 PASS
 PRIMITIVE_INFORMATIONAL_SPINE         PINNED
 STATE_SPACE_FIREWALL                  PASS
@@ -94,4 +94,4 @@ COSMOLOGICAL_SOURCE_BINDING           OPEN
 DARK_SECTOR_INTERPRETATION            NOT_YET_ADMITTED
 LENSING_PREDICTION                    NOT_YET_ADMITTED
 PROSPECTIVE_CIR_PREDICTION            NONE_FROZEN
-```
+\`\`\`
