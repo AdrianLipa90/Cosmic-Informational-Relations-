@@ -42,7 +42,17 @@ CIR uses the TIR claim hierarchy.
 | `C=2GM` | F/B | PASS CONDITIONAL MASS NORMALIZATION |
 | flat-FLRW Hamiltonian crosswalk | A/B | PASS STANDARD/CONDITIONAL |
 | Full physical gravity from microscopic TIR source | B | OPEN upstream in TIR |
-| CIR cosmological source dynamics | B | OPEN |
+| canonical information-scalar acceleration criterion | B | PASS EXACT LOCAL on admitted parent action |
+| scalar potential ↔ dynamic-Λ bookkeeping equivalence | A/B | PASS EXACT / NO DOUBLE COUNT |
+| current temporal holonomy in scalar potential | D | SPECTATOR NO-GO |
+| equal-stress \(C_h/D_h\) repartition | D | NO-GO — no new gravity |
+| naive local \(D_h\) maximum at \(\tau_R=\pi\) | D | UNSTABLE MAXIMUM in diagnostic scalar realization |
+| pure homogeneous phase kinetic source | D | \(w=+1\), DECELERATING |
+| RF-F20 connection metric-response sign test | B | PASS EXACT CONDITIONAL |
+| temporal \(U(1)\) → local \(R_{\mu\nu}^{BE}\) source binding | B | OPEN |
+| absolute \(\alpha_I/m_I\) physical normalization | F/B | OPEN |
+| dimensionful cosmological scale / \(\rho_{crit}\) binding | B/F | OPEN |
+| CIR cosmological source dynamics | B | PARTIAL EXACT CRITERIA / PHYSICAL SOURCE BINDINGS OPEN |
 | Dark-energy mechanism | B/C/E | NOT YET CLASSIFIED AS A PHYSICAL RESULT |
 | Dark-matter mechanism | B/C/E | NOT YET CLASSIFIED AS A PHYSICAL RESULT |
 | Lensing prediction | E | NONE FROZEN |
