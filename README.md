@@ -62,13 +62,16 @@ A mathematical identity or software PASS is never promoted into an empirical cos
 - `FOUNDATIONS/CIR_RELATIONAL_BUNDLE_COFRAME_INVARIANTS_V0_1.md`
 - `FOUNDATIONS/CIR_SPATIAL_TEMPORAL_ADM_CLOSURE_V0_1.md`
 - `FOUNDATIONS/CIR_SCOPE_AND_PROMOTION_BOUNDARY_V0_1.md`
+- `COSMOLOGY/CIR_COSMOLOGICAL_SOURCE_LEDGER_V0_1.md`
 - `CLAIM_STATUS.md`
 - `provenance/TIR_PARENT_PIN.json`
 - `provenance/TIR_GEOMETRY_PARENT_PIN_V0_1.json`
 - `provenance/TIR_SPACETIME_PARENT_PIN_V0_1.json`
+- `provenance/TIR_COSMOLOGY_PARENT_PIN_V0_1.json`
 - `validation/validate_foundation_spine.py`
 - `validation/validate_geometry_bridge_v0_1.py`
 - `validation/validate_spacetime_closure_v0_1.py`
+- `validation/validate_cosmological_source_ledger_v0_1.py`
 
 ## Current boundary
 
@@ -77,3 +80,10 @@ The internal geometry chain from qubit ray space through the tetrahedral relatio
 The four-dimensional ADM/Lorentzian reconstruction is now explicit and validated at the algebraic/control level. The remaining physical gates are source-owned soldering/global realization, production event-spatial input, and derived cosmological source dynamics. Runtime or synthetic NOEMA/PhaseNav states are not promoted as production spacetime evidence.
 
 No claim in this repository should be read as evidence of priority, correctness, or empirical confirmation merely because it is structurally compatible with TIR.
+
+
+## Cosmological source boundary
+
+The first CIR cosmological source ledger is now explicit. It retains the exact information-scalar acceleration criterion, the exact RF-F20 metric-response sign test, and the no-go results that prevent equal-stress holonomy bookkeeping or pure phase kinetic energy from being mislabeled as dark energy.
+
+The next physical task is not another algebraic relabeling. It is to source-bind the open quantities — especially the absolute information-scalar normalization and the local temporal-U(1)-to-metric-response tensor — and then test background expansion, perturbations and lensing/propagation observables.
