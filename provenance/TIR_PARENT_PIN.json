@@ -1,0 +1,45 @@
+{
+  "schema": "CIR_TIR_PARENT_PIN_V0_1",
+  "created_date": "2026-09-24",
+  "parent_repository": "AdrianLipa90/The-Fundamental-Theory-of-Informational-Relations",
+  "parent_ref": "main",
+  "parent_commit": "853032e019824b836de43634d949da5566396153",
+  "target_repository": "AdrianLipa90/Cosmic-Informational-Relations-",
+  "branch": "feat/tir-foundations-v0-1-20260924",
+  "sources": [
+    {
+      "path": "TIR/foundations/TIR_AXIOMATIC_KERNEL_V0_1.md",
+      "sha": "49b0bb91b04f985a4d2e3ebcb6be0e2ef1518048"
+    },
+    {
+      "path": "TIR/foundations/TIR_CAUSAL_BRIDGE_FROM_ZERO_V0_1.md",
+      "sha": "9a28cb0a365d228132fbafbd8bf755c60e557055"
+    },
+    {
+      "path": "TIR/foundations/TIR_SPATIAL_GEOMETRY_CORE_V0_1.md",
+      "sha": "8e514ab701ea23c7a139b18469e893478129b8d5"
+    },
+    {
+      "path": "TIR/foundations/TIR_GRAVITY_DERIVATION_SPINE_V0_1.md",
+      "sha": "77caa2ed7e7835f14a341a11d37915246b2bd975"
+    },
+    {
+      "path": "TIR/foundations/TIR_FRACTAL_ORBITAL_INFORMATIONAL_HOLONOMIC_GRAVITY_V0_1.md",
+      "sha": "6431f8a0205e89ab4853ff060a77a2d14b0b1326"
+    },
+    {
+      "path": "TIR/CLAIM_HIERARCHY.md",
+      "sha": "23c438fb0edc84f527ec5e3fe70b06487655e374"
+    },
+    {
+      "path": "AI_TRAINING_POLICY.md",
+      "sha": "2ca862341f8484705f264930c57c92593e951133"
+    }
+  ],
+  "promotion_policy": {
+    "main_mutation": false,
+    "branch_only": true,
+    "theorem_pass_is_not_empirical_pass": true,
+    "downstream_pass_cannot_close_upstream_open_gate": true
+  }
+}
