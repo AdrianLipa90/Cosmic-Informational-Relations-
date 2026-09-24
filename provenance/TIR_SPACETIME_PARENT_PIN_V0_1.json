@@ -1,0 +1,38 @@
+{
+  "schema": "CIR_TIR_SPACETIME_PARENT_PIN_V0_1",
+  "created_date": "2026-09-24",
+  "parent_repository": "AdrianLipa90/The-Fundamental-Theory-of-Informational-Relations",
+  "parent_commit": "853032e019824b836de43634d949da5566396153",
+  "target_repository": "AdrianLipa90/Cosmic-Informational-Relations-",
+  "target_branch": "feat/tir-foundations-v0-1-20260924",
+  "sources": [
+    {
+      "path": "TIR/foundations/TIR_SPATIAL_TEMPORAL_CLOSURE_INTERFACE_V0_1.md",
+      "sha": "cd5deba5598e354bc5fceea2840fb3e309dfd207"
+    },
+    {
+      "path": "TIR/foundations/TIR_FLOW_COFRAME_ADM_CONSTRAINT_GRAVITY_V0_1.md",
+      "sha": "b6c36c57b5ab1f2932a61bc5bd933116abd694d7"
+    },
+    {
+      "path": "TIR/integration/TIR_IDT_EXTRINSIC_CURVATURE_SOURCE_BRIDGE_V0_1.md",
+      "sha": "a4087bf53db2840c69868aac36e562c62353185d"
+    },
+    {
+      "path": "TIR/integration/TIR_IDT_EVENT_SPATIAL_STATE_BINDING_V0_1.md",
+      "sha": "bc34deea0b5a29b24f4b9305689370d720a3a793"
+    },
+    {
+      "path": "TIR/foundations/TIR_GRAVITY_DERIVATION_SPINE_V0_1.md",
+      "sha": "77caa2ed7e7835f14a341a11d37915246b2bd975"
+    }
+  ],
+  "firewalls": [
+    "DEPENDENCY_ORDER_NOT_TEMPORAL_ORDER",
+    "ADM_SHIFT_NOT_STANDALONE_PHYSICAL_SOURCE",
+    "RF_E9_UNIQUE_EXTRINSIC_CURVATURE_AUTHORITY",
+    "RUNTIME_OR_SYNTHETIC_STATE_NOT_PRODUCTION_SPACETIME",
+    "CONTROL_METRIC_NOT_MICROSCOPIC_SOURCE_DERIVATION",
+    "FLRW_KINEMATICS_NOT_ACCELERATION_SOURCE"
+  ]
+}
