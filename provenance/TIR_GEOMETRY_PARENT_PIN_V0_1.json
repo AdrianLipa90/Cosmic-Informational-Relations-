@@ -1,0 +1,50 @@
+{
+  "schema": "CIR_TIR_GEOMETRY_PARENT_PIN_V0_1",
+  "created_date": "2026-09-24",
+  "parent_repository": "AdrianLipa90/The-Fundamental-Theory-of-Informational-Relations",
+  "parent_commit": "853032e019824b836de43634d949da5566396153",
+  "target_repository": "AdrianLipa90/Cosmic-Informational-Relations-",
+  "target_branch": "feat/tir-foundations-v0-1-20260924",
+  "sources": [
+    {
+      "path": "TIR/integration/TIR_TETRA_FS_SPATIAL_SHAPE_CROSSWALK_V0_1.md",
+      "sha": "8132cef6883b428c9782629913ecb8da8cf6c22c"
+    },
+    {
+      "path": "TIR/foundations/TIR_MOIRE_HYPERLAYER_GRAVITY_BRIDGE_V0_1.md",
+      "sha": "55f52271cf3b46d4be1f0b01725d2349c531e5c5"
+    },
+    {
+      "path": "TIR/foundations/TIR_WIJ_HOLONOMY_CROSSWALK_V0_1.md",
+      "sha": "11d467ef942ed62d683cd21b343c84177f201b6e"
+    },
+    {
+      "path": "TIR/foundations/TIR_SPATIAL_BUNDLE_CONNECTION_V0_1.md",
+      "sha": "ddee82fd434f1683d0aca4480dffbaccb1c561f3"
+    },
+    {
+      "path": "TIR/foundations/TIR_SE3_ANCHOR_SOURCE_BINDING_V0_1.md",
+      "sha": "9ed5d91cb32b7952e007ac02fba75206ea46e85b"
+    },
+    {
+      "path": "TIR/foundations/TIR_UNIVERSAL_LOOP_TORSION_SOURCE_BINDING_V0_1.md",
+      "sha": "7afe3cf69a118e9f581098ad12286ee0aac39cfb"
+    },
+    {
+      "path": "TIR/foundations/TIR_CARTAN_CONTINUUM_REFINEMENT_V0_1.md",
+      "sha": "d9e3438bba0b510085d64bbad537d071ff50d0b8"
+    },
+    {
+      "path": "TIR/foundations/TIR_ZERO_TORSION_LEVI_CIVITA_SELECTION_V0_1.md",
+      "sha": "dfea715aa8139ff27c98fd4885fa166a0673470c"
+    }
+  ],
+  "firewalls": [
+    "BERRY_U1_NOT_SPATIAL_SU2_WITHOUT_PROMOTION_MAP",
+    "CP1_BLOCH_SPHERE_NOT_HYPERBOLIC_POINCARE_DISK",
+    "PURE_ATLAS_HOLONOMY_TRIVIAL",
+    "INTERNAL_RELATION_BUNDLE_NOT_PHYSICAL_TANGENT_WITHOUT_SOLDER",
+    "LEVI_CIVITA_TORSION_ZERO_DOES_NOT_FORCE_CURVATURE_ZERO",
+    "TELEPARALLEL_AND_LEVI_CIVITA_CONNECTIONS_DISTINCT"
+  ]
+}
