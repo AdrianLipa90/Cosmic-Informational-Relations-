@@ -17,11 +17,23 @@ CIR uses the TIR claim hierarchy.
 |---|---:|---|
 | \(H_2(1/2)=\ln2\) | A | PASS — standard information theory |
 | \(\mathbb{CP}^1\cong S^2\) for pure qubit state space | A | PASS — standard projective geometry |
-| \({\rm Herm}_0(2)\cong\mathbb R^3\) as real vector spaces | A | PASS — standard linear algebra |
+| qubit Fubini--Study metric \(ds^2_{\rm FS}=\frac14 ds^2_{S^2}\) | A | PASS — standard |
+| spin-\(1/2\) Berry phase \(\gamma_B=-\Omega/2\pmod{2\pi}\) | A | PASS — standard |
+| tetrahedral SIC face \(A_{\rm FS}=\pi/4\) | A/B | PASS EXACT on declared tetrahedral realization |
+| tetrahedral Berry face phase magnitude \(\pi/2\) | A/B | PASS EXACT on declared orientation convention |
+| \({\rm Herm}_0(2)\cong\mathbb R^3\) as real metric vector spaces | A | PASS — standard |
 | \(\kappa=\ln2/(24\pi)\) | B | PINNED TIR structural normalization |
 | TIR primitive dependency spine | B | PINNED |
 | TIR spatial relational carrier | B | PINNED |
-| TIR Cartan/Levi-Civita conditional chain | B | PINNED WITH DECLARED PREMISES |
+| \(SU(2)\to SO(3)\) relation-frame transport | A/B | PASS STANDARD / TIR-TYPED |
+| pure-atlas \(SE(3)\) closed loop is identity | A/B | PASS EXACT on declared atlas model |
+| endpoint defect ↔ affine-loop translation | B | PASS EXACT TIR parent |
+| discrete solder / rotational holonomy Cartan limits | B | PASS CONDITIONAL on smooth refinement |
+| metric compatibility + \(T=0\) selects Levi-Civita | A/B | PASS STANDARD on admitted sector |
+| Berry \(U(1)\) holonomy = spatial \(SU(2)\) connection | — | NOT IDENTIFIED |
+| Bloch \(CP^1\) sphere = hyperbolic Poincare disk | — | FORBIDDEN TYPE COLLAPSE |
+| internal relation bundle \(E_{\rm rel}\) = physical \(T\Sigma\) | B | OPEN PHYSICAL SOLDER/PROMOTION GATE |
+| global smooth physical refinement | B | OPEN |
 | Full physical gravity from microscopic TIR source | B | OPEN upstream in TIR |
 | CIR cosmological source dynamics | B | OPEN |
 | Dark-energy mechanism | B/C/E | NOT YET CLASSIFIED AS A PHYSICAL RESULT |
