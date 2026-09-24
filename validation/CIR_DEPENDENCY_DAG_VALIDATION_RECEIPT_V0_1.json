@@ -1,0 +1,20 @@
+{
+  "schema": "CIR_DEPENDENCY_DAG_VALIDATION_RECEIPT_V0_1",
+  "date": "2026-09-24",
+  "branch": "feat/tir-foundations-v0-1-20260924",
+  "remote_surfaces": {
+    "dag_blob_sha": "8705bddb0d99debcb95de997ed9a32f5d4d636b2",
+    "validator_blob_sha": "dc615ddbe9c1ee7c6e1b2800fb729a5e09744bed"
+  },
+  "checks": {
+    "referential_integrity": true,
+    "acyclic": true,
+    "physical_frontier_not_prematurely_promoted": true,
+    "retained_no_go_preserved": true,
+    "no_empirical_verdict_before_freeze": true
+  },
+  "node_count": 23,
+  "edge_count": 25,
+  "failures": [],
+  "verdict": "PASS"
+}
