@@ -1,0 +1,17 @@
+{
+  "schema": "CIR_PREDICTION_FREEZE_V0_1",
+  "status": "TEMPLATE_ONLY",
+  "exact_commit": null,
+  "source_pins": [],
+  "physical_branch": null,
+  "equations": [],
+  "parameters": [],
+  "nuisance_policy": null,
+  "observables": [],
+  "data_cutoff_utc": null,
+  "held_out_data": [],
+  "no_refit_rule": "No source parameter may be changed after held-out observable evaluation unless the freeze is retired and a new version is created before re-evaluation.",
+  "decision_rules": [],
+  "verdict": null,
+  "notes": "A filled freeze becomes evidential only when committed before the declared held-out evaluation."
+}
