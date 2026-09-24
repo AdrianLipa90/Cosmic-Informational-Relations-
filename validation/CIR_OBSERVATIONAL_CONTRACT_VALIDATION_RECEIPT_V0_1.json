@@ -1,0 +1,28 @@
+{
+  "schema": "CIR_OBSERVATIONAL_CONTRACT_VALIDATION_RECEIPT_V0_1",
+  "date": "2026-09-24",
+  "branch": "feat/tir-foundations-v0-1-20260924",
+  "parent_commit": "853032e019824b836de43634d949da5566396153",
+  "remote_surfaces": {
+    "contract_blob_sha": "cdce2729aeab6154692f10984841955234449725",
+    "freeze_template_blob_sha": "278120ce28a6da00e18d7ee1c1aa7fca4d7b01ba",
+    "provenance_blob_sha": "a3a8ba1f6758ae1117fd218a6e24b36166f4a0a8",
+    "validator_blob_sha": "e5c3aa4c05fc7447d2f263d7718d131296feaef7"
+  },
+  "execution": {
+    "mode": "LOCAL_EQUIVALENT_REFERENCE_CHECK_WITH_REMOTE_SURFACES_VERIFIED",
+    "full_git_checkout": false,
+    "full_checkout_blocker": "container DNS could not resolve github.com"
+  },
+  "checks": {
+    "distance_duality_control": true,
+    "event_acceleration_estimator": true,
+    "contract_firewalls": true,
+    "freeze_is_unpopulated": true,
+    "parent_pin": true,
+    "lensing_gate_remains_open": true
+  },
+  "failures": [],
+  "verdict": "PASS",
+  "interpretation": "Validates the observational/falsification contract and reference identities only. It does not constitute empirical validation or a frozen prediction."
+}
