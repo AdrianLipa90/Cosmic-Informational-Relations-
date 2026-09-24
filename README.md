@@ -17,13 +17,16 @@ The admitted foundation spine is
 -> ln2
 -> C^2
 -> CP^1 / Bloch state geometry
--> Herm_0(2) ~= R^3
--> relational spatial geometry
--> tetrahedral closure
--> typed connection / holonomy
--> SE(3) affine lift / solder
+-> Fubini--Study metric + Berry curvature
+-> tetrahedral SIC frame
+-> Herm_0(2) ~= R^3 relation carrier
+-> relation bundle E_rel
+-> SU(2) connection / SO(3) frame holonomy
+-> SE(3) affine lift / discrete solder
+-> solder/coframe promotion E_rel -> T Sigma
+-> spatial metric h
 -> Cartan refinement
--> Levi-Civita sector
+-> Levi-Civita sector / invariant curvature
 -> spatial x temporal closure
 -> spacetime metric / invariant gravity observables
 -> cosmological dynamics
@@ -36,28 +39,38 @@ The canonical TIR information normalization is
 \boxed{\kappa=\frac{\ln 2}{24\pi}}.
 \]
 
-CIR preserves a strict separation between:
+The exact state-geometric tetrahedral crosswalk gives
 
-- established mathematics;
-- TIR structural postulates and conditional derivations;
-- representation/control identities;
-- open physical source bindings;
-- observational tests;
-- retrospective assignments;
-- prospectively frozen predictions.
+\[
+A_{\rm FS}^{\rm face}=\frac{\pi}{4},
+\qquad
+|\gamma_{\rm B}^{\rm face}|=\frac{\pi}{2},
+\qquad
+C_{\Delta/{\rm FS}}=\frac{8}{9\sqrt3\,\pi}.
+\]
+
+These are state/shape identities, not physical cosmological measurements.
+
+CIR preserves a strict separation between established mathematics, TIR structural premises, representation identities, physical promotion gates, observational tests, retrospective assignments, and prospectively frozen predictions.
 
 A mathematical identity or software PASS is never promoted into an empirical cosmological claim.
 
 ## Start here
 
 - `FOUNDATIONS/TIR_FOUNDATION_SPINE_V0_1.md`
+- `FOUNDATIONS/CIR_CP1_FS_BERRY_TETRAHEDRAL_BRIDGE_V0_1.md`
+- `FOUNDATIONS/CIR_RELATIONAL_BUNDLE_COFRAME_INVARIANTS_V0_1.md`
 - `FOUNDATIONS/CIR_SCOPE_AND_PROMOTION_BOUNDARY_V0_1.md`
 - `CLAIM_STATUS.md`
 - `provenance/TIR_PARENT_PIN.json`
+- `provenance/TIR_GEOMETRY_PARENT_PIN_V0_1.json`
 - `validation/validate_foundation_spine.py`
+- `validation/validate_geometry_bridge_v0_1.py`
 
 ## Current boundary
 
-The TIR parent currently has an assembled structural gravity spine and conditional local GR closure, while the production physical realization and several source/dynamics gates remain open. CIR therefore starts **before** any dark-sector interpretation and will promote cosmological claims only after their required upstream gates are explicit and testable.
+The internal geometry chain from qubit ray space through the tetrahedral relation carrier, typed connection, affine loop, Cartan refinement and local Levi-Civita sector is now explicitly represented.
+
+The remaining type-changing gate is physical soldering/global realization: the internal relation bundle must be bound to a physical tangent/coframe realization rather than identified by analogy. The four-dimensional spatial-temporal join is the next CIR foundation layer.
 
 No claim in this repository should be read as evidence of priority, correctness, or empirical confirmation merely because it is structurally compatible with TIR.
