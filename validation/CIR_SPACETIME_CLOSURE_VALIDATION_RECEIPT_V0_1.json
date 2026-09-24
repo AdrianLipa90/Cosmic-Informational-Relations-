@@ -1,0 +1,32 @@
+{
+  "schema": "CIR_SPACETIME_CLOSURE_VALIDATION_RECEIPT_V0_1",
+  "date": "2026-09-24",
+  "branch": "feat/tir-foundations-v0-1-20260924",
+  "parent_commit": "853032e019824b836de43634d949da5566396153",
+  "validation": {
+    "math_execution": "LOCAL_PYTHON_NUMERIC_IDENTITY_CHECK",
+    "remote_surfaces": "GITHUB_CONNECTOR_FETCH_VERIFIED",
+    "full_git_checkout": false,
+    "full_checkout_blocker": "container DNS could not resolve github.com"
+  },
+  "checks": {
+    "adm_determinant": true,
+    "adm_inverse": true,
+    "schur_lorentzian": true,
+    "spherical_vacuum_power": true,
+    "flrw_constraint": true,
+    "firewalls_present": true,
+    "parent_pin": true
+  },
+  "values": {
+    "det_h": 3.5340000000000003,
+    "det_g": -10.213259999999998,
+    "expected_det_g": -10.21326,
+    "schur": -2.8899999999999992,
+    "expected_schur": -2.8899999999999997,
+    "inverse_identity_error": 2.220446049250313e-16
+  },
+  "verdict": "PASS",
+  "failures": [],
+  "interpretation": "Validates ADM block algebra and declared GR control identities only. Production physical realization and microscopic/cosmological source dynamics remain open."
+}
