@@ -1,0 +1,41 @@
+{
+  "schema": "CIR_GEOMETRY_BRIDGE_VALIDATION_RECEIPT_V0_1",
+  "date": "2026-09-24",
+  "branch": "feat/tir-foundations-v0-1-20260924",
+  "parent_commit": "853032e019824b836de43634d949da5566396153",
+  "validation": {
+    "math_execution": "LOCAL_PYTHON_EXACT_NUMERIC_CHECK",
+    "remote_source_surfaces": "GITHUB_CONNECTOR_FETCH_VERIFIED",
+    "full_git_checkout": false,
+    "full_checkout_blocker": "container DNS could not resolve github.com"
+  },
+  "checks": {
+    "tetra_unit_vectors": true,
+    "tetra_pairwise_dot_minus_one_third": true,
+    "edge_squared_eight_thirds": true,
+    "tetra_volume": true,
+    "spherical_face_angle_two_pi_thirds": true,
+    "solid_angle_face_pi": true,
+    "fs_face_area_pi_over_four": true,
+    "fs_total_area_pi": true,
+    "berry_face_phase_magnitude_pi_over_two": true,
+    "berry_unitarity": true,
+    "chern_number_magnitude_one": true,
+    "dual_shape_coefficient": true,
+    "type_firewalls_present": true,
+    "parent_provenance_pinned": true
+  },
+  "values": {
+    "edge_squared": 2.6666666666666674,
+    "tetra_volume": 0.5132002392796676,
+    "solid_angle_face": 3.141592653589794,
+    "fs_face_area": 0.7853981633974485,
+    "fs_total_area": 3.141592653589794,
+    "berry_face_phase": -1.570796326794897,
+    "chern_number_magnitude": 1,
+    "dual_shape_coefficient": 0.1633567097546051
+  },
+  "verdict": "PASS",
+  "failures": [],
+  "interpretation": "Validates exact/conditional geometry bridge identities and type firewalls only. It is not empirical validation of physical spacetime, gravity or cosmology."
+}
