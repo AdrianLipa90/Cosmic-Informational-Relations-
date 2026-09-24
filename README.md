@@ -63,15 +63,19 @@ A mathematical identity or software PASS is never promoted into an empirical cos
 - `FOUNDATIONS/CIR_SPATIAL_TEMPORAL_ADM_CLOSURE_V0_1.md`
 - `FOUNDATIONS/CIR_SCOPE_AND_PROMOTION_BOUNDARY_V0_1.md`
 - `COSMOLOGY/CIR_COSMOLOGICAL_SOURCE_LEDGER_V0_1.md`
+- `OBSERVABLES/CIR_OBSERVATIONAL_FALSIFICATION_CONTRACT_V0_1.md`
+- `schemas/CIR_PREDICTION_FREEZE_V0_1.json`
 - `CLAIM_STATUS.md`
 - `provenance/TIR_PARENT_PIN.json`
 - `provenance/TIR_GEOMETRY_PARENT_PIN_V0_1.json`
 - `provenance/TIR_SPACETIME_PARENT_PIN_V0_1.json`
 - `provenance/TIR_COSMOLOGY_PARENT_PIN_V0_1.json`
+- `provenance/TIR_OBSERVABLES_PARENT_PIN_V0_1.json`
 - `validation/validate_foundation_spine.py`
 - `validation/validate_geometry_bridge_v0_1.py`
 - `validation/validate_spacetime_closure_v0_1.py`
 - `validation/validate_cosmological_source_ledger_v0_1.py`
+- `validation/validate_observational_contract_v0_1.py`
 
 ## Current boundary
 
@@ -87,3 +91,8 @@ No claim in this repository should be read as evidence of priority, correctness,
 The first CIR cosmological source ledger is now explicit. It retains the exact information-scalar acceleration criterion, the exact RF-F20 metric-response sign test, and the no-go results that prevent equal-stress holonomy bookkeeping or pure phase kinetic energy from being mislabeled as dark energy.
 
 The next physical task is not another algebraic relabeling. It is to source-bind the open quantities — especially the absolute information-scalar normalization and the local temporal-U(1)-to-metric-response tensor — and then test background expansion, perturbations and lensing/propagation observables.
+
+
+## Observational boundary
+
+CIR now has a no-retune observational contract covering background expansion, distance consistency, null propagation/lensing, perturbation/growth observables and local/GW controls. No prospective CIR cosmological prediction is currently frozen. Lensing remains an open test after physical source binding; morphological similarity alone is explicitly non-identifying.
