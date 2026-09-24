@@ -34,6 +34,13 @@ CIR uses the TIR claim hierarchy.
 | Bloch \(CP^1\) sphere = hyperbolic Poincare disk | — | FORBIDDEN TYPE COLLAPSE |
 | internal relation bundle \(E_{\rm rel}\) = physical \(T\Sigma\) | B | OPEN PHYSICAL SOLDER/PROMOTION GATE |
 | global smooth physical refinement | B | OPEN |
+| ADM Lorentzian block reconstruction | A/B | PASS STANDARD EXACT CONDITIONAL |
+| `det(g)=-N^2 det(h)` and ADM inverse | A | PASS EXACT |
+| ADM Hamiltonian/momentum closure equations | A | PASS STANDARD GR CONDITIONS |
+| event-spatial metric-rate source contract | B | PASS EXECUTABLE CONTRACT / PRODUCTION INPUT OPEN |
+| stationary spherical vacuum `V^2=C/r` | A/B | PASS CONDITIONAL ON ADMITTED ADM/GR SECTOR |
+| `C=2GM` | F/B | PASS CONDITIONAL MASS NORMALIZATION |
+| flat-FLRW Hamiltonian crosswalk | A/B | PASS STANDARD/CONDITIONAL |
 | Full physical gravity from microscopic TIR source | B | OPEN upstream in TIR |
 | CIR cosmological source dynamics | B | OPEN |
 | Dark-energy mechanism | B/C/E | NOT YET CLASSIFIED AS A PHYSICAL RESULT |
