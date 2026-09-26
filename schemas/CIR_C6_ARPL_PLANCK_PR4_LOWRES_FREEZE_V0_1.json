@@ -1,0 +1,49 @@
+{
+  "schema":"CIR_C6_ARPL_PLANCK_PR4_LOWRES_FREEZE_V0_1",
+  "date":"2026-09-27",
+  "status":"FROZEN_BEFORE_PLANCK_PR4_LOWRES_FILE_DOWNLOAD",
+  "parent_prediction":"CIR_C6_REGULAR_ARPL_REFINEMENT_SCALE_FREEZE_V0_1",
+  "prediction":{
+    "q":0.16666666666666666,
+    "R_CMB_Mpc":13873.0,
+    "d_Mpc":2312.1666666666665
+  },
+  "input":{
+    "release":"Planck PR4 / NPIPE",
+    "source":"CMB-S4 public mirror of Planck PR4 lowres products",
+    "nside":16,
+    "frequencies_GHz":[70,100,143],
+    "files":[
+      "npipe6v20_070_map_ns0016.fits",
+      "npipe6v20_100_map_ns0016.fits",
+      "npipe6v20_143_map_ns0016.fits"
+    ],
+    "temperature_field":"I/T only; Q/U ignored"
+  },
+  "extraction":{
+    "sky":"full sky as supplied",
+    "mask":"none",
+    "fit":"simultaneous least-squares real spherical harmonics l=0..3 on all valid HEALPix pixel centres",
+    "reported":"C2 and C3 from fitted l=2,3 coefficients",
+    "frequency_policy":"report all three channels separately; no best-frequency selection",
+    "foreground_warning":"these are frequency maps, not component-separated CMB maps; this is a robustness/held-out diagnostic, not a precision cosmological estimator"
+  },
+  "tetrahedral_translation_estimator":{
+    "q_data":"(1/7)*sqrt(5*C2/C3)",
+    "equivalent_Dl":"(1/7)*sqrt(10*D2/D3)",
+    "primary_residual":"q_data - 1/6"
+  },
+  "verdict_policy":{
+    "exact_hit":"not required from raw frequency maps",
+    "direction":"q_data values should be reported without retuning",
+    "promotion":"no physical promotion from this frequency-map diagnostic alone"
+  },
+  "forbidden":[
+    "change frequencies after seeing results",
+    "add a Galactic mask post hoc",
+    "foreground-clean using coefficients chosen after seeing q",
+    "change tetrahedral sqrt(7) coefficient",
+    "change q=1/6",
+    "average only selected channels"
+  ]
+}
