@@ -1,0 +1,20 @@
+{
+  "schema": "CIR_AOE_GREEN_SHADOW_PLANCK2013_DIAGNOSTIC_V0_1",
+  "date": "2026-09-26",
+  "status": "FAIL",
+  "independence_class": "same-release diagnostic; frozen axis used Planck-2013 orientation information",
+  "axis_galactic_deg": [239.9881633256477, 68.5117419161366],
+  "source": {
+    "paper": "Polastri, Gruppuso & Natoli, arXiv:1503.01611",
+    "tables": [4,5]
+  },
+  "results": {
+    "SMICA_raw": {"g2_uK":7.390464410500907,"g3_uK":-11.6281044603997,"q23":1.5733929310149504,"n_cont":-0.6538790069493998,"verdict":"FAIL_q_lt_1"},
+    "SMICA_deboosted": {"g2_uK":5.285160164583028,"g3_uK":-11.676965934860016,"q23":2.2093873357159213,"n_cont":-1.143646364972222,"verdict":"FAIL_q_lt_1"},
+    "NILC_raw": {"g2_uK":7.82862333359097,"g3_uK":-10.602694379050684,"q23":1.3543497914322637,"n_cont":-0.43760039562739667,"verdict":"FAIL_q_lt_1"},
+    "NILC_deboosted": {"g2_uK":5.72508819924693,"g3_uK":-10.651384264891725,"q23":1.8604751392813117,"n_cont":-0.8956711124872291,"verdict":"FAIL_q_lt_1"}
+  },
+  "model_verdict": "SIMPLE_POINT_GREEN_SHADOW_AT_FROZEN_AXIS_FAIL",
+  "general_shadow_hypothesis": "NOT_ADJUDICATED",
+  "no_retune": true
+}
