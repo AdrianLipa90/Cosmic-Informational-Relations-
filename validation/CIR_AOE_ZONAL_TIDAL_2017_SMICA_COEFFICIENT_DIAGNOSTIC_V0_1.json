@@ -1,0 +1,46 @@
+{
+  "schema": "CIR_AOE_ZONAL_TIDAL_2017_SMICA_COEFFICIENT_DIAGNOSTIC_V0_1",
+  "date": "2026-09-26",
+  "status": "DIAGNOSTIC",
+  "provenance": {
+    "source": "O. V. Verkhodanov, Autumn Mathematical Readings in Adygea proceedings, 2017",
+    "coefficient_set_discovered_after_model_freeze": true,
+    "exact_planck_release_filename_explicit_in_source_excerpt": false,
+    "primary_PR2_R2_02_substitute": false
+  },
+  "zonal_axis_galactic_deg": [148.95586065960015, 5.978894413868929],
+  "zonal_axis_icrs_deg": [67.05022049162834, 57.44749815951144],
+  "zonal_scores": {
+    "Z2": 0.7328959437362605,
+    "Z3": 0.5777312865040855,
+    "Z23": 1.310627230240346
+  },
+  "frozen_aoe_axis_galactic_deg": [239.9881633256477, 68.5117419161366],
+  "duality": {
+    "undirected_separation_deg": 84.81576890781714,
+    "orthogonality_residual_deg": 5.184231092182856
+  },
+  "tidal_inversion": {
+    "g2_K": -1.699575420386884e-05,
+    "g3_K": 3.3061839519668465e-05,
+    "r23": 1.9452999333293728,
+    "interior_branch": "REJECTED_DOMAIN_r23_ge_5_over_3",
+    "exterior_branch": "ADMISSIBLE",
+    "q_R_over_d": 0.648433311109791,
+    "n_cont": 0.624969888457453,
+    "nearest_preregistered_integer": 1,
+    "eta_to_integer": -0.375030111542547,
+    "R_CMB_Mpc": 13873.0,
+    "d_out_Mpc_comoving": 21394.644232968873,
+    "d_out_Gly_comoving_approx": 69.77991584448195
+  },
+  "integer_dyadic_verdict": "CENTRAL_TENSION_NO_FORMAL_SIGMA",
+  "five_eighths": {
+    "observed_delta_n_from_5_over_8": -3.0111542546951142e-05,
+    "q_pred_2_pow_minus_5_over_8": 0.6484197773255048,
+    "relative_q_residual": 2.0871948634759718e-05,
+    "status": "POST_HOC_QUARANTINED"
+  },
+  "higher_multipole_test": "PENDING",
+  "source_catalog_used": false
+}
