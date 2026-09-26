@@ -1,0 +1,13 @@
+{
+  "schema":"CIR_C6_REGULAR_ARPL_ELC2026_POSTHOC_DIAGNOSTIC_V0_1",
+  "date":"2026-09-27",
+  "status":"POST_HOC_ONLY_NOT_VALIDATION",
+  "prediction_q":0.16666666666666666,
+  "prediction_d_Mpc":2312.1666666666665,
+  "ELC_mean_q":0.16944932194983256,
+  "ELC_mean_d_Mpc":2350.770443410027,
+  "fractional_q_residual":0.01669593169899539,
+  "absolute_d_residual_Mpc":38.60377674336048,
+  "classification":"NUMERICALLY_CLOSE_POST_HOC; NO_EVIDENTIAL_CREDIT",
+  "reason":"C6->ARPL-child bridge was formulated after ELC amplitudes were inspected"
+}
