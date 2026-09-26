@@ -1,0 +1,33 @@
+{
+  "schema":"CIR_C6_REGULAR_ARPL_REFINEMENT_SCALE_FREEZE_V0_1",
+  "date":"2026-09-27",
+  "status":"PROSPECTIVE_AFTER_NEW_BRIDGE_ELC_CONTAMINATED",
+  "bridge":{
+    "name":"REGULAR_C6_CHILD_BINDING",
+    "conditions":[
+      "one ARPL refinement fibre is identified with the C6 grade set",
+      "one child per grade",
+      "child successor intertwines with the C6 generator",
+      "free transitive action",
+      "no omitted or duplicated grades"
+    ]
+  },
+  "prediction":{
+    "branching_b":6,
+    "q":"1/6",
+    "q_numeric":0.16666666666666666,
+    "R_CMB_Mpc":13873.0,
+    "d_Mpc":2312.1666666666665,
+    "entropy_increment":"ln(6)"
+  },
+  "not_replaced":{
+    "dyadic_generator":"nu -> nu+ln2 remains its own exact representation structure",
+    "kappa":"ln2/(24pi)"
+  },
+  "contaminated_for_validation":[
+    "Planck-2013 low-l coefficients previously inspected",
+    "WMAP9 low-l powers previously inspected",
+    "ELC2026 C2/C3 cross-spectra previously inspected"
+  ],
+  "no_refit":true
+}
