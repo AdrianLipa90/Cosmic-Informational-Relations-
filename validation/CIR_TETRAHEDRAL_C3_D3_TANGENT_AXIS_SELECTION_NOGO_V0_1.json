@@ -1,0 +1,21 @@
+{
+  "schema":"CIR_TETRAHEDRAL_C3_D3_TANGENT_AXIS_SELECTION_NOGO_V0_1",
+  "date":"2026-09-26",
+  "status":"PASS_EXACT_NOGO",
+  "selected_vertex_stabilizer":"C3",
+  "tangent_representation":"real 2D rotation by 120 degrees",
+  "nonzero_C3_invariant_vector_exists":false,
+  "canonical_tangent_candidate_count":3,
+  "pairwise_candidate_dot_product":-0.5,
+  "D3_action_on_three_candidates":"transitive",
+  "unique_axis_from_unlabeled_D3":false,
+  "required_upstream_selector":[
+    "labeled incident tetrahedral edge",
+    "nontrivial C3 character/phase",
+    "source-owned sheet/orientation witness",
+    "typed PhaseNav edge-pair selector"
+  ],
+  "PhaseNav_edge_labels_exist_representation_level":true,
+  "physical_edge_carrier_provenance":"OPEN",
+  "CMB_orientation_refit":"FORBIDDEN"
+}
