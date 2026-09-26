@@ -1,0 +1,20 @@
+{
+  "schema": "CIR_AOE_AXIS_CONVENTION_WALKBACK_V0_1",
+  "date": "2026-09-26",
+  "status": "CORRECTION",
+  "error": "AoE maximum-angular-momentum-dispersion axis was incorrectly identified with the m=0 symmetry axis of an axisymmetric Green/tidal kernel.",
+  "exact_identity": "For |l,0> about s: M_l(beta)=l(l+1) sin^2(beta)/2; maximum occurs for n perpendicular to s, minimum at n=s.",
+  "reclassifications": {
+    "CIR_AOE_GREEN_SHADOW_PLANCK2013_DIAGNOSTIC_V0_1": "NON_ADJUDICATING_INVALID_AXIS_TO_M0_IDENTIFICATION",
+    "CIR_AOE_INTERIOR_TIDAL_GREEN_SHADOW_FREEZE_V0_3": "RETIRED_BEFORE_INDEPENDENT_HELDOUT"
+  },
+  "unaffected": [
+    "CIR_LOCAL_LOG_SCALE_DIHEDRAL_LEMMA_V0_1",
+    "CIR_DYADIC_AOE_POPULATION_AUDIT_V0_2",
+    "CIR_LOCAL_DOMAIN_SCALE_BINDING_GATE_V0_3",
+    "CIR_HORIZON_TO_LOCAL_ANCHOR_THEOREM_CANDIDATE_V0_1",
+    "CIR_CMB_LAST_SCATTERING_SCREEN_ANCHOR_V0_1"
+  ],
+  "next_interface": "full rotated a_lm with planar/high-|m| observables and the same AoE axis convention",
+  "append_only": true
+}
