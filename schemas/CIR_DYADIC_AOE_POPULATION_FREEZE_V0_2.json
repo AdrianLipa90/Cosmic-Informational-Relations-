@@ -1,0 +1,75 @@
+{
+  "algebra": {
+    "D_n": "2^n",
+    "Phi_n": "24*pi*n",
+    "identity": "ln(D_n)=kappa*Phi_n=n*ln(2)",
+    "kappa": "ln(2)/(24*pi)",
+    "physical_binding_status": "OPEN: D_n -> L_n/L0"
+  },
+  "combined_rule": {
+    "current_seen_objects": "diagnostic only for v0.2 because their coordinates/masses were inspected before this freeze.",
+    "promotion": "No physical promotion from either test alone. Require direction and scale effects to survive stated controls and independent replication."
+  },
+  "cosmology_anchor": {
+    "H0_km_s_Mpc": 67.4,
+    "compact_object_proxy": "Schwarzschild mass proxy unless spin is independently available",
+    "source_policy": "Planck 2018 baseline fixed before catalog inspection"
+  },
+  "created_utc": "2026-09-26T20:24:16.764940+00:00",
+  "directional_estimator": {
+    "construction": "orient all published axes to northern Galactic hemisphere; normalize Euclidean sum of their unit vectors",
+    "frozen_common_axis_deg": [
+      239.9881633256477,
+      68.5117419161366
+    ],
+    "input_axes_deg": {
+      "C-R_o": [246.1, 66.0],
+      "C-R_q": [228.2, 60.3],
+      "NILC_o": [241.7, 64.2],
+      "NILC_q": [241.3, 77.3],
+      "SEVEM_o": [245.6, 64.8],
+      "SEVEM_q": [242.4, 73.8],
+      "SMICA_o": [239.0, 64.3],
+      "SMICA_q": [238.5, 76.6]
+    },
+    "no_refit": true,
+    "source": "Planck 2013 Table 18 MAMD axes, four component-separation maps C-R/NILC/SEVEM/SMICA, uncorrected primary rows",
+    "unoriented": true
+  },
+  "freeze_sha256": "73b6f6d730f47e6174ed3bc1ff49ff420fd94f3c94f2303a8fa87c0d0d87e4df",
+  "parent_freeze_sha256": "741b7754b39f240dc51515954ae0e6b42173eeac6da0ac9d2bbb44fe1eb8ae14",
+  "population": {
+    "catalog": "van den Bosch 2016 ApJ 831, 134; VizieR J/ApJ/831/134/table2",
+    "catalog_rows_reported": 245,
+    "direction_subset": "top 10 percent by central BH mass among eligible held-out rows; K=ceil(0.10*N)",
+    "exclude_previously_inspected": [
+      "TON 618",
+      "Cosmic Horseshoe",
+      "Abell 1201",
+      "Holm 15A",
+      "NGC 4889",
+      "NGC 1600",
+      "J0529-4351"
+    ],
+    "no_posthoc_name_or_mass_threshold_selection": true,
+    "primary_rows": "catalog rows used in the paper fit (selected=1 where available), finite positive BH mass and sky coordinates"
+  },
+  "primary_direction_test": {
+    "null": "permute BH mass labels across the fixed eligible sky coordinates; recompute top-decile subset and T_dir",
+    "p_value": "(1 + count(T_perm>=T_obs))/(1+Nperm)",
+    "permutations": 100000,
+    "purpose": "controls survey/sky-footprint selection under exchangeability of masses and coordinates",
+    "statistic": "T_dir = mean(abs(dot(n_i,a))) over top-decile mass subset"
+  },
+  "primary_scale_test": {
+    "M0": "c^3/(2*G*H0) in solar masses",
+    "control": "scan q in [1.5,3.0] only as diagnostic; q=2 remains the sole preregistered target and may not be moved",
+    "phase": "theta_i = 2*pi*frac(log2(M0/M_i))",
+    "predicted_phase_offset": 0.0,
+    "statistic": "R2 = abs(mean(exp(i*theta_i)))",
+    "uncertainty": "propagate catalog mass uncertainties by Monte Carlo when available; report proxy limitation from unknown Kerr spin"
+  },
+  "repo_write_status": "WRITTEN_AFTER_USER_EXPLICIT_2026-09-26",
+  "schema": "CIR_DYADIC_AOE_POPULATION_FREEZE_V0_2",
+  "status": "PROSPECTIVE_FREEZE_RECORDED_POST_TEST_WITH_ORIGINAL_HASH_PRESERVED"
+}
