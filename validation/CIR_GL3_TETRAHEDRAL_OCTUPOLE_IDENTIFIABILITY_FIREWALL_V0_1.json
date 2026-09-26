@@ -1,0 +1,25 @@
+{
+  "schema":"CIR_GL3_TETRAHEDRAL_OCTUPOLE_IDENTIFIABILITY_FIREWALL_V0_1",
+  "date":"2026-09-26",
+  "status":"PASS_EXACT_LOCAL_NOGO",
+  "theorem_path":"COSMOLOGY/CIR_GL3_TETRAHEDRAL_OCTUPOLE_IDENTIFIABILITY_FIREWALL_V0_1.md",
+  "facts":{
+    "dim_gl3":9,
+    "dim_H3":7,
+    "full_harmonic_tangent_rank":7,
+    "full_tangent_kernel_dimension":2,
+    "full_tangent_kernel":"traceless diagonal matrices in the canonical tetrahedral frame",
+    "normalized_shape_dimension":6,
+    "normalized_rotation_plus_shear_rank":6,
+    "finite_diagonal_deformation":"changes xyz only by the scalar factor det(F)^(-1)",
+    "linear_Q_response":"delta Q = 12 offdiag(S)"
+  },
+  "verdict":{
+    "fit_F_from_same_CMB_octupole":"FORBIDDEN_NON_IDENTIFYING",
+    "upstream_fixed_F_then_CMB_test":"ADMISSIBLE_PROSPECTIVE_ROUTE",
+    "GL3_can_break_ideal_AoE_degeneracy":"PASS_MATHEMATICAL",
+    "GL3_CMB_prediction_without_upstream_F":"OPEN",
+    "reuse_ideal_sqrt7_scale_coefficient_after_nontrivial_F":"FORBIDDEN_UNTIL_REDERIVED"
+  },
+  "no_refit":true
+}
