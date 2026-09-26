@@ -1,0 +1,25 @@
+{
+  "schema":"CIR_KERR_AXISYMMETRIC_TETRAHEDRAL_SOURCE_RECEIPT_V0_1",
+  "date":"2026-09-26",
+  "status":"PASS_MATH_SOURCE_FORMULAS_OPEN_PHYSICAL_BINDING",
+  "runtime_source_owned_F":"NOT_FOUND",
+  "kerr_adm":{
+    "alpha":"sqrt(Delta*Sigma/A)",
+    "beta_phi":"-2*M*a*r/A",
+    "gamma_diagonal":true,
+    "spatial_rotation_correction_order":"O(a^2)",
+    "shift_rotation_order":"O(a)",
+    "polar_axis_lambda":"r/sqrt(Delta)"
+  },
+  "tetrahedral_scale":{
+    "C2":"63*(3*lambda^2+2)^2/(5*(20*lambda^6+9*lambda^4+12*lambda^2+4))",
+    "C_at_1":"sqrt(7)",
+    "q":"(A2/A3)/C(lambda)"
+  },
+  "verdicts":{
+    "generic_live_phase36_to_F":"FORBIDDEN",
+    "free_GL3_fit_to_CMB":"FORBIDDEN",
+    "source_fixed_Kerr_ADM_to_F":"ADMISSIBLE_CANDIDATE",
+    "leading_Kerr_chirality_from_GL3_only":"NO; SHIFT_REQUIRED_AT_O(a)"
+  }
+}
