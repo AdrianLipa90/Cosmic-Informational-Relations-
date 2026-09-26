@@ -1,0 +1,28 @@
+{
+  "schema":"CIR_PHASE_OPTICS_SPIN23_AND_CMB_LENSING_RECEIPT_V0_1",
+  "date":"2026-09-26",
+  "status":"PASS_MATH_STANDARD_LENSING_RESPONSE_OPEN_SOURCE_BINDING",
+  "phase_optics":{
+    "gamma":"0.5*(d_x+i d_y)^2 Phi",
+    "spin_gamma":2,
+    "F1":"(d_x-i d_y) gamma",
+    "spin_F1":1,
+    "G3":"(d_x+i d_y) gamma",
+    "spin_G3":3,
+    "C3_action_on_G3":"invariant"
+  },
+  "scale_covariance":{
+    "gamma":"A/L^2",
+    "G3":"A/L^3",
+    "ratio":"|G3|/|gamma| proportional 1/L for frozen source shape"
+  },
+  "cmb_standard_lensing":{
+    "response":"T_lensed(n)=T_unlensed(n+grad psi)",
+    "psi_alone_determines_raw_low_l_T":false,
+    "primary_observable":"mode coupling / lensing-potential reconstruction"
+  },
+  "branches":{
+    "direct_imprint":"separate candidate",
+    "standard_lensing":"requires independent primordial CMB realization/statistical treatment"
+  }
+}
