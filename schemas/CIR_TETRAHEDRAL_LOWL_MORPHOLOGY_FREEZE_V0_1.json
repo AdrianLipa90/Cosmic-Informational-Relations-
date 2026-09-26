@@ -1,0 +1,51 @@
+{
+  "schema":"CIR_TETRAHEDRAL_LOWL_MORPHOLOGY_FREEZE_V0_1",
+  "status":"FROZEN_BEFORE_ELC_MAP_ALM_EXTRACTION",
+  "date":"2026-09-26",
+  "branch":"formalize/local-log-scale-binding-v0.3-20260926",
+  "data_embargo_state":{
+    "ELC_2026_cross_spectrum_C2_C3":"ALREADY_SEEN_AND_USED_FOR_SCALE_AUDIT",
+    "ELC_2026_full_map_a_lm":"NOT_YET_OPENED_FOR_THIS_MORPHOLOGY_TEST"
+  },
+  "model":{
+    "octupole_parent":"SO(3) orbit of H3=x*y*z",
+    "quadrupole_descendant":"D_s H3 for one tetrahedral vertex axis s",
+    "free_nuisance":"one global SO(3) orientation only",
+    "no_deformation":true,
+    "no_extra_phase_for_v0_1":true
+  },
+  "exact_invariants":{
+    "octupole_angular_momentum_second_moment":"Q_ij=4 delta_ij",
+    "octupole_dispersion":"M3(n)=4 for all axes",
+    "quadrupole_dispersion":"M2(beta)=3 sin^2(beta)",
+    "joint_maximum_set":"n dot s = 0"
+  },
+  "primary_morphology_tests":[
+    "best normalized SO(3)-orbit overlap of observed l=3 with tetrahedral H3",
+    "after the same fitted orientation, normalized overlap of observed l=2 with the corresponding D_s H3 descendant",
+    "observed l=3 angular-momentum-dispersion anisotropy versus exact isotropic value"
+  ],
+  "fit_policy":{
+    "orientation":"maximize l=3 tetrahedral overlap only",
+    "quadrupole":"held out after l=3 orientation fit",
+    "scale_q":"not refit; use prior C2/C3 scale audit only",
+    "amplitudes":"normalize each l carrier for morphology, so overall amplitudes are removed"
+  },
+  "cross_map_policy":{
+    "maps":["ELC_70GHz","ELC_94GHz","ELC_100GHz","ELC_143GHz"],
+    "report_each_map_separately":true,
+    "no_selecting_best_frequency":true
+  },
+  "verdict_policy":{
+    "ideal_axis_uniqueness":"FAIL_BY_THEOREM_BEFORE_DATA",
+    "tetrahedral_l3_shape":"evaluate from full a_lm",
+    "translated_l2_shape":"held out conditional on l3-fitted orientation",
+    "general_shadow_model":"NOT_ADJUDICATED"
+  },
+  "forbidden":[
+    "fit l2 and l3 orientations independently",
+    "deform tetrahedron after inspecting maps",
+    "add Moire/holonomy phase after inspecting maps inside v0.1",
+    "reinterpret already-seen ELC C2/C3 as independent morphology evidence"
+  ]
+}
