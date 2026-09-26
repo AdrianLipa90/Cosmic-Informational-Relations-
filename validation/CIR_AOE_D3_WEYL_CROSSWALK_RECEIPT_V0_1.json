@@ -1,0 +1,20 @@
+{
+  "schema":"CIR_AOE_D3_WEYL_CROSSWALK_RECEIPT_V0_1",
+  "date":"2026-09-26",
+  "status":"PASS_GROUP_THEORY_OPEN_PHYSICS",
+  "exact":{
+    "weyl_A2":"S3",
+    "S3_isomorphic_to":"D3",
+    "C3_action":"Y_lm -> exp(i*2*pi*m/3) Y_lm",
+    "symmetry_only_scale_no_go":true
+  },
+  "external_crosscheck":{
+    "source":"R. Mereau, Evidence for Dihedral D3 Symmetry in the Planck CMB Temperature Anisotropy, 2026 preprint",
+    "peer_reviewed":false,
+    "reported_axis_deg":[50.3,-64.9],
+    "unoriented_separation_from_frozen_CIR_axis_deg":5.254507908893771,
+    "classification":"SAME_SKY_STRUCTURAL_CROSSCHECK_NOT_MODEL_VALIDATION"
+  },
+  "physical_binding":"OPEN",
+  "shell_index_from_coxeter_number":"FORBIDDEN_WITHOUT_TRANSFER_THEOREM"
+}
