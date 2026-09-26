@@ -1,0 +1,39 @@
+{
+  "schema": "CIR_AOE_SPIN2_TIDAL_CROSSCHANNEL_FREEZE_V0_1",
+  "status": "PROSPECTIVE_BEFORE_POLARIZATION_EVALUATION",
+  "date": "2026-09-26",
+  "parent_temperature_branch": "CIR AoE radial/tidal temperature branch; primary PR2 execution pending bytes",
+  "motivation": "temperature-only zonal/max-dispersion orthogonality failed as discriminator under isotropic null",
+  "operator": {
+    "field": "Gamma=eth^2 Psi",
+    "normalization": "N_l=sqrt((l+2)!/(l-2)!)",
+    "ell_min": 2
+  },
+  "power_ladder": {
+    "P_l": "|A|^2 q^(2l) [4*pi/(2l+1)] N_l^2",
+    "P3_over_P2": "(25/7) q^2",
+    "P4_over_P3": "(7/3) q^2",
+    "P5_over_P4": "(21/11) q^2"
+  },
+  "q_estimator_if_spin2_used_standalone": "sqrt((7/25)*(P3/P2))",
+  "cross_channel_rule": {
+    "preferred": "q must first be frozen from the independent primary temperature pipeline when available; polarization then tests the predicted ladder without retuning",
+    "q_refit_on_polarization": false
+  },
+  "dyadic": {
+    "q": "2^{-n}",
+    "base": 2,
+    "offset": 0,
+    "no_refit": true
+  },
+  "axis_rule": {
+    "source_axis": "freeze from the declared temperature source-axis estimator before opening polarization",
+    "polarization_axis_refit": false
+  },
+  "held_out_channel": {
+    "candidate_product": "Planck PR3/PR4 component-separated Q/U or E-mode product",
+    "exact_product_bytes": "MUST_BE_PINNED_BEFORE_EXECUTION",
+    "status": "NOT_OPENED_IN_THIS_FREEZE"
+  },
+  "decision_policy": "No physical PASS/FAIL until polarization product, mask/foreground pipeline and simulation covariance are pinned. Algebraic ladder remains exact conditional."
+}
