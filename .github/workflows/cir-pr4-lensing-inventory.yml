@@ -22,6 +22,9 @@ jobs:
           urllib.request.urlretrieve(url, "PR42018like_maps.tar")
           PY
 
+      - name: Install FITS parser
+        run: python -m pip install --quiet astropy
+
       - name: Inventory archive
         run: |
           mkdir pr4
