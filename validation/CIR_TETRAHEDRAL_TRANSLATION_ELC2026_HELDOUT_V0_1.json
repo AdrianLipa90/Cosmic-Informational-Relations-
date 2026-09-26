@@ -1,0 +1,32 @@
+{
+  "schema":"CIR_TETRAHEDRAL_TRANSLATION_ELC2026_HELDOUT_V0_1",
+  "date":"2026-09-26",
+  "status":"MIXED",
+  "freeze":"CIR_TETRAHEDRAL_TRANSLATION_SCALE_FREEZE_V0_1",
+  "data":{
+    "source":"hnofi/ELC_Paper2; Zenodo 10.5281/zenodo.20012802",
+    "mask":"1%",
+    "cross_spectra":[
+      {"pair":"100x70","D2":138.84800481874672,"D3":932.2704341350611,"q":0.17434151920757943,"n_cont":2.5200119085459134,"d_Mpc":2418.6398959667495},
+      {"pair":"100x94","D2":122.57521597565983,"D3":929.7147563392913,"q":0.1640319438519112,"n_cont":2.607951299866624,"d_Mpc":2275.615157057564},
+      {"pair":"143x100","D2":136.97736263070678,"D3":913.0165939424569,"q":0.17497944092064469,"n_cont":2.5147426712539356,"d_Mpc":2427.489783892104},
+      {"pair":"143x70","D2":138.16337335301176,"D3":924.5776768095703,"q":0.17463316389812125,"n_cont":2.5176005333541256,"d_Mpc":2422.685882758636},
+      {"pair":"143x94","D2":122.05069359959167,"D3":922.1337797618902,"q":0.16435204797621406,"n_cont":2.6051386610628766,"d_Mpc":2280.0559615740176},
+      {"pair":"94x70","D2":124.12582503225137,"D3":941.7092384802344,"q":0.16401162009306752,"n_cont":2.6081300626247215,"d_Mpc":2275.333205551126}
+    ],
+    "mean_spectrum":{"D2":130.45674590166135,"D3":927.2370799114174,"q":0.16944932194983256,"n_cont":2.561074230987091,"d_Mpc":2350.770443410027}
+  },
+  "robustness":{
+    "six_pair_n_mean":2.562262522784699,
+    "six_pair_n_sample_sd":0.049127594666998314,
+    "six_pair_n_range":[2.5147426712539356,2.6081300626247215],
+    "note":"cross spectra correlated; scatter is robustness diagnostic, not formal sigma"
+  },
+  "verdicts":{
+    "continuous_q_domain":"PASS",
+    "integer_dyadic_zero_offset":"FAIL_AT_HELD_OUT_POINT_ESTIMATES",
+    "physical_tetrahedral_CMB_binding":"NOT_ADJUDICATED"
+  },
+  "no_retune":true,
+  "half_integer_reinterpretation":"FORBIDDEN_AS_CONFIRMATION; NEW_PROSPECTIVE_MODEL_REQUIRED"
+}
