@@ -1,0 +1,19 @@
+{
+  "schema":"CIR_TWO_TANGENT_AXIS_CENTRE_DIRECTION_RECEIPT_V0_1",
+  "date":"2026-09-26",
+  "status":"PASS_GEOMETRY_EXPLORATORY_WMAP",
+  "theorem":{
+    "radial_axis":"s=+/- normalize(a2 cross a3)",
+    "condition_number":"1/sin(gamma)"
+  },
+  "WMAP9":{
+    "quadrupole_axis_deg":[235.9,58.1],
+    "octupole_axis_deg":[237.7,62.9],
+    "separation_deg":4.88065785521028,
+    "conditioning_factor":11.753565170812795,
+    "radial_axis_deg":[137.65831979352447,5.098818745494779],
+    "antipode_deg":[317.65831979352447,-5.098818745494779],
+    "classification":"POST_HOC_EXPLORATORY_ALREADY_SEEN_AXES"
+  },
+  "high_precision_centre_claim":"NOT_SUPPORTED_BY_TWO_AXIS_GEOMETRY"
+}
