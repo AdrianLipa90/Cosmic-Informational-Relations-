@@ -1,0 +1,20 @@
+{
+  "schema":"CIR_C6_REGULAR_ARPL_REFINEMENT_VALIDATION_RECEIPT_V0_1",
+  "date":"2026-09-27",
+  "status":"PASS_CONDITIONAL_REPRESENTATION",
+  "checks":{
+    "regular_C6_orbit_has_six_children":true,
+    "free_transitive_action":true,
+    "ARPL_ultrametric_ratio_if_bound":"1/6",
+    "entropy_increment":"ln6=ln3+ln2",
+    "R_CMB_over_6_Mpc":2312.1666666666665,
+    "ln6_is_not_integer_multiple_of_ln2":true
+  },
+  "physical_binding":"OPEN: REGULAR_C6_CHILD_BINDING is a new bridge condition",
+  "evidence_status":{
+    "ELC2026":"POST_HOC_ONLY",
+    "Planck_PR3":"HELD_OUT_NON_DECISIVE",
+    "Planck_PR4_lowres":"FROZEN_BUT_BINARY_TRANSPORT_NOT_EXECUTED",
+    "source_owned_GL3_F":"NOT_FOUND"
+  }
+}
