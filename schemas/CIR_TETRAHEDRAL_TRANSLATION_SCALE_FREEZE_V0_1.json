@@ -1,0 +1,52 @@
+{
+  "schema": "CIR_TETRAHEDRAL_TRANSLATION_SCALE_FREEZE_V0_1",
+  "status": "FROZEN_BEFORE_WMAP9_OR_PLANCK_PR4_POWER_EVALUATION",
+  "date": "2026-09-26",
+  "branch": "formalize/local-log-scale-binding-v0.3-20260926",
+  "parent_geometry": {
+    "tetrahedron_vertices": [
+      ["1/sqrt3","1/sqrt3","1/sqrt3"],
+      ["1/sqrt3","-1/sqrt3","-1/sqrt3"],
+      ["-1/sqrt3","1/sqrt3","-1/sqrt3"],
+      ["-1/sqrt3","-1/sqrt3","1/sqrt3"]
+    ],
+    "solid_harmonic": "H3=x*y*z",
+    "displacement_axis": "(1,1,1)/sqrt(3)",
+    "displacement_class": "tetrahedral vertex axis"
+  },
+  "primary_scale_estimator": {
+    "A_l": "sqrt((2l+1)*C_l)",
+    "q": "(1/7)*sqrt(5*C2/C3)",
+    "n_cont": "log2(7*sqrt(C3/(5*C2)))",
+    "domain": "0<q<1"
+  },
+  "dyadic_subhypothesis": {
+    "q": "2^{-n}",
+    "n": "positive integer",
+    "base": 2,
+    "offset": 0,
+    "no_refit": true
+  },
+  "dimensional_anchor": {
+    "R_CMB_Mpc": 13873.0,
+    "distance": "d=q*R_CMB"
+  },
+  "morphology": {
+    "l3": "SO(3) orbit of tetrahedral H3",
+    "l2": "D_s H3, pure zonal quadrupole about tetrahedral vertex axis",
+    "AoE_max_dispersion_relation": "ideal l2 preferred-axis great circle is perpendicular to displacement axis"
+  },
+  "contaminated_for_prospective_amplitude_test": [
+    "Planck-2013 SMICA/NILC a_lm coefficients previously inspected"
+  ],
+  "held_out_priority": [
+    "WMAP9 ILC low-l C2,C3 from an official/published product not previously used for amplitudes",
+    "Planck PR4/NPIPE low-l amplitudes if independently retrieved"
+  ],
+  "forbidden": [
+    "change sqrt(7) coefficient after data inspection",
+    "change tetrahedral displacement direction class after data inspection",
+    "choose n from a target black-hole catalogue",
+    "use previously inspected Planck-2013 coefficients as prospective confirmation"
+  ]
+}
