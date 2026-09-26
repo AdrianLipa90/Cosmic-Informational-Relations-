@@ -1,0 +1,23 @@
+{
+  "schema": "CIR_AOE_WMAP9_DIRECTIONAL_CROSSCHECK_V0_1",
+  "date": "2026-09-26",
+  "status": "NON_DECISIVE",
+  "frozen_planck_axis_deg": [239.9881633256477,68.5117419161366],
+  "distance_definition": "acos(abs(a dot b))",
+  "source": {
+    "Rassat_Starck_Dupe_2013": "A&A 557 A32, DOI 10.1051/0004-6361/201219793",
+    "Bennett_et_al_2013": "ApJS 208:20"
+  },
+  "separations_deg": {
+    "raw": {"ell2":10.566755706598673,"ell3":5.689168081519004},
+    "inpainted": {"ell2":15.250342372927966,"ell3":11.557415977400845},
+    "inpainted_plus_ISW": {"ell2":31.96616516173605,"ell3":9.542028509380712}
+  },
+  "raw_WMAP9_ell2_ell3_separation_deg": 4.88065785521028,
+  "verdict": {
+    "direction": "TENSIONED_COMPATIBILITY_NON_DECISIVE",
+    "radial_scale": "NOT_TESTED",
+    "shadow_physics": "NOT_ADJUDICATED"
+  },
+  "no_refit": true
+}
