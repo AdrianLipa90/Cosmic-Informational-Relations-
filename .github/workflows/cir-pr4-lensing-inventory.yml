@@ -1,0 +1,60 @@
+name: CIR PR4 lensing inventory
+
+on:
+  push:
+    branches:
+      - "formalize/local-log-scale-binding-v0.3-20260926"
+    paths:
+      - ".github/workflows/cir-pr4-lensing-inventory.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  inventory:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download frozen public PR4 asset
+        run: |
+          python - <<'PY'
+          import urllib.request
+          url = "https://github.com/carronj/planck_PR4_lensing/releases/download/Data/PR42018like_maps.tar"
+          urllib.request.urlretrieve(url, "PR42018like_maps.tar")
+          PY
+
+      - name: Inventory archive
+        run: |
+          mkdir pr4
+          tar -xf PR42018like_maps.tar -C pr4
+          find pr4 -type f -printf '%P\t%s bytes\n' | sort > PR4_INVENTORY.txt
+          python - <<'PY' >> PR4_INVENTORY.txt
+          import pathlib
+          print("\nFITS header inventory")
+          try:
+              from astropy.io import fits
+          except Exception:
+              raise SystemExit("astropy unavailable on runner")
+          for p in sorted(pathlib.Path("pr4").rglob("*.fits")):
+              print("\nFILE", p)
+              try:
+                  with fits.open(p, memmap=True) as hdul:
+                      for i,hdu in enumerate(hdul):
+                          print("HDU", i, "name=", hdu.name, "class=", type(hdu).__name__)
+                          data = getattr(hdu, "data", None)
+                          print(" shape=", getattr(data, "shape", None))
+                          cols = getattr(hdu, "columns", None)
+                          if cols is not None:
+                              print(" columns=", list(cols.names or []))
+                          for key in ("NSIDE","ORDERING","PIXTYPE","LMAX","INDXSCHM","OBJECT","EXTNAME"):
+                              if key in hdu.header:
+                                  print(" ", key, "=", hdu.header[key])
+              except Exception as e:
+                  print(" ERROR", repr(e))
+          PY
+          sha256sum PR42018like_maps.tar >> PR4_INVENTORY.txt
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: cir-pr4-lensing-inventory
+          path: PR4_INVENTORY.txt
+          if-no-files-found: error
