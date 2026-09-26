@@ -1,0 +1,55 @@
+{
+  "schema": "CIR_AOE_INTERIOR_TIDAL_GREEN_SHADOW_FREEZE_V0_3",
+  "status": "PROSPECTIVE_FOR_NEW_INDEPENDENT_DATA_ONLY",
+  "date": "2026-09-26",
+  "supersedes_physical_candidate": "CIR_AOE_RECIPROCAL_GREEN_SHADOW_FREEZE_V0_2",
+  "preserves_prior_verdict": "SIMPLE_POINT_GREEN_SHADOW_AT_FROZEN_AXIS_FAIL",
+  "data_contamination": {
+    "Planck_2013_SMICA_NILC_low_l_coefficients": "EXPLORATORY_ONLY_ALREADY_SEEN",
+    "may_count_as_prospective_validation": false
+  },
+  "axis": {
+    "type": "unoriented_galactic_axis",
+    "l_deg": 239.9881633256477,
+    "b_deg": 68.5117419161366,
+    "refit": false
+  },
+  "declared_geometry": {
+    "branch": "interior centre/source",
+    "condition": "0<d<R",
+    "q": "d/R"
+  },
+  "operator": {
+    "name": "axis-contracted trace-free Hessian / tidal component",
+    "formula": "(a_i a_j-delta_ij/3) partial_i partial_j G",
+    "away_from_source": "equals partial_d^2 G because Delta G=0"
+  },
+  "multipoles": {
+    "t_l": "A/R^3 * l(l-1) q^(l-2), l>=2",
+    "annihilated": [0,1]
+  },
+  "primary_estimator": {
+    "r23": "abs(g3/g2)",
+    "q23": "r23/3",
+    "n_cont": "log2(3/r23)",
+    "inference_multipoles": [2,3]
+  },
+  "dyadic_subhypothesis": {
+    "q": "2^{-n}",
+    "n_domain": "positive integers",
+    "base": 2,
+    "offset": 0,
+    "no_refit": true
+  },
+  "held_out_predictions": {
+    "multipoles": [4,5],
+    "r34": "(2/3)*r23",
+    "r45": "(5/9)*r23"
+  },
+  "screen_anchor": {
+    "schema": "CIR_CMB_LAST_SCATTERING_SCREEN_ANCHOR_V0_1",
+    "R_CMB_Mpc": 13873.0,
+    "radial_prediction": "d=q23*R_CMB"
+  },
+  "no_refit": "axis, operator order, interior branch, base 2, phase offset and q estimator cannot be changed after opening new independent low-l coefficients"
+}
