@@ -1,0 +1,69 @@
+{
+  "schema":"CIR_TETRAHEDRAL_LOWL_MORPHOLOGY_METHOD_FREEZE_V0_1_1",
+  "status":"FROZEN_BEFORE_ELC_FULL_MAP_HARMONIC_EXTRACTION",
+  "date":"2026-09-26",
+  "parent_freeze":"CIR_TETRAHEDRAL_LOWL_MORPHOLOGY_FREEZE_V0_1",
+  "input":{
+    "maps":[
+      "ELC_Maps/ELC_70GHz.fits",
+      "ELC_Maps/ELC_94GHz.fits",
+      "ELC_Maps/ELC_100GHz.fits",
+      "ELC_Maps/ELC_143GHz.fits"
+    ],
+    "mask":"ELC_Masks/ELC_1percent_mask.fits",
+    "source":"hnofi/ELC_Paper2 / Zenodo 10.5281/zenodo.20012802"
+  },
+  "harmonic_extraction":{
+    "primary":"uniform-weight complex spherical-harmonic least squares on unmasked HEALPix pixel centres",
+    "fit_lmax":10,
+    "fit_all_modes_from_l0_through_l10_simultaneously":true,
+    "reason":"removes monopole/dipole jointly and reduces leakage from l=4..10 through the 1 percent mask",
+    "mask_threshold":"mask>0.5",
+    "reported_modes":[2,3],
+    "no_inpainting":true
+  },
+  "octupole_test":{
+    "template":"SO(3) orbit of H3=x*y*z",
+    "orientation_fit_uses":"l=3 only",
+    "score":"F3=max_R |<u3, R*T3>|^2 for normalized l=3 states",
+    "necessary_invariant":"Q3 eigenvalues; exact template target [4,4,4]",
+    "amplitude_removed":true
+  },
+  "quadrupole_holdout":{
+    "template":"D_s H3 for a tetrahedral vertex s after the l3-only orientation fit",
+    "discrete_vertex_policy":"evaluate all four symmetry-equivalent vertices and report max squared normalized overlap F2; the same max-over-four rule is used in null calibration",
+    "continuous_refit_to_l2":false,
+    "amplitude_removed":true
+  },
+  "cross_frequency":{
+    "report_each_frequency":true,
+    "do_not_select_best_frequency":true,
+    "common_conclusion_requires_same_qualitative_verdict_across_all_four":true
+  },
+  "numerical_search":{
+    "observed_orientation":"deterministic differential-evolution plus local refinement with fixed seed",
+    "template_sign":"irrelevant because overlap is squared",
+    "rotation_convention":"right-handed SO(3); world template H_R(n)=H3(R^T n)"
+  },
+  "null_diagnostics":{
+    "l3":"isotropic Gaussian real l=3 states; orientation-fit statistic calibrated with the same finite rotation bank/search policy",
+    "l2":"isotropic Gaussian real l=2 states; max-over-four vertex statistic",
+    "p_values":"diagnostic unless simulation count and numerical convergence are reported"
+  },
+  "verdicts":{
+    "exact_axis_uniqueness":"already FAIL by theorem",
+    "ideal_tetrahedral_octupole_shape":"PASS/TENSION/FAIL from frozen morphology outputs",
+    "translated_quadrupole_shape":"held-out PASS/TENSION/FAIL after l3-only orientation",
+    "continuous_scale":"separate from morphology and already evaluated",
+    "integer_dyadic":"prior held-out FAIL preserved"
+  },
+  "forbidden":[
+    "lower fit_lmax because a result improves",
+    "fit orientation using l2",
+    "choose one of four vertices before reporting all four/max policy",
+    "deform tetrahedron",
+    "introduce half-step scaling",
+    "change ELC mask",
+    "use one frequency as primary after seeing results"
+  ]
+}
