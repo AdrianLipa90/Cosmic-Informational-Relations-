@@ -1,0 +1,47 @@
+{
+  "schema": "CIR_AOE_GREEN_SHADOW_SCALE_FREEZE_V0_1",
+  "status": "PROSPECTIVE_FREEZE_BEFORE_LOW_L_COEFFICIENT_EVALUATION",
+  "date": "2026-09-26",
+  "parent_branch": "formalize/local-log-scale-binding-v0.3-20260926",
+  "physical_branch": "off-centre harmonic Green-shadow candidate",
+  "axis": {
+    "type": "unoriented_galactic_axis",
+    "l_deg": 239.9881633256477,
+    "b_deg": 68.5117419161366,
+    "provenance": "frozen common Planck-2013 low-l axis from CIR_DYADIC_AOE_POPULATION_FREEZE_V0_2",
+    "refit_after_map_open": false
+  },
+  "forward_model": {
+    "epsilon": "d/R_S",
+    "kernel": "K(mu;epsilon)=1/sqrt(1-2*epsilon*mu+epsilon^2)",
+    "exact_series": "K=sum_{ell>=0} epsilon^ell P_ell(mu)",
+    "shadow_component": "S=A*K",
+    "legendre_coefficients": "g_ell=A*epsilon^ell"
+  },
+  "primary_estimator": {
+    "g_ell": "(2ell+1)/2 * integral_{-1}^{1} Tbar(mu) P_ell(mu) dmu",
+    "epsilon_23": "abs(g_3/g_2)",
+    "n_cont": "-log2(epsilon_23)",
+    "eta": "n_cont-round(n_cont)"
+  },
+  "dyadic_hypothesis": {
+    "prediction": "epsilon=2^{-n}, n integer >=0",
+    "no_refit": "base 2 and zero shell offset are fixed; neither may be changed after evaluation"
+  },
+  "cmb_input": {
+    "primary": "Planck PR2/R2.02 SMICA full-sky temperature map",
+    "file": "COM_CMB_IQU-smica_1024_R2.02_full.fits",
+    "source": "NASA/IPAC IRSA Planck release_2",
+    "map_opened_for_this_estimator_before_freeze": false
+  },
+  "decision_rule": {
+    "green_model_identified": "g_2 finite and nonzero, 0<=epsilon_23<1",
+    "dyadic_consistent": "95% propagated interval for n_cont intersects an integer",
+    "dyadic_tension": "95% interval misses all integers but 99.7% interval intersects one",
+    "dyadic_fail": "99.7% interval misses all integers"
+  },
+  "target_embargo": {
+    "black_hole_or_source_catalogs": "do not use any new target mass/radius/location to set epsilon, n, or R_S before the scale prediction is frozen",
+    "previously_seen_objects": "diagnostic only"
+  }
+}
