@@ -1,0 +1,58 @@
+{
+  "schema":"CIR_PR4_LENSING_C3_AXIS_CROSS_OBSERVABLE_FREEZE_V0_1",
+  "status":"FROZEN_BEFORE_PR4_LENSING_ALM_INSPECTION",
+  "date":"2026-09-26",
+  "source_model":"Kerr-axis selects tetrahedral vertex; oriented C3 source sector",
+  "temperature_reference_axis":{
+    "type":"unoriented_galactic_axis",
+    "l_deg":239.9881633256477,
+    "b_deg":68.5117419161366,
+    "provenance":"previously frozen temperature AoE axis",
+    "not_refit_from_lensing":true
+  },
+  "lensing_dataset":{
+    "primary":"Planck PR4 NPIPE minimum-variance lensing reconstruction, PR3-like public map product",
+    "source":"carronj/planck_PR4_lensing release Data / PR42018like_maps.tar",
+    "unblinded_before_this_freeze":false
+  },
+  "multipole_band":{
+    "L_min":8,
+    "L_max":30,
+    "reason":"Planck lensing science range begins at L=8; upper bound keeps the test on large angular scales while providing multiple independent m sectors"
+  },
+  "per_L_statistic":{
+    "f_C3":"sum_{m: m mod 3 = 0} |phi_Lm^(axis)|^2 / sum_{m=-L}^{L} |phi_Lm^(axis)|^2",
+    "isotropic_mean":"N_allowed(L)/(2L+1)",
+    "centered":"f_C3 - N_allowed(L)/(2L+1)"
+  },
+  "axis_score":{
+    "S_C3":"unweighted mean of centered per-L fractions for L=8..30",
+    "axis_search":"maximize S_C3 over an unoriented SO(3) axis; azimuth about axis is irrelevant to the m mod 3 projector",
+    "output":"s_lens_C3"
+  },
+  "cross_observable_alignment":{
+    "Delta_deg":"acos(abs(s_lens_C3 dot a_temperature))",
+    "primary_null":"Planck PR4 lensing simulations processed through the identical axis search if available",
+    "fallback_geometric_null":"for an unbiased random unoriented axis, P(Delta<=d)=1-cos(d)"
+  },
+  "robustness":{
+    "required_variants":[
+      "minimum-variance reconstruction",
+      "TT-only reconstruction if supplied in the same release",
+      "polarization-only reconstruction if supplied in the same release"
+    ],
+    "do_not_select_best_variant":true
+  },
+  "interpretation":{
+    "PASS_candidate":"a stable lensing C3 axis aligns with the frozen temperature axis beyond the preregistered null expectation",
+    "FAIL":"no stable C3 axis or no cross-observable alignment",
+    "physical_Kerr_origin":"NOT_ESTABLISHED_BY_ALIGNMENT_ALONE"
+  },
+  "forbidden":[
+    "change L range after inspecting lensing alms",
+    "change modulo class from 3 after inspection",
+    "rotate the frozen temperature axis",
+    "use a different lensing estimator only because it aligns better",
+    "treat a lensing-axis alignment as proof of a Kerr cosmological parent"
+  ]
+}
