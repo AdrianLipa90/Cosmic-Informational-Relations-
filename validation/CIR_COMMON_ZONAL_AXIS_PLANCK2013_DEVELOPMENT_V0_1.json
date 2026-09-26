@@ -1,0 +1,18 @@
+{
+  "schema": "CIR_COMMON_ZONAL_AXIS_PLANCK2013_DEVELOPMENT_V0_1",
+  "date": "2026-09-26",
+  "status": "DEVELOPMENT_ONLY_NOT_CONFIRMATORY",
+  "reason": "Planck-2013 coefficients were inspected before the zonal-axis estimator was frozen.",
+  "objective": "Z23=Z2+Z3 with unit-normalized multipole powers",
+  "exploratory_maxima_galactic_deg": {
+    "SMICA_raw": [330.1594819438467,-6.265164371261238],
+    "SMICA_deboosted": [149.72715347534302,5.584639845778831],
+    "NILC_raw": [149.39698514170044,6.73606582290565],
+    "NILC_deboosted": [148.910932157849,5.904915992930735]
+  },
+  "note": "Axes are unoriented; the SMICA_raw solution is close to the antipode of the others.",
+  "qualitative_observation": "All four development solutions represent an unoriented axis near l~149-150 deg, b~6 deg.",
+  "frozen_AoE_axis_galactic_deg": [239.9881633256477,68.5117419161366],
+  "development_undirected_separation_deg": "approximately 84-85 deg",
+  "promotion": "NONE"
+}
