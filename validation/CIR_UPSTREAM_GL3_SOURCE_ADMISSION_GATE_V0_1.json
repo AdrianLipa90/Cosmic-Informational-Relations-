@@ -1,0 +1,34 @@
+{
+  "schema":"CIR_UPSTREAM_GL3_SOURCE_ADMISSION_GATE_V0_1",
+  "date":"2026-09-26",
+  "status":"OPEN",
+  "live_runtime":{
+    "tether":"ACTIVE",
+    "phi_count":36,
+    "aux_phi_count":36,
+    "aux_feedback_phi_count":36,
+    "all_finite":true,
+    "gremlin":"ACTIVE"
+  },
+  "phase_basis":{
+    "live_generic":"PNV_T36_PHASE_ANGLES_RADIANS_V1",
+    "required_typed_moire":"PNV_MOIRE_RELATIVE_PHASE_MATRIX6_ROW_MAJOR_V1",
+    "live_generic_to_bivector":"REJECT_AS_REQUIRED"
+  },
+  "carrier":{
+    "GL3_exterior_square":"rho_36(F)=diag(F,cof(F))",
+    "representation_status":"PASS",
+    "dynamics_reference_status":"PASS"
+  },
+  "source_F":{
+    "live_runtime":"NOT_AVAILABLE",
+    "gremlin_receipt":"NOT_AVAILABLE",
+    "cosmological_boundary":"NOT_DERIVED"
+  },
+  "verdicts":{
+    "upstream_F":"OPEN",
+    "generic_T36_reshape":"FORBIDDEN",
+    "CMB_fit_F_as_evidence":"FORBIDDEN",
+    "prospective_CMB_GL3_test":"BLOCKED_UNTIL_INDEPENDENT_F"
+  }
+}
