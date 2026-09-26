@@ -1,0 +1,50 @@
+{
+  "schema": "CIR_AOE_RECIPROCAL_GREEN_SHADOW_FREEZE_V0_2",
+  "status": "PROSPECTIVE_FREEZE_BEFORE_LOW_L_M0_EVALUATION",
+  "date": "2026-09-26",
+  "supersedes_for_future_evaluation": "CIR_AOE_GREEN_SHADOW_SCALE_FREEZE_V0_1",
+  "reason_for_revision": "pre-data exact reciprocal interior/exterior Green expansion discovered",
+  "axis": {
+    "type": "unoriented_galactic_axis",
+    "l_deg": 239.9881633256477,
+    "b_deg": 68.5117419161366,
+    "refit_after_map_open": false
+  },
+  "geometry": {
+    "x": "d/R",
+    "q": "min(x,1/x)=exp(-abs(ln x))",
+    "inside": "d/R=q",
+    "outside": "d/R=1/q"
+  },
+  "primary_low_l_estimator": {
+    "q23": "sqrt(7/5)*abs(a30_axis/a20_axis)",
+    "n_cont": "-log2(q23)",
+    "requires": "a20_axis nonzero and 0<q23<1"
+  },
+  "dyadic_subhypothesis": {
+    "q": "2^{-n}",
+    "radial_branches": ["d=R*2^{-n}", "d=R*2^{+n}"],
+    "base": 2,
+    "offset": 0,
+    "no_refit": true
+  },
+  "held_out_multipoles": {
+    "inference": [2,3],
+    "validation": [4,5],
+    "predictions": [
+      "abs(g4/g3)=q23",
+      "abs(g5/g4)=q23"
+    ]
+  },
+  "cmb_input": {
+    "primary": "Planck PR2/R2.02 SMICA full-sky temperature map",
+    "file": "COM_CMB_IQU-smica_1024_R2.02_full.fits",
+    "opened_for_m0_estimator_before_v0_2_freeze": false
+  },
+  "R_anchor": {
+    "status": "MUST_BE_FROZEN_BEFORE_SOURCE_CATALOG_COMPARISON",
+    "candidate_if_CMB_screen_interpretation_is_used": "comoving radius of the declared last-scattering surface under a fixed cosmological parameter set"
+  },
+  "embargo": "No new source/BH catalog may set q, n, axis sign, radial branch, or R.",
+  "no_retune": "Any change after coefficient inspection requires a new version and v0.2 result must remain recorded."
+}
