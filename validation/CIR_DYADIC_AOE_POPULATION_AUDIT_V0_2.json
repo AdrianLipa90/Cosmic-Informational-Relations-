@@ -1,0 +1,41 @@
+{
+  "schema": "CIR_DYADIC_AOE_POPULATION_AUDIT_V0_2",
+  "date": "2026-09-26",
+  "freeze_file": "CIR_DYADIC_AOE_POPULATION_FREEZE_V0_2.json",
+  "freeze_sha256": "73b6f6d730f47e6174ed3bc1ff49ff420fd94f3c94f2303a8fa87c0d0d87e4df",
+  "catalog": {
+    "name": "van_den_Bosch_2016_black_hole_mass_compilation",
+    "source_repo": "remco-space/Black-Hole-Mass-compilation",
+    "fits_blob_sha": "ec7fb8da2ec7bd071e841f2b21b939de416340b9",
+    "rows_total": 294,
+    "eligible_after_frozen_filters": 223,
+    "top_decile_k": 23
+  },
+  "direction_test": {
+    "axis_galactic_deg": [239.9881633256477, 68.5117419161366],
+    "statistic": "mean(abs(n_i dot a)) over frozen top mass decile",
+    "observed": 0.5898269710935227,
+    "null": "100000 deterministic mass-label permutations over fixed sky positions",
+    "p_upper_tail": 0.984160158398416,
+    "verdict": "FAIL_FOR_ALIGNMENT_HYPOTHESIS"
+  },
+  "scale_test": {
+    "H0_km_s_Mpc": 67.4,
+    "M0_solar_mass": 4.6472709613931804e22,
+    "q_frozen": 2.0,
+    "phase_lock_R2": 0.009943560656364613,
+    "diagnostic_q_scan": {
+      "range": [1.5, 3.0],
+      "step": 0.01,
+      "q2_rank_of_151": 145,
+      "largest_diagnostic_R_near": {"q": 2.10, "R": 0.12176279735285152}
+    },
+    "verdict": "FAIL_FOR_GLOBAL_DYADIC_MASS_COMB"
+  },
+  "interpretation": {
+    "exact_representation_lemma_status": "UNCHANGED",
+    "physical_binding_rejected": "universal Hubble anchor for every SMBH",
+    "no_refit": "q and phase offset were not changed after the test",
+    "next_candidate": "derive a local relational anchor L_star,S upstream for each admissible domain, then freeze before evaluation"
+  }
+}
