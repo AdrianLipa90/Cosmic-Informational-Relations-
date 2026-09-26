@@ -1,0 +1,21 @@
+{
+  "schema": "CIR_AOE_RECIPROCAL_GREEN_SHADOW_VALIDATION_RECEIPT_V0_2",
+  "date": "2026-09-26",
+  "status": "PASS",
+  "checks": {
+    "interior_Green_adjacent_ratio": true,
+    "exterior_Green_adjacent_ratio": true,
+    "q_equals_exp_minus_abs_log_x": true,
+    "dyadic_reciprocal_branches": true
+  },
+  "numeric_probe_sets": [
+    {"R":1.0,"d":0.2},
+    {"R":1.0,"d":0.6},
+    {"R":1.0,"d":2.0},
+    {"R":1.0,"d":5.0},
+    {"R":3.0,"d":1.0},
+    {"R":2.0,"d":7.0}
+  ],
+  "tested_ell_ratios": "0->1 through 4->5",
+  "epistemic_boundary": "validates mathematical kernel implementation only; does not validate the physical AoE shadow hypothesis"
+}
