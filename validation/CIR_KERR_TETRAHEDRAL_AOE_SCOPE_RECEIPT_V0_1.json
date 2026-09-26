@@ -1,0 +1,17 @@
+{
+  "schema":"CIR_KERR_TETRAHEDRAL_AOE_SCOPE_RECEIPT_V0_1",
+  "date":"2026-09-26",
+  "status":"PASS_SCOPE_CORRECTION_OPEN_TRANSFER",
+  "polar_branch":{
+    "scale_equations":"RETAINED",
+    "complete_AoE_morphology":"REJECTED",
+    "reason":"exact axial symmetry gives no preferred azimuth"
+  },
+  "tetrahedral_stabilizers":{
+    "proper":"Stab_A4(vertex)=C3",
+    "full":"Stab_Td(vertex)=S3~=D3"
+  },
+  "candidate_axis_binding":"Kerr spin axis selects tetrahedral vertex axis",
+  "source_chirality":"sign(Omega_H)",
+  "primary_open_gate":"typed inclined Kerr critical-curve -> CMB a_lm transfer operator"
+}
