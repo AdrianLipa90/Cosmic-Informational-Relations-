@@ -1,0 +1,24 @@
+{
+  "schema":"CIR_KERR_POLAR_PHOTON_FORWARD_FAMILY_RECEIPT_V0_1",
+  "date":"2026-09-26",
+  "status":"PASS_MATH_SPIN_SELECTOR_OPEN",
+  "photon_region":{
+    "equation":"x^3-3*x^2+chi^2*(x+1)=0",
+    "exterior_branch_x_range":["1+sqrt(2)",3],
+    "chi2_of_x":"x^2*(3-x)/(x+1)",
+    "lambda2_ph":"x*(x+1)/(2*(x-1))"
+  },
+  "forward_family":{
+    "delta_n":"chi/(12*sqrt(1-chi^2))",
+    "q_src":"2^(-n-delta_n)",
+    "R23_pred":"C(lambda_ph(chi))*q_src",
+    "D2_over_D3_pred":"(7/10)*R23_pred^2",
+    "free_dimensionless_source_parameters":["integer n","source-owned chi"]
+  },
+  "spin_selector":{
+    "status":"OPEN",
+    "current_IDT_horizon_winding_fixes_chi":false,
+    "posthoc_CMB_spin_fit":"FORBIDDEN"
+  },
+  "new_data_evaluated_after_freeze":false
+}
