@@ -1,0 +1,29 @@
+{
+  "schema":"CIR_EXPLORATORY_3D_RELATIONAL_CENTRE_PACKET_V0_1",
+  "date":"2026-09-26",
+  "status":"EXPLORATORY_DIRECTION_NOT_ROBUST",
+  "radial":{
+    "mean_Mpc":2350.770443410027,
+    "mean_Gpc":2.350770443410027,
+    "mean_Gly_approx":7.667178847408407,
+    "six_cross_spectrum_range_Mpc":[2275.333205551126,2427.489783892104],
+    "integer_dyadic_zero_offset":"PRIOR_FAIL"
+  },
+  "raw_WMAP_direction":{
+    "axis_deg":[137.65831979352447,5.098818745494779],
+    "antipode_deg":[317.65831979352447,-5.098818745494779],
+    "galactic_cartesian_Mpc":[-1730.67588034,1577.09681099,208.92181217],
+    "conditioning":11.753565170812795
+  },
+  "WMAP_processing_variants":{
+    "raw":{"axis_deg":[137.65831979352447,5.098818745494779],"gamma_deg":4.88065785521028,"conditioning":11.753565170812795},
+    "inpainted":{"axis_deg":[71.97733752793756,32.26959225029267],"gamma_deg":13.408392762564134,"conditioning":4.312382158230489},
+    "inpainted_plus_ISW":{"axis_deg":[184.59977342776244,-5.422389616947123],"gamma_deg":24.638072141101908,"conditioning":2.398743787340636}
+  },
+  "verdicts":{
+    "continuous_radial_scale":"CONDITIONALLY_IDENTIFIED",
+    "unique_direction":"NOT_ROBUST",
+    "precise_3D_centre":"NOT_ESTABLISHED",
+    "catalogue_target_used":false
+  }
+}
