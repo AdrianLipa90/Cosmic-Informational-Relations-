@@ -1,0 +1,70 @@
+{
+  "schema": "CIR_AOE_SPIN2_TIDAL_CROSSCHANNEL_FREEZE_V0_2",
+  "status": "PROSPECTIVE_BEFORE_PR3_POLARIZATION_BYTES_OPENED",
+  "date": "2026-09-26",
+  "supersedes": "CIR_AOE_SPIN2_TIDAL_CROSSCHANNEL_FREEZE_V0_1",
+  "reason": "official held-out Planck PR3 polarization product and exact primary fields pinned before numerical evaluation",
+  "official_product": {
+    "mission_release": "Planck PR3",
+    "component_separation": "SMICA",
+    "filename": "COM_CMB_IQU-smica_2048_R3.00_full.fits",
+    "nside": 2048,
+    "official_source": "NASA/IPAC IRSA Planck PR3 all-sky CMB maps",
+    "verified_fields": [
+      "I_STOKES",
+      "Q_STOKES",
+      "U_STOKES",
+      "TMASK",
+      "PMASK",
+      "I_STOKES_INP",
+      "Q_STOKES_INP",
+      "U_STOKES_INP",
+      "TMASKINP",
+      "PMASKINP"
+    ]
+  },
+  "primary_polarization_extraction": {
+    "fields": ["Q_STOKES_INP","U_STOKES_INP"],
+    "reason": "official full-sky inpainted fields avoid introducing a new cut-sky E/B mixing prescription into the primary low-l test",
+    "harmonics": "spin-2 Q/U -> E/B alms",
+    "lmax": 5,
+    "use_E": true,
+    "use_B": false,
+    "multipoles": [2,3,4,5],
+    "additional_mask_primary": "none"
+  },
+  "secondary_robustness": {
+    "fields": ["Q_STOKES","U_STOKES"],
+    "mask": "official PR3 polarization common/in-product PMASK",
+    "status": "ROBUSTNESS_ONLY",
+    "rule": "must use a frozen cut-sky E/B leakage-control estimator before execution; may not replace primary result post hoc"
+  },
+  "spin2_model": {
+    "operator": "Gamma=eth^2 Psi",
+    "N_l": "sqrt((l+2)!/(l-2)!)",
+    "P_l": "|A|^2 q^(2l) [4*pi/(2l+1)] N_l^2"
+  },
+  "temperature_to_polarization_cross_prediction": {
+    "q_source": "primary frozen temperature pipeline when exact PR2/R2.02 bytes become available",
+    "polarization_q_refit": false,
+    "predicted_P3_over_P2": "(25/7) q_T^2",
+    "predicted_P4_over_P3": "(7/3) q_T^2",
+    "predicted_P5_over_P4": "(21/11) q_T^2"
+  },
+  "standalone_diagnostic_only": {
+    "q_E": "sqrt((7/25)*(P3/P2))",
+    "n_E": "-log2(q_E)",
+    "status": "diagnostic until q_T is independently frozen"
+  },
+  "axis_policy": {
+    "temperature_source_axis": "must be frozen upstream before PR3 polarization evaluation",
+    "polarization_axis_refit": false
+  },
+  "data_state_at_freeze": {
+    "PR3_product_metadata_seen": true,
+    "PR3_Q_U_pixel_values_seen": false,
+    "PR3_E_B_alms_seen": false,
+    "PR3_low_l_polarization_power_seen": false
+  },
+  "no_retune": "product, primary fields, l-range, E-only primary channel, harmonic normalization, dyadic base and power-ratio formulas are immutable after bytes are opened"
+}
