@@ -1,0 +1,25 @@
+{
+  "schema":"CIR_KERR_HORIZON_TWIST_SCALE_OFFSET_RECEIPT_V0_1",
+  "date":"2026-09-26",
+  "status":"PASS_EXACT_KERR_ALGEBRA_OPEN_PHASE_BINDING",
+  "exact":{
+    "Upsilon_H":"chi/sqrt(1-chi^2)",
+    "Theta_H":"2*pi*chi/sqrt(1-chi^2)",
+    "kappa_I":"ln(2)/(24*pi)"
+  },
+  "candidate":{
+    "Phi_spin":"Theta_H",
+    "delta_n_spin":"chi/(12*sqrt(1-chi^2))",
+    "shell_law":"q=2^(-n-delta_n_spin)"
+  },
+  "identifiability":{
+    "free_chi_fit_to_CMB":"FORBIDDEN",
+    "upstream_fixed_chi_then_CMB_test":"ADMISSIBLE"
+  },
+  "ELC2026":{
+    "classification":"POST_HOC_CONTAMINATED_ONLY",
+    "mean_n_cont":2.561074230987091,
+    "diagnostic_integer_n":2,
+    "diagnostic_chi":0.989149412559955
+  }
+}
