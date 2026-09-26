@@ -1,0 +1,42 @@
+{
+  "schema": "CIR_AOE_SAMEMAP_ZONAL_MAXDISP_NULL_AUDIT_V0_1",
+  "date": "2026-09-26",
+  "status": "PASS_AUDIT_ORTHOGONALITY_NOT_EVIDENTIAL",
+  "input": "2017 published SMICA ell=2,3 coefficients",
+  "same_map_axes": {
+    "joint_maxdisp_galactic_deg": [241.5301662642795, 61.321435350528084],
+    "ell2_maxdisp_galactic_deg": [244.8767745013419, 58.96551433333906],
+    "ell3_maxdisp_galactic_deg": [237.97529966122835, 63.12137750943768],
+    "ell2_ell3_undirected_separation_deg": 5.326580734247988,
+    "simple_isotropic_axis_null_p": 0.0043182616511093785,
+    "common_zonal_galactic_deg": [148.95585844507076, 5.978887847620947],
+    "common_zonal_Z23": 1.3106272302403985,
+    "zonal_vs_joint_maxdisp_separation_deg": 85.98907182874541,
+    "orthogonality_residual_deg": 4.010928171254591
+  },
+  "monte_carlo": {
+    "primary": {
+      "n": 100000,
+      "seed": 20260926,
+      "fibonacci_grid_points": 4096,
+      "p_orthogonality_equal_or_better": 0.3298367016329837,
+      "p_Z23_equal_or_larger": 0.22371776282237177,
+      "p_joint": 0.13466865331346686
+    },
+    "grid_control": {
+      "n": 30000,
+      "seed": 2026092602,
+      "fibonacci_grid_points": 8192,
+      "p_orthogonality_equal_or_better": 0.3002566581113963,
+      "p_Z23_equal_or_larger": 0.22735908803039898,
+      "p_joint": 0.12446251791606947
+    }
+  },
+  "verdicts": {
+    "ell2_ell3_alignment": "ANOMALOUS_UNDER_SIMPLE_ISOTROPIC_AXIS_NULL",
+    "zonal_maxdisp_orthogonality": "NOT_ANOMALOUS",
+    "common_zonal_score": "NOT_ANOMALOUS",
+    "physical_shadow_mechanism": "NOT_ADJUDICATED"
+  },
+  "no_catalog_target_used": true
+}
