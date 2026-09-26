@@ -1,0 +1,29 @@
+{
+  "schema":"CIR_C6_ARPL_PLANCK_PR3_HELDOUT_V0_1",
+  "date":"2026-09-27",
+  "status":"NON_DECISIVE",
+  "prediction":{"q":0.16666666666666666,"R_CMB_Mpc":13873.0,"d_Mpc":2312.1666666666665},
+  "source":{
+    "product":"Planck PR3 COM_PowerSpect_CMB-TT-full_R3.01.txt",
+    "D2":225.895,
+    "D2_minus":132.369,
+    "D2_plus":533.062,
+    "D3":936.920,
+    "D3_minus":450.471,
+    "D3_plus":1212.308
+  },
+  "result":{
+    "q_central":0.22182169230576443,
+    "n_cont":2.172527638983372,
+    "d_Mpc":3077.33233735787,
+    "fractional_q_residual_vs_1_over_6":0.3309301538345866,
+    "conservative_endpoint_q_interval":[0.09423818112303212,0.5642764013227791]
+  },
+  "verdict":{
+    "central_value_exact_hit":false,
+    "prediction_inside_conservative_interval":true,
+    "formal_exclusion":"NOT_ESTABLISHED",
+    "overall":"NON_DECISIVE"
+  },
+  "no_refit":true
+}
