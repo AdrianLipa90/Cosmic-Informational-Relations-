@@ -1,0 +1,33 @@
+{
+  "schema": "CIR_AOE_SPIN2_PR3_EE_ANCILLARY_DIAGNOSTIC_V0_1",
+  "date": "2026-09-26",
+  "status": "DATA_INSUFFICIENT_SECONDARY_DIAGNOSTIC",
+  "source_file": "COM_PowerSpect_CMB-EE-full_R3.01.txt",
+  "source_release": "Planck PR3",
+  "Dl": {
+    "2": {"value":0.11043700,"sigma":0.0614751615},
+    "3": {"value":0.03783000,"sigma":0.0396450884},
+    "4": {"value":0.01754611,"sigma":0.0235603232},
+    "5": {"value":0.04533970,"sigma":0.0162989593}
+  },
+  "derived": {
+    "q_E": 0.25911282305963473,
+    "n_E": 1.9483476810413916,
+    "q_n2": 0.25,
+    "fractional_q_offset_from_n2": 0.036451292238538935,
+    "sigma_q_linear_independent_approx": 0.15373743035846907,
+    "sigma_n_linear_independent_approx": 0.8559832190401838,
+    "D4_over_D3_observed": 0.46381469733016123,
+    "D4_over_D3_predicted_from_q23": 0.20307612954461388,
+    "D5_over_D4_observed": 2.5840314462863847,
+    "D5_over_D4_predicted_from_q23": 0.15730607862363774
+  },
+  "verdicts": {
+    "central_near_n2": "NUMERICALLY_YES",
+    "dyadic_n2": "NOT_ESTABLISHED",
+    "higher_l_central_closure": "POOR",
+    "formal_statistics": "OPEN_COVARIANCE_REQUIRED",
+    "primary_Q_U_map_test": "PENDING"
+  },
+  "no_retune": true
+}
