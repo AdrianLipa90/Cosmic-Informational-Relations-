@@ -1,0 +1,19 @@
+{
+  "schema":"CIR_GL3_TETRAHEDRAL_OCTUPOLE_IDENTIFIABILITY_RECEIPT_V0_1",
+  "date":"2026-09-26",
+  "status":"PASS_MATH_OPEN_PHYSICS",
+  "results":{
+    "normalized_H3_dimension":6,
+    "rotation_tangent_dimension":3,
+    "offdiagonal_shear_tangent_dimension":3,
+    "combined_tangent_rank":6,
+    "diagonal_traceless_strain_first_order":"INVISIBLE",
+    "diagonal_GL3_in_tetra_frame_all_orders":"AMPLITUDE_ONLY",
+    "first_order_Q_response":"deltaQ=12*offdiag(S)"
+  },
+  "verdict":{
+    "GL3_breaks_tetrahedral_axis_degeneracy":"MATHEMATICALLY_ALLOWED",
+    "unconstrained_GL3_fit_to_CMB":"FORBIDDEN_AS_NONPREDICTIVE",
+    "independent_PhaseNav_source_for_F":"OPEN"
+  }
+}
