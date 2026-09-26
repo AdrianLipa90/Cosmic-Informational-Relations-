@@ -1,0 +1,52 @@
+{
+  "schema": "CIR_AOE_RADIAL_TIDAL_GREEN_SHADOW_FREEZE_V0_1",
+  "status": "PROSPECTIVE_FOR_NEW_COEFFICIENT_PRODUCT",
+  "date": "2026-09-26",
+  "development_data_excluded_from_confirmation": [
+    "Planck 2013 SMICA coefficients from Polastri et al. Table 4/5",
+    "Planck 2013 NILC coefficients from Polastri et al. Table 4/5"
+  ],
+  "operator": "E_RR = d^2 G / dR^2",
+  "G": "1/sqrt(R^2+d^2-2*R*d*mu)",
+  "axis": {
+    "l_deg": 239.9881633256477,
+    "b_deg": 68.5117419161366,
+    "unoriented": true,
+    "no_refit": true
+  },
+  "primary_estimator": {
+    "r23": "sqrt(7/5)*abs(a30_axis/a20_axis)"
+  },
+  "interior_branch": {
+    "domain": "0<r23<5/3",
+    "x": "d/R=(3/5)*r23",
+    "n": "-log2(x)",
+    "held_out": [
+      "abs(g4/g3)=(9/10)*r23",
+      "abs(g5/g4)=(21/25)*r23"
+    ]
+  },
+  "exterior_branch": {
+    "domain": "0<r23<3",
+    "q": "R/d=r23/3",
+    "n": "-log2(q)",
+    "held_out": [
+      "abs(g4/g3)=(5/6)*r23",
+      "abs(g5/g4)=(2/3)*r23"
+    ]
+  },
+  "branch_discriminator": {
+    "both_possible": "0<r23<5/3",
+    "exterior_only": "5/3<=r23<3",
+    "model_fail": "r23>=3"
+  },
+  "dyadic": {
+    "condition": "geometric n is integer >=1",
+    "base": 2,
+    "offset": 0,
+    "no_refit": true
+  },
+  "screen_anchor": "CIR_CMB_LAST_SCATTERING_SCREEN_ANCHOR_V0_1",
+  "next_validating_data": "must be a low-l coefficient/map product not used to choose the k=2 operator",
+  "no_retune": "operator order, axis, branch equations, base and held-out ratio formulas are frozen before next validating product"
+}
