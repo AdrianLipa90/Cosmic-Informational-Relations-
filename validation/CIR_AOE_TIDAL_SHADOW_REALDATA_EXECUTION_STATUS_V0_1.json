@@ -1,0 +1,12 @@
+{
+  "schema": "CIR_AOE_TIDAL_SHADOW_REALDATA_EXECUTION_STATUS_V0_1",
+  "date": "2026-09-26",
+  "status": "BLOCKED_DATA_BYTES",
+  "target_file": "COM_CMB_IQU-smica_1024_R2.02_full.fits",
+  "archive_metadata_verified": true,
+  "payload_size_reported": "169M",
+  "reason": "Available web route exposes Planck archive metadata but not the binary FITS payload to the execution container; direct binary fetch is unavailable in this session.",
+  "interpretation": "Neither PASS nor FAIL of the radial-tidal model.",
+  "fallback_used": false,
+  "next_action": "Run validation/evaluate_cir_aoe_tidal_from_healpix_v0_1.py on the exact frozen FITS payload when bytes are available."
+}
