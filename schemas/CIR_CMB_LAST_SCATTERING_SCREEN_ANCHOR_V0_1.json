@@ -1,0 +1,28 @@
+{
+  "schema": "CIR_CMB_LAST_SCATTERING_SCREEN_ANCHOR_V0_1",
+  "status": "FROZEN_BEFORE_GREEN_SHADOW_LOW_L_EVALUATION",
+  "date": "2026-09-26",
+  "coordinate": "present-day transverse comoving distance",
+  "source": {
+    "citation": "Planck Collaboration VI, A&A 641 A6 (2020), DOI 10.1051/0004-6361/201833910",
+    "dataset": "TT,TE,EE+lowE+lensing baseline"
+  },
+  "inputs": {
+    "z_star": 1089.92,
+    "r_star_Mpc": 144.43,
+    "theta_star_times_100": 1.04110,
+    "D_M_zstar_Gpc": 13.873,
+    "sigma_D_M_Gpc": 0.025
+  },
+  "anchor": {
+    "R_CMB_Mpc": 13873.0,
+    "R_CMB_Gpc": 13.873,
+    "R_CMB_Gly_approx": 45.25
+  },
+  "dyadic_shells": {
+    "inside": "d_in=R_CMB*2^{-n}",
+    "outside": "d_out=R_CMB*2^{+n}",
+    "n_selected_by": "frozen q23 low-l estimator, not target catalog"
+  },
+  "no_refit": true
+}
