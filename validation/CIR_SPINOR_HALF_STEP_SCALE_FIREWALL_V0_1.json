@@ -1,0 +1,11 @@
+{
+  "schema":"CIR_SPINOR_HALF_STEP_SCALE_FIREWALL_V0_1",
+  "date":"2026-09-26",
+  "status":"NO_GO_UNTIL_NEW_BRIDGE",
+  "established_scale_generator":"T: nu -> nu + ln2",
+  "spinor_fact":"SU(2)->SO(3) gives projective/lifted 2pi/4pi recurrence",
+  "not_implied":"T^(1/2): nu -> nu + ln2/2",
+  "conditional_identity":"kappa*12pi=ln2/2",
+  "missing_premise":"12pi is a primitive physical scale-translation block",
+  "ELC2026_for_future_halfstep_model":"CONTAMINATED_POST_HOC_ONLY"
+}
