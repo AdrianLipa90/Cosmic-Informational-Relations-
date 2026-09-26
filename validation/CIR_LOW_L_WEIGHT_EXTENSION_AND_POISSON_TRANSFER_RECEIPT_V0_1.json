@@ -1,0 +1,25 @@
+{
+  "schema":"CIR_LOW_L_WEIGHT_EXTENSION_AND_POISSON_TRANSFER_RECEIPT_V0_1",
+  "date":"2026-09-26",
+  "status":"PASS_MATH_OPEN_PHYSICS",
+  "weight_extension":{
+    "dim_H2":5,
+    "dim_H3":7,
+    "edge_dimension":2,
+    "edge_weights":[-3,3],
+    "D3_split":["A1","A2"]
+  },
+  "TIR_label_crosswalk":{
+    "L3":7,
+    "L4":2,
+    "L5":5,
+    "identity":"L3=L5+L4=7"
+  },
+  "harmonic_transfer":{
+    "K_l":"q^l",
+    "rho23":"q*C23",
+    "dyadic_selector":"n_cont=log2(C23/rho23)"
+  },
+  "remaining_open_scalar":"C23=B3_planar/B2_planar",
+  "forbidden":"n=L4 without an independently derived radial/representation bridge"
+}
