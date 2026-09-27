@@ -1,0 +1,29 @@
+{
+  "schema":"CIR_C3_CHARGED_ALIGNMENT_BRIDGE_FREEZE_V0_1",
+  "date":"2026-09-27",
+  "status":"PROSPECTIVE_AFTER_PR4_ALIGNMENT_MOTIVATION",
+  "upstream_operator":{
+    "source":"pre-existing TIR minimal C3 compensator",
+    "relation":"Z X Z^-1 = omega X",
+    "degree_X":"+1 mod 3",
+    "degree_Xdagger":"-1 mod 3"
+  },
+  "sky_prediction":{
+    "octupole_sector":"C3 trivial selected-face sector",
+    "quadrupole_sector":"real span of m=+2 and m=-2 about the same axis s",
+    "Q2_eigenvalues":[1,1,4],
+    "MAMD_axis_relation":"n2=plus_or_minus s=n3",
+    "theta23_deg":0,
+    "quadrupole_MPV_abs_dot":0,
+    "quadrupole_area_axis":"plus_or_minus s"
+  },
+  "scale_prediction":"NONE_FROM_THIS_BRIDGE",
+  "contaminated":[
+    "Planck PR4 theta23=14.8 deg already opened",
+    "Planck2015 four-map l2/l3 multipole-vector files already opened",
+    "older WMAP and Planck alignment data already discussed",
+    "ELC2026 powers"
+  ],
+  "prospective_priority":"unopened PR4/NPIPE or later l2 multipole-vector/a_lm morphology",
+  "no_refit":true
+}
