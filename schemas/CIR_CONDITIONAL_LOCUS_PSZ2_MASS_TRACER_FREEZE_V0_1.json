@@ -1,0 +1,61 @@
+{
+  "schema":"CIR_CONDITIONAL_LOCUS_PSZ2_MASS_TRACER_FREEZE_V0_1",
+  "date":"2026-09-27",
+  "status":"FROZEN_BEFORE_OPENING_PSZ2_CATALOG",
+  "parent_locus":"CIR_CONDITIONAL_SEMANTIC_CENTRE_3D_LOCUS_V0_1",
+  "catalog":{
+    "name":"Planck PSZ2 SZ cluster catalogue",
+    "target_rows":"confirmed/catalogued SZ sources with finite sky coordinates and finite redshift",
+    "mass_field":"use published M500 proxy if present only as secondary metadata",
+    "reason":"all-sky gravitationally selected massive-cluster tracer; independent of low-l CMB morphology construction"
+  },
+  "cosmology":{
+    "H0_km_s_Mpc":67.4,
+    "Omega_m":0.315,
+    "Omega_Lambda":0.685,
+    "distance":"flat-LCDM line-of-sight comoving distance from catalog redshift"
+  },
+  "candidate":{
+    "radius_Mpc":2312.1666666666665,
+    "axis_galactic_deg":[239.9881633256477,68.5117419161366],
+    "antipodal":true
+  },
+  "primary_statistic":{
+    "name":"D_NN",
+    "definition":"minimum 3D Euclidean comoving distance from either antipodal candidate point to any eligible PSZ2 cluster",
+    "no_mass_cut":true
+  },
+  "primary_null":{
+    "name":"fixed-latitude longitude rotation",
+    "draws":100000,
+    "rule":"hold |b|=68.5117419161366 deg and radius fixed; draw unoriented axis longitude uniformly; include both antipodes; recompute D_NN against the unchanged catalog",
+    "p_value":"(1+count(D_NN_null<=D_NN_obs))/(1+Ndraw)",
+    "reason":"preserves the candidate Galactic latitude and therefore reduces sensitivity to the Planck Galactic selection mask"
+  },
+  "secondary_null":{
+    "name":"isotropic unoriented axes",
+    "draws":100000,
+    "purpose":"diagnostic only"
+  },
+  "secondary_outputs":[
+    "nearest cluster name/id",
+    "cluster l,b,z",
+    "cluster comoving radius",
+    "3D separation",
+    "angular separation",
+    "radial separation",
+    "published M500 proxy and its catalog percentile if available"
+  ],
+  "epistemic_boundary":{
+    "positive_result":"mass-tracer coincidence only; not proof of a black-hole/horizon source",
+    "negative_result":"does not falsify the algebra because the physical locus bridges remain conditional and need not correspond to a PSZ2 cluster"
+  },
+  "forbidden":[
+    "change catalog after seeing result",
+    "apply a post-hoc redshift or mass cut",
+    "expand angular/radial window to include an attractive cluster",
+    "choose only one antipodal branch after inspection",
+    "interpret nearest cluster as the source without an independent mechanism"
+  ],
+  "no_refit":true
+}
