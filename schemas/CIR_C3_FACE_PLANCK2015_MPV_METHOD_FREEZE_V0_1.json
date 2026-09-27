@@ -1,0 +1,44 @@
+{
+  "schema":"CIR_C3_FACE_PLANCK2015_MPV_METHOD_FREEZE_V0_1",
+  "date":"2026-09-27",
+  "status":"FROZEN_BEFORE_OPENING_PINKWART_SCHWARZ_PLANCK2015_MPV_FILES",
+  "parent_model":"CIR_C3_SELECTED_TETRAHEDRAL_FACE_FREEZE_V0_1",
+  "dataset":{
+    "paper":"Pinkwart & Schwarz, Phys. Rev. D 98, 083536 (2018), arXiv:1803.07473",
+    "repository":"MPinkwart/MPV-files-Pinkwart-Schwarz",
+    "maps":["COMMANDER","NILC","SEVEM","SMICA"],
+    "release":"Planck 2015 / second public release full-mission cleaned maps",
+    "multipole":3
+  },
+  "predictions":{
+    "absolute_pairwise_dot":[0.3333333333333333,0.3333333333333333,0.3333333333333333],
+    "missing_vertex_reconstruction":"choose projective signs so all three signed pairwise dots are negative when possible; s_rec=-sum(v_i)/norm(sum(v_i))",
+    "octupole_MAMD_axis":"plus_or_minus s_rec"
+  },
+  "primary_numeric_residual":{
+    "name":"R_face",
+    "formula":"sqrt(mean_{i<j} (abs(v_i dot v_j)-1/3)^2)",
+    "interpretation":"zero is exact tetrahedral-face morphology; report numeric residual for every map"
+  },
+  "secondary_statistics":[
+    "mean_abs_dot",
+    "min_abs_dot",
+    "max_abs_dot",
+    "three pairwise angles arccos(abs(dot))",
+    "s_rec galactic longitude/latitude",
+    "angular separation of s_rec from the already frozen CIR AoE axis"
+  ],
+  "verdict_policy":{
+    "formal_pass_fail":"NOT_ASSIGNED because the repository files do not encode per-vector covariance and no null-calibrated R_face threshold is frozen",
+    "allowed_language":"EXACT_MATCH only if numerical precision gives all abs dots=1/3; otherwise report residual and cross-map stability, with NON_DECISIVE statistical verdict",
+    "no_best_map_selection":true
+  },
+  "forbidden":[
+    "change 1/3 after opening files",
+    "discard SEVEM after seeing results",
+    "choose projective signs to minimize R_face; R_face is sign invariant",
+    "fit GL3 deformation",
+    "change the C3-face parent geometry"
+  ],
+  "no_refit":true
+}
