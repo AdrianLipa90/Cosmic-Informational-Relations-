@@ -1,0 +1,24 @@
+{
+  "schema":"CIR_CONDITIONAL_SEMANTIC_CENTRE_3D_LOCUS_V0_1",
+  "date":"2026-09-27",
+  "status":"DOUBLY_CONDITIONAL_NO_CATALOG_OPENED",
+  "radius_Mpc":2312.1666666666665,
+  "reference_redshift_flat_LCDM":0.6109123985467981,
+  "galactic_plus_deg":[239.9881633256477,68.5117419161366],
+  "galactic_minus_deg":[59.9881633256477,-68.5117419161366],
+  "icrs_plus_deg":[173.01886567517522,16.021504653218],
+  "icrs_minus_deg":[353.0188656751752,-16.021504653218],
+  "galactic_cartesian_plus_Mpc":[-423.63703815,-733.41092436,2151.45410604],
+  "axis_spread_deg":{
+    "mean":6.028879178280366,
+    "rms":6.43935155714509,
+    "max":9.626345547945013
+  },
+  "transverse_spread_Mpc":{
+    "rms_sine":259.312820766004,
+    "max_sine":386.6453802807128
+  },
+  "anchor_only_radial_sigma_Mpc":4.166666666666667,
+  "catalog_opened":false,
+  "physical_detection":false
+}
