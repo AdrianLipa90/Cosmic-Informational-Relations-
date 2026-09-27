@@ -1,0 +1,57 @@
+{
+  "schema":"CIR_CONDITIONAL_LOCUS_PSZ2_MASS_TRACER_AUDIT_V0_1",
+  "date":"2026-09-27",
+  "status":"FAIL_NO_SPATIAL_EXCESS",
+  "freeze":"CIR_CONDITIONAL_LOCUS_PSZ2_MASS_TRACER_FREEZE_V0_1",
+  "catalog":{
+    "official":"Planck PSZ2 / CDS VizieR J/A+A/594/A27/psz2",
+    "source_mirror_repo":"carlzimmerman/zimmerman-formula",
+    "source_mirror_ref":"e3511273974837d69f60c54e8bada40d646ec9b9",
+    "source_mirror_path":"real_research/data/psz2_union.tsv",
+    "git_blob_sha":"bc1d77017b3aacfb93042c583c2d18cc203c122b",
+    "total_rows":1653,
+    "eligible_positive_redshift_rows":1094,
+    "missing_nonpositive_redshift_rows":559,
+    "finite_mass_eligible_rows":1094
+  },
+  "candidate":{
+    "radius_Mpc":2312.1666666666665,
+    "l_deg":239.9881633256477,
+    "b_deg":68.5117419161366,
+    "antipodal":true
+  },
+  "cosmology":{"H0_km_s_Mpc":67.4,"Omega_m":0.315,"Omega_Lambda":0.685},
+  "nearest":{
+    "index":1030,
+    "name":"PSZ2 G228.16+75.20",
+    "l_deg":228.1607002,
+    "b_deg":75.2057066,
+    "z":0.545,
+    "MSZ_1e14_Msun":10.417826,
+    "comoving_Mpc":2100.717525627427,
+    "angular_unoriented_deg":7.607997712153787,
+    "radial_abs_Mpc":211.4491410392393,
+    "distance_3d_Mpc":360.868518161784,
+    "MSZ_percentile_among_eligible":98.44606946983546
+  },
+  "primary_null":{
+    "type":"fixed absolute Galactic latitude, uniform longitude, both antipodes",
+    "seed":20260927,
+    "draws":100000,
+    "count_distance_le_observed":81119,
+    "p_lower_tail":0.8111918880811192,
+    "quantiles_Mpc":{"q01":48.22930501295995,"q05":84.1138337320715,"median":257.8015130238414,"q95":460.2924510601299}
+  },
+  "secondary_isotropic":{
+    "draws":100000,
+    "p_lower_tail":0.47028529714702855,
+    "quantiles_Mpc":{"q01":83.98556877501014,"q05":147.98878184324963,"median":375.53411519180725,"q95":835.689597625532}
+  },
+  "verdict":{
+    "PSZ2_mass_tracer_excess":"FAIL_NO_EVIDENCE",
+    "nearest_cluster_mass":"SECONDARY_HIGH_PERCENTILE_NO_PRIMARY_CREDIT",
+    "conditional_locus_physical_source":"NOT_ESTABLISHED",
+    "representation_math":"UNAFFECTED"
+  },
+  "no_refit":true
+}
