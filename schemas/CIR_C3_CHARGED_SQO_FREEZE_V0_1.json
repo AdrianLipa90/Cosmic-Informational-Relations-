@@ -1,0 +1,19 @@
+{
+  "schema":"CIR_C3_CHARGED_SQO_FREEZE_V0_1",
+  "date":"2026-09-27",
+  "status":"FROZEN_BEFORE_NUMERICAL_PR4_SQO_EXTRACTION",
+  "prediction":{
+    "S_QO":"4/(3*sqrt(3))",
+    "S_QO_numeric":0.769800358919501,
+    "quadrupole_area_vector_magnitude":1.0,
+    "quadrupole_area_axis":"plus_or_minus s"
+  },
+  "statistic":"S_QO=(1/3) sum_{i<j} abs(w2 dot w3_ij), with unnormalised area vectors",
+  "already_seen_before_freeze":[
+    "qualitative PR4 statement that quadrupole/octupole alignment is high",
+    "PR4 principal-axis separation about 14.8 deg",
+    "older Planck/WMAP S_QO/alignment discussions"
+  ],
+  "not_seen_before_freeze":"a numerical PR4 S_QO value for the Jung et al. PR4 Commander/SEVEM analysis",
+  "no_refit":true
+}
