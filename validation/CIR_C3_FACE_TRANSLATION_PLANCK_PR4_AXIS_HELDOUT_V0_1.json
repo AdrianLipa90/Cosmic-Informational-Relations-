@@ -1,0 +1,29 @@
+{
+  "schema":"CIR_C3_FACE_TRANSLATION_PLANCK_PR4_AXIS_HELDOUT_V0_1",
+  "date":"2026-09-27",
+  "status":"FAIL",
+  "model_prediction":{
+    "octupole_principal_axis":"n3=plus_or_minus s",
+    "quadrupole_principal_axis":"n2 dot s=0",
+    "theta23_deg":90.0,
+    "abs_dot_n2_n3":0.0
+  },
+  "heldout":{
+    "dataset":"Planck PR4 NPIPE Commander",
+    "method":"Power tensor principal eigenvectors",
+    "theta23_deg":14.8,
+    "abs_dot_approx":0.9668,
+    "reported_p_values":[0.08,0.035],
+    "source":"Aluri & Patel, Physics Letters B 836 (2023) 137593"
+  },
+  "residual":{
+    "absolute_angle_deg":75.2
+  },
+  "verdict":{
+    "C3_face_plus_pure_vertex_translation":"FAIL",
+    "C3_face_cross_l_scale_coefficient_for_same_physical_model":"RETIRED",
+    "C6_ARPL_q_1_over_6":"UNAFFECTED_OPEN",
+    "representation_identities":"UNAFFECTED"
+  },
+  "no_refit":true
+}
