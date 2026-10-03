@@ -52,6 +52,11 @@ CIR uses the TIR claim hierarchy.
 | temporal \(U(1)\) → local \(R_{\mu\nu}^{BE}\) source binding | B | OPEN |
 | absolute \(\alpha_I/m_I\) physical normalization | F/B | OPEN |
 | dimensionful cosmological scale / \(\rho_{crit}\) binding | B/F | OPEN |
+| CIR relational log-scale rate \(H_D=d\ln D/dt=\kappa\dot\Phi_D\) | B | PASS EXACT on declared representation |
+| GREMLIN/RFC five-factor carrier \(Q=B\omega N/(AR)\) identifiability | B | PASS CONDITIONAL EXACT — rank 1 / nullity 4 |
+| CIR scale phase \(\Phi_D\) ↔ QHTRI dynamical phase \(\Phi_Q\) registry | B | OPEN PHYSICAL BINDING |
+| RFC source density \(\rho_E\) → QHTRI effective potential \(U_{eff}\) | B | OPEN PHYSICAL BINDING |
+| Dimensionless radial normalization \(Q/Q_*\) for hyperbolic-coordinate use | B/F | OPEN PHYSICAL BINDING |
 | CIR cosmological source dynamics | B | PARTIAL EXACT CRITERIA / PHYSICAL SOURCE BINDINGS OPEN |
 | Dark-energy mechanism | B/C/E | NOT YET CLASSIFIED AS A PHYSICAL RESULT |
 | Dark-matter mechanism | B/C/E | NOT YET CLASSIFIED AS A PHYSICAL RESULT |
