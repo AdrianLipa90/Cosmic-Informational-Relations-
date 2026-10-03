@@ -1,0 +1,16 @@
+{
+  "schema": "CIR_SOURCE_PHASE_LOGSCALE_PARENT_PIN_V0_1",
+  "date": "2026-10-04",
+  "status": "PINNED_FOR_CANDIDATE_BRANCH",
+  "cir_base_commit": "cbe7cb292d6f164b656ba38a051b7914c40fbad2",
+  "tir_parent_commit": "853032e019824b836de43634d949da5566396153",
+  "gremlin_parent_commit": "b0000828238e0cd244f5eb1fb679155315df372f",
+  "gremlin_sources": [
+    "spec/GREMLIN_SEMANTIC_ORBITAL_RFC_SOURCE_DENSITY_V0_4.md",
+    "spec/GREMLIN_ORBIT_SOURCE_COUPLING_IDENTIFIABILITY_V0_8.md"
+  ],
+  "qhtri_monograph_reported_baseline": "d8e07571ef8132bfa1069cff27c9cca8b191853a",
+  "qhtri_source_equation": "dPhi_Q/dt = -U/eta_phi",
+  "authority": "CANDIDATE_BRANCH_ONLY",
+  "main_untouched": true
+}
