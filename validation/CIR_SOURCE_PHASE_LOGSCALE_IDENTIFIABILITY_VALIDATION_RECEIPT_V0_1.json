@@ -1,0 +1,40 @@
+{
+  "schema": "CIR_SOURCE_PHASE_LOGSCALE_IDENTIFIABILITY_VALIDATION_RECEIPT_V0_1",
+  "date": "2026-10-04",
+  "status": "PASS",
+  "checks": {
+    "kappa_block_identity": true,
+    "dlogD_equals_kappa_phidot": true,
+    "four_null_rescalings_preserve_Q": true,
+    "null_vectors_orthogonal_to_log_gradient": true,
+    "carrier_log_jacobian_rank_one": true,
+    "nullspace_basis_rank_four": true,
+    "same_cell_energy_cancels_AR": true,
+    "conditional_phase_transfer_sign_and_scale": true
+  },
+  "epistemic_boundary": {
+    "exact_or_conditional_exact": [
+      "dlnD/dt = kappa*dPhi_D/dt on declared CIR representation",
+      "five-factor Q-only source Jacobian has rank one",
+      "four independent multiplicative null directions preserve Q",
+      "same-cell RFC integration cancels A*R"
+    ],
+    "open_physical_binding": [
+      "Phi_Q to Phi_D registry",
+      "rho_E to U_eff law",
+      "dimensionless source-density normalization Q_star",
+      "D to cosmological metric/observable binding",
+      "H_D to measured Hubble-like rate"
+    ],
+    "forbidden": [
+      "Q equals H",
+      "raw dimensionful Q used directly as tanh argument",
+      "H0-fitted source normalization presented as derivation"
+    ]
+  },
+  "execution": {
+    "validator": "validation/validate_cir_source_phase_logscale_identifiability_v0_1.py",
+    "local_validation": "PASS",
+    "deterministic": true
+  }
+}
