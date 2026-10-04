@@ -5,430 +5,474 @@ Date: 2026-10-04
 
 ## 1. Scope
 
-This note separates three objects that must not be collapsed:
+This note separates the exact CIR log-scale representation, the QHTRI dynamical phase law, and the GREMLIN/RFC source-density carrier.
 
-1. the exact CIR log-scale representation,
-2. the QHTRI dynamical phase law,
-3. the GREMLIN/RFC source-density carrier.
+No value of \(H_0\), no cosmological distance datum, and no target redshift is used to fix a coefficient.
 
-The objective is to determine exactly what follows when they are connected, and exactly which physical bindings are still missing.
+Two follow-on gates now sharpen the original bridge:
 
-No value of (H_0), no cosmological distance datum, and no target redshift is used to fix any coefficient in this note.
+- \`CIR_PHASE_REGISTRY_GATE_V0_1.md\`;
+- \`CIR_DENSITY_TO_POTENTIAL_GATE_V0_1.md\`.
+
+They supersede the earlier use of an arbitrary continuous phase slope \(\lambda_\Phi\) whenever the registry is required to be a genuine \(U(1)\) homomorphism, and they resolve the density-versus-extensive-energy typing.
 
 ## 2. Exact CIR log-scale identity
 
-Let (D(t)>0) be a declared dimensionless multiplicative scale coordinate and define
+Let \(D(t)>0\) be a dimensionless multiplicative scale coordinate,
 
-[
+\[
+\nu_D(t):=\ln D(t).
+\]
 
-u_D(t):=ln D(t).
-]
+On the declared CIR representation branch,
 
-On the CIR representation branch, let
-
-[
-
-u_D=kappaPhi_D,
-qquad
-kappa=rac{ln 2}{24pi}.
-]
-
-Then
-
-[
-D=e^{kappaPhi_D}.
-]
-
-For differentiable (D,Phi_D),
-
-[
-oxed{
-H_D
-:=rac{dln D}{dt}
-=rac{dot D}{D}
-=kappadotPhi_D.
+\[
+\boxed{
+\nu_D=\kappa\Phi_D,
+\qquad
+\kappa=\frac{\ln2}{24\pi}.
 }
-]
+\]
 
-This is an exact differential identity on the declared representation.
+Therefore
+
+\[
+D=e^{\kappa\Phi_D}
+\]
+
+and, wherever differentiable,
+
+\[
+\boxed{
+H_D
+:=
+\frac{d\ln D}{dt}
+=
+\frac{\dot D}{D}
+=
+\kappa\dot\Phi_D.
+}
+\]
+
+This is exact on the declared representation.
 
 ### Firewall
 
-(H_D) is a relational log-scale rate. It is **not** automatically the FLRW Hubble parameter.
+\(H_D\) is a relational log-scale rate. It is not automatically the FLRW Hubble parameter.
 
-The further identification
+The identification
 
-[
-H_D=H_{m FLRW}=dot a/a
-]
+\[
+H_D=H_{\rm FLRW}=\frac{\dot a}{a}
+\]
 
-requires an independent physical map such as (D=a/a_star), or another declared observable/metric binding. The present CIR repository does not yet close that gate.
+requires an independent metric/observable map such as \(D=a/a_\star\), or another source-backed cosmological scale binding.
 
-## 3. Phase-type firewall
+## 3. Phase registry
 
-QHTRI supplies a phase-mechanics law
+QHTRI carries a phase-action law
 
-[
-dotPhi_Q=-rac{U}{eta_phi}.
-]
+\[
+\Phi_Q=\frac{S_Q}{\eta_\phi},
+\qquad
+\dot\Phi_Q=-\frac{E_Q}{\eta_\phi},
+\]
 
-The scale phase (Phi_D) and the QHTRI phase (Phi_Q) are provenance-distinct until a transfer map is supplied.
+after a carrier action scale and source energy have been admitted.
 
-The minimal affine phase-transfer candidate is
+The CIR phase \(\Phi_D\) and QHTRI phase \(\Phi_Q\) remain provenance-distinct until a registry is supplied.
 
-[
-oxed{
-Phi_D=lambda_PhiPhi_Q+Phi_0
-}
-]
+For a general real-coordinate map one could write
 
-with dimensionless (lambda_Phi), fixed independently of cosmological target data.
+\[
+\Phi_D=\lambda_\Phi\Phi_Q+\Phi_0.
+\]
 
-If (lambda_Phi) and (Phi_0) are constant, then
+However, the dedicated phase-registry gate proves that if the physical map is required to be a continuous group homomorphism
 
-[
-oxed{
-H_D
-=-rac{kappalambda_Phi}{eta_phi}U.
-}
-]
-
-The special case (lambda_Phi=1) is admissible only after an exact same-phase registry is proven. It must not be assumed by symbol reuse.
-
-## 4. GREMLIN/RFC source-density carrier
-
-The GREMLIN RFC source-density branch defines
-
-[
-Q
-:=rac{Bomegamathcal N}{AR},
-qquad
-AR=A,R,
-]
-
-and
-
-[
-ho_E
-=
-Q(	ildephi+kappa).
-]
-
-The parent typing is
-
-[
-V_R:=AR,
-qquad
-n_R:=rac{mathcal N}{AR},
-qquad
-epsilon_Psi:=Bomega(	ildephi+kappa),
-qquad
-ho_E=n_Repsilon_Psi.
-]
-
-Therefore (Q) is a source-density prefactor. It is not a dimensionless radial coordinate.
-
-### Dimensional firewall for the hyperbolic-disk candidate
-
-A Poincare-disk coordinate of the form
-
-[
-z=	anh(chi/2)e^{i	heta}
-]
-
-requires dimensionless (chi).
-
-Accordingly the raw assignment
-
-[
-chi=Q=rac{Bomegamathcal N}{AR}
-]
-
-is not dimensionally closed on the current typed source branch.
-
-An admissible form is instead
-
-[
-oxed{
-hatchi:=rac{Q}{Q_star},
-qquad
-z=	anh(hatchi/2)e^{i	heta},
-}
-]
-
-where (Q_star>0) is an independently derived source-density scale. (Q_star) may not be fitted to (H_0) or chosen after inspecting the target cosmological observable.
-
-## 5. Carrier identifiability theorem
-
-Assume (B,omega,mathcal N,A,R>0), and assume an observable depends on these five source variables only through
-
-[
-Q=rac{Bomegamathcal N}{AR}.
-]
-
-Define logarithmic coordinates
-
-[
-x=
-(ln B,lnomega,lnmathcal N,ln A,ln R)^T.
-]
-
-Then
-
-[
-ln Q
-=
-c^T x,
-qquad
-c=(1,1,1,-1,-1)^T.
-]
-
-Hence
-
-[
-
-abla_xln Q=c,
-]
-
-so the source-to-carrier Jacobian has rank one.
-
-Therefore its nullspace has dimension four:
-
-[
-oxed{
-operatorname{rank}J_Q=1,
-qquad
-dimker J_Q=4.
-}
-]
-
-Equivalently, for any (vinmathbb R^5) satisfying
-
-[
-v_B+v_omega+v_N-v_A-v_R=0,
-]
-
-the transformation
-
-[
-(B,omega,mathcal N,A,R)
-mapsto
-(e^{v_B}B,e^{v_omega}omega,e^{v_N}mathcal N,e^{v_A}A,e^{v_R}R)
-]
-
-leaves (Q) invariant.
-
-### Consequence
-
-No collection of observables of the form
-
-[
-y_i=F_i(Q)
-]
-
-can locally identify the five factors separately without additional independent source constraints.
-
-If
-
-[
-dotPhi_D=mathcal F(Q)
-]
-
-or
-
-[
-H_D=mathcal H(Q),
-]
-
-the same four-dimensional carrier degeneracy remains.
-
-This extends the GREMLIN v0.8 source/coupling identifiability principle from the two-factor orbital invariant
-
-[
-K_{m orb}=mu_{m source}eta_G
-]
-
-to the five-factor RFC source-density carrier.
-
-## 6. Density-to-phase bridge: two distinct physical branches
-
-The QHTRI law uses a potential energy (U), whereas GREMLIN/RFC supplies an energy-density-like source (ho_E). They cannot be equated without a volume/kernel map.
-
-Introduce an independently sourced effective support volume (V_{m eff}) and a dimensionless response functional (mathcal C):
-
-[
-U_{m eff}
-=
-V_{m eff},ho_E,mathcal C.
-]
-
-Then the conditional bridge is
-
-[
-oxed{
-H_D
-=
--rac{kappalambda_Phi}{eta_phi}
-V_{m eff}
-rac{Bomegamathcal N}{AR}
-(	ildephi+kappa)
-mathcal C.
-}
-]
-
-All factors outside the exact CIR identity remain typed physical bindings.
-
-### Cell-integrated special case
-
-If, and only if, the QHTRI potential is identified with the energy of exactly the same RFC relational cell,
-
-[
-V_{m eff}=V_R=AR,
-qquad
-mathcal C=1,
-]
+\[
+U(1)\to U(1),
+\]
 
 then
 
-[
-U_{m cell}
-=
-ho_E AR
-=
-Bomegamathcal N(	ildephi+kappa),
-]
-
-and therefore
-
-[
-oxed{
-H_D
-=
--rac{kappalambda_Phi}{eta_phi}
-Bomegamathcal N(	ildephi+kappa).
+\[
+\boxed{
+\lambda_\Phi=m\in\mathbb Z.
 }
-]
+\]
 
-The factor (AR) cancels.
+On a fixed lifted branch,
 
-This is important: (Bomegamathcal N/(AR)) controls the **local density** branch, but an integrated same-cell phase-energy branch need not retain (AR).
+\[
+\Phi_D=m\Phi_Q+\Phi_0+2\pi k,
+\qquad
+\dot\Phi_D=m\dot\Phi_Q.
+\]
 
-Therefore the statement “(Bomega N/AR) directly drives the cosmic log-scale rate” is not yet justified. The answer depends on whether the phase responds to a local density, an integrated cell energy, or another nonlocal/source kernel.
+If the registry is an isomorphism, \(m=\pm1\). If it is additionally orientation-preserving,
 
-## 7. Minimal source-to-scale architecture
+\[
+\boxed{m=1.}
+\]
 
-The current admissible architecture is
+Hence the registry slope is not a cosmological fit parameter on the same-phase branch.
 
-[
-(B,omega,mathcal N,A,R,	ildephi)
-	o
-ho_E
-	o
-U_{m eff}
-	o
-Phi_Q
-	o
-Phi_D
-	o
+## 4. GREMLIN/RFC source-density carrier
 
-u_D=ln D.
-]
+The RFC/GREMLIN branch defines
 
-In differential form,
-
-[
-oxed{
-H_D
+\[
+\boxed{
+\rho_G
 =
-kappadotPhi_D
-=
--rac{kappalambda_Phi}{eta_phi}U_{m eff}.
+\frac{B\omega\mathcal N}{AR}
+(\tilde\phi+\kappa),
+\qquad
+AR=A\,R.
 }
-]
+\]
 
-The unresolved physical content is concentrated in
+Equivalently,
 
-[
-(ho_E,	ext{geometry},	ext{holonomy},	ext{orbit})
-longrightarrow
-U_{m eff},
-]
+\[
+V_R:=AR,
+\qquad
+n_R:=\frac{\mathcal N}{V_R},
+\]
 
-and in the phase-transfer coefficient/map between (Phi_Q) and (Phi_D).
+\[
+\epsilon_\Psi:=B\omega(\tilde\phi+\kappa),
+\qquad
+\rho_G=n_R\epsilon_\Psi.
+\]
 
-## 8. No-(H_0)-fit rule
+Thus
 
-Any dimensionful rate emerging from this bridge must be fixed upstream from source dynamics.
+\[
+Q:=\frac{B\omega\mathcal N}{AR}
+\]
 
-A generic normalized form may be written
+is a source-density prefactor, not a dimensionless radial coordinate.
 
-[
+### Hyperbolic-coordinate firewall
+
+A coordinate such as
+
+\[
+z=\tanh(\chi/2)e^{i\theta}
+\]
+
+requires dimensionless \(\chi\).
+
+Therefore
+
+\[
+\chi=Q
+\]
+
+is not typed on the current source branch. A dimensionally admissible candidate is
+
+\[
+\boxed{
+\hat\chi=\frac{Q}{Q_\star},
+\qquad
+z=\tanh(\hat\chi/2)e^{i\theta},
+}
+\]
+
+where \(Q_\star\) must be fixed independently of cosmological targets.
+
+## 5. Five-factor carrier identifiability theorem
+
+Assume \(B,\omega,\mathcal N,A,R>0\) and that an observable depends on those variables only through
+
+\[
+Q=\frac{B\omega\mathcal N}{AR}.
+\]
+
+Use logarithmic coordinates
+
+\[
+x=
+(\ln B,\ln\omega,\ln\mathcal N,\ln A,\ln R)^T.
+\]
+
+Then
+
+\[
+\ln Q=c^Tx,
+\qquad
+c=(1,1,1,-1,-1)^T.
+\]
+
+Hence
+
+\[
+\boxed{
+\operatorname{rank}J_Q=1,
+\qquad
+\dim\ker J_Q=4.
+}
+\]
+
+For any \(v\in\mathbb R^5\) satisfying
+
+\[
+v_B+v_\omega+v_N-v_A-v_R=0,
+\]
+
+the positive multiplicative rescaling
+
+\[
+(B,\omega,\mathcal N,A,R)
+\mapsto
+(e^{v_B}B,e^{v_\omega}\omega,e^{v_N}\mathcal N,e^{v_A}A,e^{v_R}R)
+\]
+
+leaves \(Q\) invariant.
+
+Therefore \(Q\)-only observations cannot identify all five factors separately without additional independent source constraints.
+
+This is the five-factor counterpart of the GREMLIN v0.8 product-identifiability firewall.
+
+## 6. Exact cell-integration identity
+
+RFC RF-S16 supplies
+
+\[
+j_{Q,a}=q_0\frac{\mathcal N_a}{V_a},
+\qquad
+\epsilon_{Q,a}
+=
+\frac{B_a\omega_a}{q_0}
+(\phi_a+\kappa),
+\]
+
+so
+
+\[
+\rho_{G,a}
+=
+\epsilon_{Q,a}j_{Q,a}.
+\]
+
+Multiplying by the same cell volume gives
+
+\[
+\boxed{
+E_a
+=
+V_a\rho_{G,a}
+=
+B_a\omega_a\mathcal N_a(\phi_a+\kappa).
+}
+\]
+
+Both \(V_a\) and the carrier bookkeeping quantum \(q_0\) cancel.
+
+For multiple cells,
+
+\[
+\boxed{
+E_\Sigma
+=
+\sum_aV_a\rho_{G,a}
+=
+\sum_aB_a\omega_a\mathcal N_a(\phi_a+\kappa).
+}
+\]
+
+This cancellation is cellwise and does not require a homogeneous multi-cell state.
+
+## 7. Density and carrier energy are distinct typed objects
+
+RF-L2 places \(U_L\) in the scalar-field Lagrangian density and gives
+
+\[
+T^{\rm pot}_{\mu\nu}=-U_Lg_{\mu\nu}.
+\]
+
+RF-I1/RF-E17 explicitly distinguish the local scalar-potential density from an integrated cell energy:
+
+\[
+\boxed{
+H_{\rm clk}=V_{\rm cell}U_{\rm clk}.
+}
+\]
+
+Therefore the QHTRI action-phase law with an ordinary action scale must consume an extensive energy coordinate,
+
+\[
+\boxed{
+\dot\Phi_Q=-\frac{E_Q}{\eta_\phi},
+}
+\]
+
+not a raw energy density, unless a separate action-density scale is declared.
+
+The physical identification
+
+\[
+E_Q
+\stackrel{?}{=}
+E_\Sigma
+\]
+
+remains a source-binding gate.
+
+## 8. Conditional source-to-log-scale equation
+
+Compose:
+
+\[
+H_D=\kappa\dot\Phi_D,
+\]
+
+\[
+\dot\Phi_D=m\dot\Phi_Q,
+\]
+
+\[
+\dot\Phi_Q=-\frac{E_Q}{\eta_\phi}.
+\]
+
+Then
+
+\[
+\boxed{
 H_D
 =
-kappa,Omega_star
-f(hatchi,mathcal H,mathcal O,ldots),
-]
+-\frac{\kappa m}{\eta_\phi}E_Q.
+}
+\]
 
-but both (Omega_star) and the source-density normalizer (Q_star) must be derived from independently specified source/geometry/QHTRI quantities.
+If the QHTRI action source is physically admitted as the same RFC extensive source,
+
+\[
+E_Q=E_\Sigma,
+\]
+
+then
+
+\[
+\boxed{
+H_D
+=
+-\frac{\kappa m}{\eta_\phi}
+\sum_a
+B_a\omega_a\mathcal N_a(\phi_a+\kappa).
+}
+\]
+
+For the orientation-preserving isomorphic registry \(m=1\),
+
+\[
+\boxed{
+H_D
+=
+-\frac{\kappa}{\eta_\phi}
+\sum_a
+B_a\omega_a\mathcal N_a(\phi_a+\kappa).
+}
+\]
+
+This equation contains no \(H_0\) fit.
+
+It remains conditional because the QHTRI source-energy binding, support selection, action-scale calibration, and cosmological interpretation of \(D\) are not yet physically closed.
+
+## 9. Local-density alternative
+
+A local phase-field law could instead use an action-density scale \(\eta_\phi^{(V)}\):
+
+\[
+\partial_t\Phi_Q(x)
+=
+-\frac{\rho_G(x)}{\eta_\phi^{(V)}}.
+\]
+
+This is not the same interface as
+
+\[
+\dot\Phi_Q=-E_Q/\eta_\phi.
+\]
+
+The two may be related only after a declared support-volume map.
+
+Thus the earlier ambiguity “does \(AR\) remain or cancel?” is now type-resolved:
+
+- \(AR\) remains in the **local density** \(\rho_G\);
+- \(AR\) cancels in the **complete same-cell extensive energy** \(V_R\rho_G\);
+- a partial/nonlocal response is represented by an independently sourced support kernel, not by silently changing the volume factor.
+
+## 10. Dyadic representation consequence
+
+The CIR representation satisfies
+
+\[
+\Delta\Phi_D=24\pi
+\Longrightarrow
+\Delta\nu_D=\ln2
+\Longrightarrow
+D\mapsto2D.
+\]
+
+Under a degree-\(m\) U(1) registry,
+
+\[
+\Delta\Phi_Q=\frac{24\pi}{m}.
+\]
+
+For the orientation-preserving isomorphism,
+
+\[
+\boxed{
+\Delta\Phi_Q=\Delta\Phi_D=24\pi.
+}
+\]
+
+No physical claim follows until a real carrier is shown to instantiate this registry.
+
+## 11. No-fit and type firewalls
 
 Forbidden:
 
-- fitting (Omega_star) to (H_0);
-- choosing (Q_star) to reproduce a desired redshift;
-- identifying (D) with the FLRW scale factor after inspecting cosmological targets;
-- identifying (Phi_D,Phi_Q,	ildephi) merely because all are written as phases.
+- \(Q=H\);
+- raw dimensionful \(Q\) used directly as a \(\tanh\) argument;
+- same symbol \(\Phi\) used as proof of same physical phase;
+- fitting registry degree \(m\) or a continuous \(\lambda_\Phi\) to cosmological data;
+- fitting \(Q_\star\), \(\eta_\phi\), support weights, or a support volume to \(H_0\);
+- inserting \(\rho_G\) into an ordinary action-phase law without integration or action-density retyping;
+- identifying \(H_D\) with \(H_{\rm FLRW}\) before a metric/observable map for \(D\) is derived.
 
-## 9. Falsifiable next gates
+## 12. Current gates
 
-The next work should close these in order:
+Closed mathematically / structurally:
 
-1. **PHASE_REGISTRY_GATE**  
-   Derive the typed map (Phi_Q	oPhi_D), including whether (lambda_Phi=1).
+- \(H_D=d\ln D/dt=\kappa\dot\Phi_D\);
+- integer-degree \(U(1)\) registry classification;
+- orientation-preserving isomorphism implies \(m=1\);
+- five-factor \(Q\)-identifiability rank \(1\), nullity \(4\);
+- same-cell source integration \(V\rho_G=B\omega\mathcal N(\phi+\kappa)\);
+- multi-cell extensive sum.
 
-2. **DENSITY_TO_POTENTIAL_GATE**  
-   Decide and derive whether (U_{m eff}) is local-density, same-cell integrated energy, or a nonlocal geometric functional.
+Open physically:
 
-3. **SOURCE_NORMALIZATION_GATE**  
-   Derive (Q_star), (V_{m eff}), and any response coefficient without cosmological target fitting.
+1. **QHTRI_SOURCE_ENERGY_BINDING** — which RFC extensive source enters the QHTRI action?
+2. **SUPPORT_KERNEL_SELECTION** — which cells/weights constitute that source?
+3. **ACTION_SCALE_CALIBRATION** — what fixes \(\eta_\phi\)?
+4. **PHASE_REGISTRY_SELECTION** — do CIR and QHTRI instantiate the same \(U(1)\) bundle and orientation?
+5. **SOURCE_NORMALIZATION_GATE** — what independently fixes \(Q_\star\) for any hyperbolic radial coordinate?
+6. **CIR_METRIC_OBSERVABLE_BINDING** — what exactly is \(D\) physically?
+7. **PROSPECTIVE_TEST_GATE** — only after the above, freeze a no-refit cosmological prediction.
 
-4. **METRIC/OBSERVABLE_GATE**  
-   Bind the dimensionless (D) to a metric or directly observable cosmological scale variable.
+## 13. Parent provenance
 
-5. **PROSPECTIVE_TEST_GATE**  
-   Freeze a no-refit prediction for redshift/distance/time-dilation/BAO or another observable only after gates 1–4 close.
-
-## 10. Epistemic verdict
-
-### EXACT / CONDITIONAL EXACT
-
-- (H_D=dln D/dt=kappadotPhi_D) on the declared CIR representation;
-- raw RFC carrier (Q=Bomegamathcal N/(AR)) is a source-density prefactor;
-- (Q)-only observation has rank-one source Jacobian and a four-dimensional multiplicative degeneracy;
-- (AR) cancels from same-cell integrated energy (ho_E V_R) when (V_R=AR).
-
-### OPEN PHYSICAL BINDING
-
-- (Phi_QleftrightarrowPhi_D);
-- (ho_E	o U_{m eff});
-- the dimensionless radial normalization (Q_star);
-- (Dleftrightarrow) cosmological metric/observable;
-- identification of (H_D) with any measured Hubble-like rate.
-
-### FORBIDDEN PROMOTIONS
-
-- (Q=H);
-- (Q) used directly as the argument of (	anh) without normalization;
-- same symbol (Phi) used as proof of cross-project phase identity;
-- fitting any bridge coefficient to (H_0) and calling the result a derivation.
-
-## 11. Parent provenance
-
-- CIR base: `cbe7cb292d6f164b656ba38a051b7914c40fbad2`.
-- TIR parent currently pinned by CIR: `853032e019824b836de43634d949da5566396153`.
-- GREMLIN main used for the source-density and identifiability crosswalk: `b0000828238e0cd244f5eb1fb679155315df372f`.
-- GREMLIN source specs:
-  - `spec/GREMLIN_SEMANTIC_ORBITAL_RFC_SOURCE_DENSITY_V0_4.md`;
-  - `spec/GREMLIN_ORBIT_SOURCE_COUPLING_IDENTIFIABILITY_V0_8.md`.
-- QHTRI phase-mechanics equation is taken from the project monograph ledger reporting QHTRI baseline `d8e07571ef8132bfa1069cff27c9cca8b191853a`.
+- CIR base at branch creation: \`cbe7cb292d6f164b656ba38a051b7914c40fbad2\`.
+- TIR parent pinned by CIR: \`853032e019824b836de43634d949da5566396153\`.
+- GREMLIN main used for source-density and source/coupling identifiability: \`b0000828238e0cd244f5eb1fb679155315df372f\`.
+- RFC main inspected for the present refinement: \`664349e2f16b57ee23bf6f5f21f5fe8ada17c5a5\`.
+- QHTRI current main inspected for the present refinement: \`f95589ff1c7e5e7cee6b1bcaf079c3c3eb4fc500\`.
+- QHTRI phase-mechanics construction commit: \`6a454f6daf6a225978ea00482d83b298187437f6\`.
 
 No parent source is promoted beyond its own declared authority.
