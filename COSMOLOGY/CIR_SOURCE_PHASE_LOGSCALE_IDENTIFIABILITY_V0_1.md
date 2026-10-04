@@ -102,13 +102,21 @@ then
 }
 \]
 
-On a fixed lifted branch,
+For a strict group homomorphism, the identity is preserved and a lifted branch has
 
 \[
-\Phi_D=m\Phi_Q+\Phi_0+2\pi k,
+\Phi_D=m\Phi_Q+2\pi k,
 \qquad
 \dot\Phi_D=m\dot\Phi_Q.
 \]
+
+A constant \(\Phi_0\) is admissible only when the phases are treated as torsors with independently chosen origins; the affine torsor map
+
+\[
+\Phi_D=m\Phi_Q+\Phi_0+2\pi k
+\]
+
+is not a group homomorphism unless \(\Phi_0=0\pmod{2\pi}\).
 
 If the registry is an isomorphism, \(m=\pm1\). If it is additionally orientation-preserving,
 
