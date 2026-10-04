@@ -14,18 +14,20 @@
     "multicell_extensive_sum": true,
     "weighted_support_identity": true,
     "cir_qhtri_rate_composition": true,
-    "extensive_product_identifiability_firewall": true
+    "extensive_product_identifiability_firewall": true,
+    "strict_homomorphism_forces_zero_offset_mod_2pi": true
   },
   "summary": {
-    "passed": 12,
-    "total": 12
+    "passed": 13,
+    "total": 13
   },
   "epistemic_boundary": {
     "exact": [
       "integer-degree U(1) registry classification",
       "same-cell RFC density integration cancels V_R",
       "same-cell current form also cancels q0",
-      "multicell and weighted-support algebra"
+      "multicell and weighted-support algebra",
+      "strict U(1) homomorphism maps identity to identity and therefore has zero phase offset modulo 2pi"
     ],
     "conditional": [
       "H_D = -kappa*m*E_Q/eta_phi after QHTRI source-energy admission and phase registry"
@@ -40,6 +42,6 @@
   "execution": {
     "validator": "validation/validate_cir_phase_registry_density_to_potential_v0_1.py",
     "deterministic": true,
-    "local_validation": "PASS_12_OF_12"
+    "local_validation": "PASS_13_OF_13"
   }
 }
