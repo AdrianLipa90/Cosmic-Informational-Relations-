@@ -58,8 +58,13 @@ CIR uses the TIR claim hierarchy.
 | RFC source density → same-cell extensive energy \(V\rho_G=B\omega N(\phi+\kappa)\) | B | PASS EXACT ON ADMITTED RFC CELL; QHTRI source-energy identity OPEN |
 | Dimensionless radial normalization \(Q/Q_*\) for hyperbolic-coordinate use | B/F | OPEN PHYSICAL BINDING |
 | CIR conditional source-to-log-scale law \(H_D=-\kappa m E_Q/\eta_\phi\) | B | PASS CONDITIONAL / PHYSICAL INPUTS OPEN |
-| QHTRI carrier action scale \(\eta_\phi\) absolute calibration | B/F | OPEN |
-| QHTRI action source \(E_Q\leftrightarrow E_\Sigma\) | B | OPEN PHYSICAL BINDING |
+| QHTRI carrier action scale \(\eta_\phi\) | B/F | OPEN PHYSICAL NORMALIZATION; \(\eta_\phi=P\) FORCED CONDITIONALLY BY GLOBAL \(U(1)\) ISOMORPHISM |
+| QHTRI dynamical source \(E_Q\leftrightarrow E_\Sigma\) | B | SAME-GENERATOR ADMISSION IDENTIFIED; PHYSICAL CARRIER SELECTION OPEN |
+| Fixed \(\eta_\phi=q_0\) + global U(1) isomorphism + RF-F8 varying-\(\omega\) selector | B | UNIQUE RF-F14 BRANCH: ISOTROPIC NULL RADIATION; PHYSICAL SECTOR OPEN |
+| RFC \(X\) → QHTRI dynamical phase fixed-degree map | A/B | PASS CONDITIONAL: degree \(-P/\eta_\phi\); U(1) requires integer ratio |
+| Full first-order action as QHTRI dynamical phase source | D | NO-GO ON RF-F13 DEGREE-ONE ON-SHELL SHELL — \(P\dot X-H_G=0\) |
+| RF-S22 matched-H \(E_\Sigma=H_\Phi^{EB}\) | B | PASS EXACT CONDITIONAL / PHYSICAL MATCHED-H RECEIPT OPEN |
+| RFC material Hamiltonian lift \(E_\Sigma=\sum_a N_aH_{G,a}=\sum_aV_a\rho_{G,a}\) | B | PASS EXACT ON RF-F13/RF-S16 SURFACE |
 | Orientation-preserving \(U(1)\) isomorphism registry | A/B | PASS EXACT CONDITIONAL — degree \(m=1\) |
 | CIR cosmological source dynamics | B | PARTIAL EXACT CRITERIA / PHYSICAL SOURCE BINDINGS OPEN |
 | Dark-energy mechanism | B/C/E | NOT YET CLASSIFIED AS A PHYSICAL RESULT |
