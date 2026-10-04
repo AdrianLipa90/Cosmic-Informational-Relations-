@@ -1,0 +1,45 @@
+{
+  "schema": "CIR_PHASE_REGISTRY_DENSITY_TO_POTENTIAL_VALIDATION_RECEIPT_V0_1",
+  "date": "2026-10-04",
+  "status": "PASS",
+  "checks": {
+    "kappa_block_identity": true,
+    "u1_integer_degree_periodicity": true,
+    "noninteger_affine_slope_rejected_as_u1_registry": true,
+    "u1_isomorphism_degree_abs_one": true,
+    "dyadic_block_registry_roundtrip": true,
+    "rfc_current_factorization": true,
+    "cell_integration_cancels_volume": true,
+    "cell_integration_cancels_q0": true,
+    "multicell_extensive_sum": true,
+    "weighted_support_identity": true,
+    "cir_qhtri_rate_composition": true,
+    "extensive_product_identifiability_firewall": true
+  },
+  "summary": {
+    "passed": 12,
+    "total": 12
+  },
+  "epistemic_boundary": {
+    "exact": [
+      "integer-degree U(1) registry classification",
+      "same-cell RFC density integration cancels V_R",
+      "same-cell current form also cancels q0",
+      "multicell and weighted-support algebra"
+    ],
+    "conditional": [
+      "H_D = -kappa*m*E_Q/eta_phi after QHTRI source-energy admission and phase registry"
+    ],
+    "open": [
+      "physical QHTRI source-energy selection",
+      "support-kernel selection",
+      "eta_phi calibration",
+      "CIR D to cosmological observable binding"
+    ]
+  },
+  "execution": {
+    "validator": "validation/validate_cir_phase_registry_density_to_potential_v0_1.py",
+    "deterministic": true,
+    "local_validation": "PASS_12_OF_12"
+  }
+}
