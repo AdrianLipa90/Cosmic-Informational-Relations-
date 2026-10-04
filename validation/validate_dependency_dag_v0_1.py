@@ -39,7 +39,7 @@ def main():
             failures.append("premature_promotion:"+node_id)
 
     # Retained no-go nodes cannot be re-labelled PASS.
-    for node_id in ["N0","N1","N2"]:
+    for node_id in ["N0","N1","N2","N3"]:
         if nodes[node_id]["status"]!="NO_GO":
             failures.append("nogo_lost:"+node_id)
 
