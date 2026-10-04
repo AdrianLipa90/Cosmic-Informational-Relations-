@@ -1,0 +1,20 @@
+{
+  "schema": "CIR_QHTRI_SOURCE_ENERGY_BINDING_PARENT_PIN_V0_1",
+  "date": "2026-10-04",
+  "status": "PINNED_CANDIDATE_BRANCH",
+  "rfc_main_commit": "664349e2f16b57ee23bf6f5f21f5fe8ada17c5a5",
+  "qhtri_main_commit": "f95589ff1c7e5e7cee6b1bcaf079c3c3eb4fc500",
+  "gremlin_main_commit": "b0000828238e0cd244f5eb1fb679155315df372f",
+  "parents": [
+    "RFC/formalism/RF_F13_VARIATIONAL_INTEGRABILITY_COMMON_ACTION.md",
+    "RFC/closure/scale/RF_S16_OCCUPATION_NOETHER_CURRENT_BINDING.md",
+    "RFC/closure/scale/RF_S17_CARRIER_NORMALIZATION_INVARIANCE.md",
+    "RFC/closure/scale/RF_S22_NOETHER_HAMILTONIAN_SOURCE_CLOSURE.md",
+    "RFC/formalism/RF_F14_NOETHER_EOS_SECTOR_COMPATIBILITY.md",
+    "QHTRI/docs/PHASE_MECHANICS_GREMLIN_ORBITAL_EB_BRIDGE.md",
+    "GREMLIN/spec/GREMLIN_ORBIT_SOURCE_COUPLING_IDENTIFIABILITY_V0_8.md",
+    "GREMLIN/spec/GREMLIN_EB_CONDENSATE_ORBITAL_PHASE_BRIDGE_V0_9.md"
+  ],
+  "authority": "CANDIDATE_BRANCH_ONLY",
+  "main_untouched": true
+}
