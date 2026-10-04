@@ -34,7 +34,7 @@ def main():
     if len(seen)!=len(nodes): failures.append("cycle")
 
     # Required frontier nodes must remain open/unfrozen.
-    for node_id in ["P0","P1","P2","C1","C3","C4","O1","O2"]:
+    for node_id in ["P0","P1","P2","C1","C3","C4","R2","R4","R5","R7","R8","O1","O2"]:
         if nodes[node_id]["status"] not in OPEN:
             failures.append("premature_promotion:"+node_id)
 
