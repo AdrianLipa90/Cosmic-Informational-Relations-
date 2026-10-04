@@ -57,15 +57,33 @@ m\in\mathbb Z.
 
 Thus the arbitrary continuous affine slope of the earlier coordinate candidate is quantized once a genuine \(U(1)\) registry is demanded.
 
-On a fixed lifted branch one may write
+For a strict group homomorphism, the identity must map to the identity. On a fixed lifted branch one may therefore write
 
 \[
 \boxed{
-\Phi_D=m\Phi_Q+\Phi_0+2\pi k,
+\Phi_D=m\Phi_Q+2\pi k,
 }
 \]
 
-where \(m\in\mathbb Z\), \(\Phi_0\) is a fixed coordinate-origin offset, and \(k\in\mathbb Z\) is a fixed lift choice on the differentiable segment. Therefore
+with \(m,k\in\mathbb Z\) and fixed \(k\) on the differentiable segment.
+
+If the phase coordinates are treated instead as \(U(1)\)-torsors with independently chosen origins, an affine equivariant registry may be written
+
+\[
+\boxed{
+\Phi_D=m\Phi_Q+\Phi_0+2\pi k.
+}
+\]
+
+This is not a group homomorphism unless
+
+\[
+\boxed{
+\Phi_0=0\pmod{2\pi}.
+}
+\]
+
+Both cases give, for fixed origin/lift,
 
 \[
 \boxed{
@@ -73,7 +91,7 @@ where \(m\in\mathbb Z\), \(\Phi_0\) is a fixed coordinate-origin offset, and \(k
 }
 \]
 
-Fixed offsets do not affect rates.
+Thus a constant torsor-origin offset does not affect rates, but it must not be silently called part of a group homomorphism.
 
 ## 3. Isomorphism and orientation gates
 
@@ -253,7 +271,7 @@ EXACT GIVEN REGISTRY AXIOMS:
 - continuous \(U(1)\) homomorphism \(\Rightarrow m\in\mathbb Z\);
 - \(U(1)\) isomorphism \(\Rightarrow m=\pm1\);
 - orientation-preserving isomorphism \(\Rightarrow m=1\);
-- fixed registry offsets disappear from \(\dot\Phi\);
+- strict homomorphism forces zero offset modulo \(2\pi\); a torsor-origin offset is allowed only in the affine equivariant version and disappears from \(\dot\Phi\);
 - \(H_D=\kappa m\dot\Phi_Q\).
 
 OPEN PHYSICAL BINDING:
