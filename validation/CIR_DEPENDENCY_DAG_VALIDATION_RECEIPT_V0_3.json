@@ -1,0 +1,36 @@
+{
+  "schema": "CIR_DEPENDENCY_DAG_VALIDATION_V0_3",
+  "date": "2026-10-04",
+  "status": "PASS",
+  "node_count": 36,
+  "edge_count": 44,
+  "checks": {
+    "referential_integrity": true,
+    "acyclic": true,
+    "physical_frontier_not_prematurely_promoted": true,
+    "retained_no_go_preserved": true,
+    "no_empirical_verdict_before_freeze": true
+  },
+  "preserved_open_frontier": [
+    "P0",
+    "P1",
+    "P2",
+    "C1",
+    "C3",
+    "C4",
+    "R2",
+    "R4",
+    "R5",
+    "R7",
+    "R8",
+    "O1",
+    "O2"
+  ],
+  "preserved_no_go": [
+    "N0",
+    "N1",
+    "N2",
+    "N3"
+  ],
+  "failures": []
+}
