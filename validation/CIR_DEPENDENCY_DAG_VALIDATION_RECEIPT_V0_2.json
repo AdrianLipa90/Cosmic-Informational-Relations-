@@ -1,0 +1,37 @@
+{
+  "schema": "CIR_DEPENDENCY_DAG_VALIDATION_V0_2",
+  "date": "2026-10-04",
+  "status": "PASS",
+  "node_count": 32,
+  "edge_count": 36,
+  "checks": {
+    "referential_integrity": true,
+    "acyclic": true,
+    "physical_frontier_not_prematurely_promoted": true,
+    "retained_no_go_preserved": true,
+    "no_empirical_verdict_before_freeze": true
+  },
+  "required_open_frontier": [
+    "P0",
+    "P1",
+    "P2",
+    "C1",
+    "C3",
+    "C4",
+    "R2",
+    "R4",
+    "R5",
+    "R7",
+    "R8",
+    "O1",
+    "O2"
+  ],
+  "new_cir_frontier": {
+    "R2": "OPEN_PHYSICAL_BINDING",
+    "R4": "OPEN_PHYSICAL_BINDING",
+    "R5": "OPEN_PHYSICAL_BINDING",
+    "R7": "OPEN_PHYSICAL_BINDING",
+    "R8": "OPEN_PHYSICAL_BINDING"
+  },
+  "failures": []
+}
