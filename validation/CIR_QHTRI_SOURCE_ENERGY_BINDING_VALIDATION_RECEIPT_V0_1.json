@@ -1,0 +1,61 @@
+{
+  "schema": "CIR_QHTRI_SOURCE_ENERGY_BINDING_VALIDATION_RECEIPT_V0_1",
+  "date": "2026-10-04",
+  "status": "PASS",
+  "checks": {
+    "local_density_equals_occupation_density_times_HG": true,
+    "cell_energy_equals_N_times_HG": true,
+    "finite_slice_extensive_energy": true,
+    "full_first_order_action_integrand_zero_on_shell": true,
+    "dynamical_phase_not_full_action": true,
+    "single_rate_phase_action_relation": true,
+    "integer_ratio_gives_u1_homomorphism": true,
+    "noninteger_f14_ratios_fail_standard_u1_periodicity": true,
+    "u1_isomorphism_requires_eta_equals_P": true,
+    "fixed_q0_global_u1_selector_unique": true,
+    "dust_pointwise_but_not_constant_P_transport": true,
+    "matched_H_conditional_roundtrip": true
+  },
+  "summary": {
+    "passed": 12,
+    "total": 12
+  },
+  "epistemic_boundary": {
+    "exact": [
+      "E_a=V_a*rho_G,a=N_a*H_G,a",
+      "E_Sigma=sum_a N_a H_G,a",
+      "P dot X-H_G=0 on RF-F13 degree-one on-shell branch",
+      "standard U(1) periodicity requires integer P/eta on Phi_Q=-(P/eta)X"
+    ],
+    "conditional": [
+      "E_Sigma=H_Phi^EB on RF-S22 matched-H",
+      "E_Q=E_Sigma after same-generator QHTRI admission",
+      "eta_phi=P for orientation-reversing U(1) isomorphism on constant-ratio branch",
+      "isotropic-null branch unique under eta_phi=q0 fixed + global U(1) isomorphism + RF-F8 varying-omega transport"
+    ],
+    "open": [
+      "physical QHTRI/RFC same-generator admission",
+      "physical eta_phi normalization",
+      "physical RF-F14 sector selection",
+      "CIR D cosmological observable binding"
+    ]
+  },
+  "gremlin_live": {
+    "user_task_event": "gremlin:whisper:sha256:ee1be1d8dfc91b39991f619bda29d552d8cafb5814fe82c2d8dbdbf059f1af34",
+    "user_task_fused": "gremlin:whisper:sha256:b37296dd72d592d7689b0f1196276fc62b1ceafcbe699a6d6905a839a7eb0129",
+    "research_packet_event": "gremlin:whisper:sha256:c8da40eb7c5740ecabd56cf14b3b36b2f0938570c9977d843fae1720a20db77e",
+    "research_packet_fused": "gremlin:whisper:sha256:89e7b5b1c456838255eb60ee72b732748b37c5e7dfaf70c1fd01102afa0596af",
+    "route_candidate": "gremlin:whisper:sha256:798cfe27fd2f201e467f369a299085c1b9b101f863ea6aba014b04a4cf10e92b",
+    "route_species": [
+      "OWL",
+      "SPIDER",
+      "MOLE",
+      "HOUND"
+    ]
+  },
+  "execution": {
+    "validator": "validation/validate_cir_qhtri_source_energy_binding_v0_1.py",
+    "local_validation": "PASS_12_OF_12",
+    "deterministic": true
+  }
+}
