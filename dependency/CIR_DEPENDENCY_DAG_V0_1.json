@@ -238,6 +238,34 @@
       "status": "OPEN_PHYSICAL_BINDING",
       "scope": "physical_realization",
       "blocks_physical_promotion": true
+    },
+    {
+      "id": "R9",
+      "name": "RFC material Hamiltonian extensive lift E_Sigma=sum N H_G",
+      "status": "PASS_EXACT",
+      "scope": "structural",
+      "blocks_physical_promotion": false
+    },
+    {
+      "id": "N3",
+      "name": "full RF-F13 first-order action as QHTRI dynamical phase source",
+      "status": "NO_GO",
+      "scope": "current_action",
+      "blocks_physical_promotion": false
+    },
+    {
+      "id": "R10",
+      "name": "RFC X to QHTRI dynamical phase action-ratio U1 selector",
+      "status": "PASS_CONDITIONAL",
+      "scope": "mathematical_conditional",
+      "blocks_physical_promotion": false
+    },
+    {
+      "id": "R11",
+      "name": "fixed q0 global U1 plus RF-F8 branch selector",
+      "status": "PASS_CONDITIONAL",
+      "scope": "mathematical_conditional",
+      "blocks_physical_promotion": false
     }
   ],
   "edges": [
@@ -384,6 +412,38 @@
     [
       "R0",
       "R8"
+    ],
+    [
+      "R3",
+      "R9"
+    ],
+    [
+      "R9",
+      "R4"
+    ],
+    [
+      "R9",
+      "N3"
+    ],
+    [
+      "R1",
+      "R10"
+    ],
+    [
+      "R4",
+      "R10"
+    ],
+    [
+      "R5",
+      "R10"
+    ],
+    [
+      "R10",
+      "R11"
+    ],
+    [
+      "R10",
+      "R6"
     ]
   ],
   "physical_promotion_rule": "A physical-realization or empirical node may not be marked PASS/CLOSED while any required upstream node on its promotion path has blocks_physical_promotion=true and an OPEN/NONE_FROZEN status.",
@@ -399,6 +459,9 @@
     "PHASE_SYMBOL_REUSE_NOT_PHYSICAL_REGISTRY",
     "U1_REGISTRY_DEGREE_NOT_COSMOLOGICAL_FIT_PARAMETER",
     "SOURCE_DENSITY_NOT_CARRIER_ENERGY_WITHOUT_INTEGRATION_OR_RETYPING",
-    "CIR_LOG_SCALE_RATE_NOT_FLRW_H_WITHOUT_METRIC_OBSERVABLE_BINDING"
+    "CIR_LOG_SCALE_RATE_NOT_FLRW_H_WITHOUT_METRIC_OBSERVABLE_BINDING",
+    "FULL_FIRST_ORDER_ACTION_NOT_QHTRI_DYNAMICAL_PHASE_ON_RF_F13_ONSHELL",
+    "ACTION_RATIO_P_OVER_ETA_MUST_BE_INTEGER_FOR_STANDARD_U1_REGISTRY",
+    "MATCHED_H_NOT_UNCONDITIONAL_PHYSICAL_IDENTITY"
   ]
 }
