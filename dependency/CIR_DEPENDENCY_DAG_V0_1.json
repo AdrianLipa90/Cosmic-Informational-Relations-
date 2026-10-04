@@ -175,6 +175,69 @@
       "status": "OPEN_EMPIRICAL",
       "scope": "empirical",
       "blocks_physical_promotion": true
+    },
+    {
+      "id": "R0",
+      "name": "CIR relational log-scale representation",
+      "status": "PASS_EXACT",
+      "scope": "mathematical_conditional",
+      "blocks_physical_promotion": false
+    },
+    {
+      "id": "R1",
+      "name": "U1 phase-registry integer-degree classification",
+      "status": "PASS_EXACT",
+      "scope": "mathematical",
+      "blocks_physical_promotion": false
+    },
+    {
+      "id": "R2",
+      "name": "physical CIR-QHTRI phase-bundle registry selection",
+      "status": "OPEN_PHYSICAL_BINDING",
+      "scope": "physical_realization",
+      "blocks_physical_promotion": true
+    },
+    {
+      "id": "R3",
+      "name": "RFC source-density to same-cell extensive-energy integration",
+      "status": "PASS_EXACT",
+      "scope": "structural",
+      "blocks_physical_promotion": false
+    },
+    {
+      "id": "R4",
+      "name": "QHTRI source-energy binding to admitted RFC extensive source",
+      "status": "OPEN_PHYSICAL_BINDING",
+      "scope": "physical_realization",
+      "blocks_physical_promotion": true
+    },
+    {
+      "id": "R5",
+      "name": "QHTRI carrier action-scale eta_phi calibration",
+      "status": "OPEN_PHYSICAL_BINDING",
+      "scope": "physical_realization",
+      "blocks_physical_promotion": true
+    },
+    {
+      "id": "R6",
+      "name": "conditional CIR source-to-log-scale rate law",
+      "status": "PASS_CONDITIONAL",
+      "scope": "mathematical_conditional",
+      "blocks_physical_promotion": false
+    },
+    {
+      "id": "R7",
+      "name": "CIR D to cosmological metric/observable binding",
+      "status": "OPEN_PHYSICAL_BINDING",
+      "scope": "physical_realization",
+      "blocks_physical_promotion": true
+    },
+    {
+      "id": "R8",
+      "name": "dimensionless source-density radial normalization Q_star",
+      "status": "OPEN_PHYSICAL_BINDING",
+      "scope": "physical_realization",
+      "blocks_physical_promotion": true
     }
   ],
   "edges": [
@@ -277,6 +340,50 @@
     [
       "O1",
       "O2"
+    ],
+    [
+      "F0",
+      "R0"
+    ],
+    [
+      "R0",
+      "R1"
+    ],
+    [
+      "R1",
+      "R2"
+    ],
+    [
+      "F0",
+      "R3"
+    ],
+    [
+      "R3",
+      "R4"
+    ],
+    [
+      "R2",
+      "R6"
+    ],
+    [
+      "R4",
+      "R6"
+    ],
+    [
+      "R5",
+      "R6"
+    ],
+    [
+      "R6",
+      "R7"
+    ],
+    [
+      "R7",
+      "O0"
+    ],
+    [
+      "R0",
+      "R8"
     ]
   ],
   "physical_promotion_rule": "A physical-realization or empirical node may not be marked PASS/CLOSED while any required upstream node on its promotion path has blocks_physical_promotion=true and an OPEN/NONE_FROZEN status.",
@@ -288,6 +395,10 @@
     "EQUAL_STRESS_HOLONOMY_PARTITION_NO_GO",
     "PURE_PHASE_KINETIC_W_PLUS_ONE_DECELERATING",
     "SIMILAR_LENSING_MORPHOLOGY_NOT_MECHANISM_IDENTITY",
-    "NO_POST_HOC_SOURCE_RETUNING"
+    "NO_POST_HOC_SOURCE_RETUNING",
+    "PHASE_SYMBOL_REUSE_NOT_PHYSICAL_REGISTRY",
+    "U1_REGISTRY_DEGREE_NOT_COSMOLOGICAL_FIT_PARAMETER",
+    "SOURCE_DENSITY_NOT_CARRIER_ENERGY_WITHOUT_INTEGRATION_OR_RETYPING",
+    "CIR_LOG_SCALE_RATE_NOT_FLRW_H_WITHOUT_METRIC_OBSERVABLE_BINDING"
   ]
 }
