@@ -54,9 +54,13 @@ CIR uses the TIR claim hierarchy.
 | dimensionful cosmological scale / \(\rho_{crit}\) binding | B/F | OPEN |
 | CIR relational log-scale rate \(H_D=d\ln D/dt=\kappa\dot\Phi_D\) | B | PASS EXACT on declared representation |
 | GREMLIN/RFC five-factor carrier \(Q=B\omega N/(AR)\) identifiability | B | PASS CONDITIONAL EXACT — rank 1 / nullity 4 |
-| CIR scale phase \(\Phi_D\) ↔ QHTRI dynamical phase \(\Phi_Q\) registry | B | OPEN PHYSICAL BINDING |
-| RFC source density \(\rho_E\) → QHTRI effective potential \(U_{eff}\) | B | OPEN PHYSICAL BINDING |
+| CIR \(U(1)\) phase-registry classification \(\Phi_Q\to\Phi_D\) | A/B | PASS EXACT GIVEN REGISTRY AXIOMS; physical registry selection OPEN |
+| RFC source density → same-cell extensive energy \(V\rho_G=B\omega N(\phi+\kappa)\) | B | PASS EXACT ON ADMITTED RFC CELL; QHTRI source-energy identity OPEN |
 | Dimensionless radial normalization \(Q/Q_*\) for hyperbolic-coordinate use | B/F | OPEN PHYSICAL BINDING |
+| CIR conditional source-to-log-scale law \(H_D=-\kappa m E_Q/\eta_\phi\) | B | PASS CONDITIONAL / PHYSICAL INPUTS OPEN |
+| QHTRI carrier action scale \(\eta_\phi\) absolute calibration | B/F | OPEN |
+| QHTRI action source \(E_Q\leftrightarrow E_\Sigma\) | B | OPEN PHYSICAL BINDING |
+| Orientation-preserving \(U(1)\) isomorphism registry | A/B | PASS EXACT CONDITIONAL — degree \(m=1\) |
 | CIR cosmological source dynamics | B | PARTIAL EXACT CRITERIA / PHYSICAL SOURCE BINDINGS OPEN |
 | Dark-energy mechanism | B/C/E | NOT YET CLASSIFIED AS A PHYSICAL RESULT |
 | Dark-matter mechanism | B/C/E | NOT YET CLASSIFIED AS A PHYSICAL RESULT |
