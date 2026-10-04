@@ -25,6 +25,20 @@ checks["noninteger_affine_slope_rejected_as_u1_registry"] = any(
     for phi in (0.0,0.4,1.7)
 )
 
+# A strict group homomorphism must map the identity to the identity.
+# An affine phase offset is a torsor-origin choice, not part of the homomorphism,
+# unless the offset is zero modulo 2*pi.
+def identity_image(offset):
+    return (math.cos(offset), math.sin(offset))
+
+checks["strict_homomorphism_forces_zero_offset_mod_2pi"] = all(
+    max(abs(a-b) for a,b in zip(identity_image(off), (1.0,0.0))) < TOL
+    for off in (0.0,2.0*math.pi,-4.0*math.pi,6.0*math.pi)
+) and all(
+    max(abs(a-b) for a,b in zip(identity_image(off), (1.0,0.0))) > 1e-6
+    for off in (0.1,0.5*math.pi,-0.7)
+)
+
 checks["u1_isomorphism_degree_abs_one"] = all(
     ((abs(m) == 1) == (m in (-1,1)))
     for m in range(-8,9)
