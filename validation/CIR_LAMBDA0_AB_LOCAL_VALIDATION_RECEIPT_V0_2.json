@@ -1,0 +1,45 @@
+{
+  "schema": "CIR_LAMBDA0_AB_LOCAL_VALIDATION_RECEIPT_V0_2",
+  "date": "2026-11-15",
+  "source": "local container",
+  "repo": "AdrianLipa90/Cosmic-Informational-Relations-",
+  "branch": "research/lambda0-rdss-holonomy-20261115",
+  "runtime": "Python 3.13.5",
+  "command": "python -m unittest discover -s validation -p 'test_cir_lambda0_ab_*py' -v",
+  "tests": {
+    "reference_v0_1": 27,
+    "ring_v0_2": 22,
+    "total": 49,
+    "passed": 49,
+    "failures": 0,
+    "errors": 0
+  },
+  "algebraic": {
+    "command": "python validate_cir_lambda0_rdss_ab_bridge_v0_1.py",
+    "checks": 8,
+    "passed": 8,
+    "failures": 0
+  },
+  "github": {
+    "published_filenames": [
+      "validation/cir_lambda0_ab_reference_v0_1.py",
+      "validation/test_cir_lambda0_ab_reference_v0_1.py",
+      "validation/cir_lambda0_ab_ring_v0_2.py",
+      "validation/test_cir_lambda0_ab_ring_v0_2.py",
+      "validation/validate_cir_lambda0_rdss_ab_bridge_v0_1.py",
+      "COSMOLOGY/CIR_AB_MATTER_STRESS_DIAGNOSTIC_V0_2.md"
+    ],
+    "github_ci_executed": false,
+    "remote_suite_execution": "NOT VERIFIED",
+    "main_changed": false
+  },
+  "verdict": "PASS_LOCAL",
+  "physics_verdict": "CONDITIONAL_MATHEMATICAL_TOY_NO_PHYSICAL_GRAVITY_CONFIRMATION",
+  "open_gates": [
+    "physical source and normalization",
+    "complete EM/core stress and boundary conditions",
+    "Einstein metric backreaction",
+    "on-shell Bianchi and matter field equations",
+    "experimental observational validation"
+  ]
+}
