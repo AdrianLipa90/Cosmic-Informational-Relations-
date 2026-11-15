@@ -63,10 +63,8 @@ def inverse4(matrix: Sequence[Sequence[float]]) -> list[list[float]]:
         pivot = max(range(k, 4), key=lambda i: abs(a[i][k]))
         if abs(a[pivot][k]) < 1e-14:
             raise ValueError("Singular matrix")
-        a[k], inv[k] = a[pivot], inv[pivot]
-        a[pivot], inv[pivot] = a[k] if pivot == k else a[pivot], inv[k] if pivot == k else inv[pivot]
-        # Maintain a properly ordered Gauss–Jordan state; all branches use
-        # the same pivoted matrix rows and the matching inverse rows.
+        a[k], a[pivot] = a[pivot], a[k]
+        inv[k], inv[pivot] = inv[pivot], inv[k]
         div = a[k][k]
         a[k] = [v / div for v in a[k]]
         inv[k] = [v / div for v in inv[k]]
